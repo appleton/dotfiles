@@ -1,0 +1,15 @@
+[user]
+  name = Andrew Appleton
+  email = andrew@mintdigital.com
+[core]
+  editor = mate -w
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[difftool "Kaleidoscope"]
+  cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+  prompt = false
+[diff]
+  tool = Kaleidoscope
