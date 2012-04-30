@@ -13,7 +13,7 @@ else
   fi
 fi
 
-PROMPT="%{$fg[white]%} ${current_dir}  : %{$reset_color%}"
+PROMPT="%{$fg[white]%}${current_dir}  : %{$reset_color%}"
 RPROMPT="${git_branch} ${rvm_ruby}"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="git:%{$fg[yellow]%}("
