@@ -1,6 +1,7 @@
 # Aliases
 
 # Change directory
+alias j='z' # Muscle memory
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
