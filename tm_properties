@@ -6,6 +6,6 @@ tabSize        = 2
 wrapColumn     = 80
 showWrapColumn = true
 softWrap       = false
-include        = "{.tm_properties,.gitignore,.htaccess}"
+include        = "{.tm_properties,.gitignore,.htaccess,.rvmrc}"
 [text.markdown.html, text.plain]
 softWrap       = true
