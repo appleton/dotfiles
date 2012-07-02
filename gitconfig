@@ -13,3 +13,5 @@
   prompt = false
 [diff]
   tool = Kaleidoscope
+[mergetool]
+  keepBackup = true
