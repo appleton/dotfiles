@@ -1,2 +1,3 @@
 # Don't install ri or RDoc with gems
-gem: --no-ri --no-rdoc
+install: --no-rdoc --no-ri
+update:  --no-rdoc --no-ri
