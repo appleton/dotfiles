@@ -76,7 +76,7 @@ white:      true
 # Set each environment that you're using to `true`.
 browser:    true
 devel:      false
-node:       false
+node:       true
 rhino:      false
 widget:     false
 windows:    false
