@@ -8,4 +8,10 @@ do
   echo ">> symlinked ~/.dotfiles/$file to ~/.$file"
 done
 
+for file in Preferences.sublime-settings Default\ \(OSX\).sublime-keymap
+do
+  ln -s ~/.dotfiles/sublime/$file ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/$file
+  echo ">> symlinked ~/.dotfiles/sublime/$file ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/$file"
+done
+
 echo "\n>> Done! Don't forget to reload your shell."

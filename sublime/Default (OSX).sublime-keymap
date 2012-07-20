@@ -1,0 +1,10 @@
+[
+  { "keys": ["super+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+  { "keys": ["super+f"], "command": "show_panel", "args": {"panel": "replace"} },
+  { "keys": ["super+alt+f"], "command": "show_panel", "args": {"panel": "find"} },
+  { "keys": ["ctrl+shift+."], "command": "erb", "context":
+    [
+      { "key": "selector", "operator": "equal", "operand": "text.html.ruby, text.haml, source.yaml, source.css, source.scss, source.js, source.coffee" }
+    ]
+  }
+]

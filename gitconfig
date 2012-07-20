@@ -2,7 +2,7 @@
   name = Andrew Appleton
   email = andrew@mintdigital.com
 [core]
-  editor = mate -w
+  editor = subl -w
 [color]
   branch = auto
   diff = auto
