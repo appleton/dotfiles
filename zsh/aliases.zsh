@@ -57,3 +57,8 @@ function current_branch() {
   echo ${ref#refs/heads/}
 }
 
+# Static file server for current directory
+function serve {
+  port="${1:-9393}"
+  ruby -r webrick -e "s = WEBrick::HTTPServer.new(:Port => $port, :DocumentRoot => Dir.pwd); trap('INT') { s.shutdown }; s.start"
+}
