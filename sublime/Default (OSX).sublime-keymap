@@ -7,9 +7,5 @@
       { "key": "selector", "operator": "equal", "operand": "text.html.ruby, text.haml, source.yaml, source.css, source.scss, source.js, source.coffee" }
     ]
   },
-  { "keys": ["ctrl+shift+,"], "command": "insert_snippet", "args": {"contents": "<${1:p}></$1>"}, "context":
-    [
-      { "key": "selector", "operator": "equal", "operand": "text.html" }
-    ]
-  }
+  { "keys": ["ctrl+shift+,"], "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" } }
 ]
