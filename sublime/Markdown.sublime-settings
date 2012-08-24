@@ -1,0 +1,6 @@
+{
+  "extensions": [ "markdown", "md", "mdown", "mmd", "txt" ],
+  "word_wrap": true,
+  "wrap_width":80,
+  "auto_match_enabled": true
+}
