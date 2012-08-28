@@ -63,3 +63,6 @@ function serve {
   open http://localhost:$port
   ruby -r webrick -e "s = WEBrick::HTTPServer.new(:Port => $port, :DocumentRoot => Dir.pwd); trap('INT') { s.shutdown }; s.start"
 }
+
+# Open in Sublime Text
+alias s='subl'
