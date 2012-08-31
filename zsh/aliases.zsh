@@ -66,3 +66,4 @@ function serve {
 
 # Open in Sublime Text
 alias s='subl'
+alias s.='subl .'
