@@ -67,3 +67,6 @@ function serve {
 # Open in Sublime Text
 alias s='subl'
 alias s.='subl .'
+
+# Open at GitHub
+alias gh='open_at_github'
