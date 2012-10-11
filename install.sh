@@ -8,14 +8,11 @@ do
   echo ">> symlinked ~/.dotfiles/$file to ~/.$file"
 done
 
-ln -s ~/.dotfiles/sublime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings
-echo ">> symlinked ~/.dotfiles/sublime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings"
-
-ln -s ~/.dotfiles/sublime/Markdown.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Markdown.sublime-settings
-echo ">> symlinked ~/.dotfiles/sublime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings"
-
-ln -s ~/.dotfiles/sublime/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Default\ \(OSX\).sublime-keymap
-echo ">> symlinked ~/.dotfiles/sublime/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Default\ \(OSX\).sublime-keymap"
-
+for path in ~/.dotfiles/sublime/*
+do
+  file=$(basename $path)
+  ln -s $path ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/$file
+  echo ">> symlinked $path to ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/$file"
+done
 
 echo "\n>> Done! Don't forget to reload your shell."
