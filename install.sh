@@ -10,9 +10,12 @@ done
 
 for path in ~/.dotfiles/sublime/*
 do
-  file=$(basename $path)
+  file=$(basename "$path")
   ln -s $path ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/$file
   echo ">> symlinked $path to ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/$file"
 done
+
+# Hackety hack. TODO: this properly.
+ln -s ~/.dotfiles/sublime/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Default\ \(OSX\).sublime-keymap
 
 echo "\n>> Done! Don't forget to reload your shell."
