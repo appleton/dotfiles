@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+background: $1;
+  background: -webkit-gradient(linear, left top, left bottom,
+               color-stop(0%,$1), color-stop(100%,$2));
+  background: -webkit-linear-gradient(top, $1 0%, $2 100%);
+  background:    -moz-linear-gradient(top, $1 0%, $2 100%);
+  background:     -ms-linear-gradient(top, $1 0%, $2 100%);
+  background:      -o-linear-gradient(top, $1 0%, $2 100%);
+background:           linear-gradient(top, $1 0%, $2 100%);
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>grad</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>meta.property-list.css</scope>
+</snippet>
