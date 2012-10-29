@@ -15,3 +15,5 @@
   tool = Kaleidoscope
 [mergetool]
   keepBackup = true
+[push]
+	default = matching
