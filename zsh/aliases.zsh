@@ -70,3 +70,6 @@ alias s.='subl .'
 
 # Open at GitHub
 alias gh='open_at_github'
+
+# Bundler
+alias b='bundle exec'
