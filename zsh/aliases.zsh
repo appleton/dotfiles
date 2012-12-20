@@ -73,3 +73,6 @@ alias gh='open_at_github'
 
 # Bundler
 alias b='bundle exec'
+
+# rbenv
+alias rb='rbenv'
