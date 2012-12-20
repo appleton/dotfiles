@@ -9,7 +9,7 @@ if which rvm-prompt &> /dev/null; then
   rvm_ruby='rvm:%{$fg[red]%}($(rvm-prompt i v p g))%{$reset_color%}'
 else
   if which rbenv &> /dev/null; then
-    rvm_ruby='rbenv:%{$fg[red]%}$(rbenv version | sed -e "s/ (set.*$//")%{$reset_color%}'
+    rvm_ruby='rb:%{$fg[red]%}($(rbenv version | sed -e "s/ (set.*$//"))%{$reset_color%}'
   fi
 fi
 
