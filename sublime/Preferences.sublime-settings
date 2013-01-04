@@ -8,6 +8,7 @@
   "font_face": "Inconsolata-dz",
   "font_options": [ "subpixel_antialias" ],
   "font_size": 13.0,
+  "folder_exclude_patterns": [ "node_modules", ".bundle" ],
   "highlight_line": true,
   "rulers": [ 80 ],
   "scroll_speed": 0,
