@@ -98,9 +98,9 @@ unset -f git_compare_version
 function open_at_github() {
   GIT='git'
   FETCH_URL=`$GIT remote show origin -n  | sed -n '/Fetch URL/p' | awk '{print $3}' | sed -E 's/[:@]/ /g' `
-  HOST=`echo $FETCH_URL | awk '{print $2}' `
+  GH_HOST=`echo $FETCH_URL | awk '{print $2}' `
   REPOS=`echo $FETCH_URL | awk '{print $3}' | sed 's/.git$//'`
-  ORIGIN="http://$HOST/"
+  ORIGIN="http://$GH_HOST/"
   BRANCH=`$GIT branch | grep -F '*' | sed 's/^* //'`
 
   echo $REPOS | 'egrep' -q '^gist/'
