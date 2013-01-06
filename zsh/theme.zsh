@@ -12,8 +12,7 @@ else
     rvm_ruby='rb:%{$fg[red]%}($(rbenv version | sed -e "s/ (set.*$//"))%{$reset_color%}'
   fi
 fi
-
-PROMPT="%{$fg[white]%}$current_dir : %{$reset_color%}"
+PROMPT="%{$fg[black]%}%n@%m %{$fg[white]%}$current_dir : %{$reset_color%}"
 RPROMPT="$git_branch $rvm_ruby"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="git:%{$fg[yellow]%}("
