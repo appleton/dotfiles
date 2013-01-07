@@ -1,0 +1,7 @@
+{
+  "sublimelinter": "save-only",
+  "sublimelinter_disable":
+  [
+    "ruby"
+  ]
+}
