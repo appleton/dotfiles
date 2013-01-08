@@ -9,7 +9,8 @@
 	[
 		"node_modules",
 		".bundle",
-		".git"
+		".git",
+		"tmp"
 	],
 	"font_face": "Inconsolata-dz",
 	"font_options":
