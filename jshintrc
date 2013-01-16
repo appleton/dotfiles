@@ -9,7 +9,10 @@
     "waits": false,
     "waitsFor": false,
     "runs": false,
-    "sinon": false
+    "sinon": false,
+    "require": false,
+    "requirejs": false,
+    "define": false
   },
   "node": true,
   "es5": true,
