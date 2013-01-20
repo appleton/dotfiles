@@ -24,6 +24,7 @@
   "debug": false,
   "eqeqeq": true,
   "eqnull": true,
+  "expr": true,
   "forin": true,
   "immed": true,
   "latedef": true,
