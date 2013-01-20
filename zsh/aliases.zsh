@@ -59,9 +59,8 @@ function current_branch() {
 
 # Static file server for current directory
 function serve {
-  port="${1:-9393}"
-  open http://localhost:$port
-  ruby -r webrick -e "s = WEBrick::HTTPServer.new(:Port => $port, :DocumentRoot => Dir.pwd); trap('INT') { s.shutdown }; s.start"
+  open http://localhost:8000
+  python -m SimpleHTTPServer
 }
 
 # Open in Sublime Text
