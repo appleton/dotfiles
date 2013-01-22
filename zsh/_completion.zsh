@@ -20,3 +20,4 @@ else
 fi
 
 zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' menu select
