@@ -20,7 +20,6 @@
   "browser": true,
   "jquery": true,
 
-  "camelcase": true,
   "curly": true,
   "debug": false,
   "eqeqeq": true,
