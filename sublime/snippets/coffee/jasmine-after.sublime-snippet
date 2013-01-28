@@ -1,11 +1,10 @@
 <snippet>
   <content><![CDATA[
-beforeEach(function() {
+afterEach ->
   ${0}
-});
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>bef</tabTrigger>
+  <tabTrigger>aft</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <scope>source.js</scope>
+  <scope>source.coffee</scope>
 </snippet>
