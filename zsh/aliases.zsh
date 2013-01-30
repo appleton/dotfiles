@@ -75,3 +75,6 @@ alias b='bundle exec'
 
 # rbenv
 alias rb='rbenv'
+
+# pngquant
+alias pngdir='pngquant_dir'
