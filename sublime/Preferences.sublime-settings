@@ -10,6 +10,7 @@
 		"node_modules",
 		".bundle",
 		".git",
+		"log",
 		"tmp"
 	],
 	"font_face": "Inconsolata-dz",
