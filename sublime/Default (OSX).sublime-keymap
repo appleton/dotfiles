@@ -7,5 +7,9 @@
       { "key": "selector", "operator": "equal", "operand": "text.html.ruby, text.haml, source.yaml, source.css, source.scss, source.js, source.coffee" }
     ]
   },
-  { "keys": ["ctrl+shift+,"], "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" } }
+  { "keys": ["ctrl+shift+,"], "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" } },
+  [
+    { "keys": ["super+v"], "command": "paste_and_indent" },
+    { "keys": ["super+shift+v"], "command": "paste" }
+  ]
 ]
