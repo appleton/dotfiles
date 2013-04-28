@@ -11,7 +11,9 @@
 		".bundle",
 		".git",
 		"log",
-		"tmp"
+		"tmp",
+		".tmp",
+		".sass-cache"
 	],
 	"font_face": "Inconsolata-dz",
 	"font_options":
