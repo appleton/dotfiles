@@ -78,3 +78,6 @@ alias rb='rbenv'
 
 # pngquant
 alias pngdir='pngquant_dir'
+
+# grep
+alias grep="grep -i --color=auto"
