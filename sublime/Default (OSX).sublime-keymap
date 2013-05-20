@@ -8,8 +8,6 @@
     ]
   },
   { "keys": ["ctrl+shift+,"], "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" } },
-  [
-    { "keys": ["super+v"], "command": "paste_and_indent" },
-    { "keys": ["super+shift+v"], "command": "paste" }
-  ]
+  { "keys": ["super+v"], "command": "paste_and_indent" },
+  { "keys": ["super+shift+v"], "command": "paste" }
 ]
