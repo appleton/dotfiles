@@ -1,7 +1,7 @@
 {
 	"auto_complete_delay": 200,
 	"caret_style": "blink",
-	"color_scheme": "Packages/Theme - Aqua/Color Schemes/Espresso Aqua.tmTheme",
+	"color_scheme": "Packages/Demain.tmTheme",
 	"default_line_ending": "LF",
 	"draw_white_space": "selection",
 	"fade_fold_buttons": false,
