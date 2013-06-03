@@ -1,3 +1,3 @@
 # Rails related aliases
 
-alias update='bundle && rake db:migrate db:test:prepare'
+alias update='(bundle check || bundle install) && rake db:migrate db:test:prepare'
