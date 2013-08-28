@@ -9,5 +9,8 @@
   },
   { "keys": ["ctrl+shift+,"], "command": "insert_snippet", "args": { "name": "Packages/XML/long-tag.sublime-snippet" } },
   { "keys": ["super+v"], "command": "paste_and_indent" },
-  { "keys": ["super+shift+v"], "command": "paste" }
+  { "keys": ["super+shift+v"], "command": "paste" },
+
+  { "keys": ["super+shift+t"], "command": "reopen_last_file" },
+  { "keys": ["super+shift+e"], "command": "run_all_ruby_test" }
 ]
