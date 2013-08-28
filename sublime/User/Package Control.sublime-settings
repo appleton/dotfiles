@@ -1,0 +1,24 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"All Autocomplete",
+		"Better JavaScript",
+		"CoffeeScript",
+		"EditorConfig",
+		"Emmet",
+		"GitGutter",
+		"Handlebars",
+		"LESS",
+		"Package Control",
+		"RubyTest",
+		"Sass",
+		"SideBarEnhancements",
+		"Syntax Highlighting for Sass",
+		"Theme - Aqua",
+		"Theme - Soda"
+	],
+	"repositories":
+	[
+	]
+}
