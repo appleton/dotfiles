@@ -3,6 +3,7 @@
 	"caret_style": "blink",
 	"color_scheme": "Packages/Demain.tmTheme",
 	"default_line_ending": "LF",
+	"dictionary": "Packages/Language - English/en_GB.dic",
 	"draw_white_space": "selection",
 	"fade_fold_buttons": false,
 	"folder_exclude_patterns":
@@ -24,6 +25,7 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
+		"JavaScript",
 		"Vintage"
 	],
 	"rulers":
@@ -36,5 +38,6 @@
 	"theme": "AppKit.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
+	"use_simple_full_screen": true,
 	"word_wrap": false
 }
