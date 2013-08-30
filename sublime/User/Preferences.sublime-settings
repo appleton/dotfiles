@@ -25,7 +25,6 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"JavaScript",
 		"Vintage"
 	],
 	"rulers":
