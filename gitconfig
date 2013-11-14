@@ -16,4 +16,4 @@
 [mergetool]
   keepBackup = true
 [push]
-	default = tracking
+  default = current
