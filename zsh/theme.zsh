@@ -1,5 +1,4 @@
 PURE_DEFAULT_USERNAME=andy
-PURE_CMD_MAX_EXEC_TIME=5
 
 # Pure
 # by Sindre Sorhus
@@ -77,7 +76,7 @@ pure_precmd() {
 
   vcs_info
   # add `%*` to display the time
-  print -P '\n%F{blue}%~%F{yellow}$vcs_info_msg_0_`pure_git_dirty` %F{black}`ruby_version` $username%f %F{yellow}`pure_cmd_exec_time`%f'
+  print -P '\n%F{blue}%~%F{yellow}$vcs_info_msg_0_`pure_git_dirty` %F{black}`ruby_version` $username%f'
   # reset value since `preexec` isn't always triggered
   unset cmd_timestamp
 }
