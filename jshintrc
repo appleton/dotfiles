@@ -20,7 +20,7 @@
   "browser": true,
   "jquery": true,
 
-  "curly": true,
+  "curly": false,
   "debug": false,
   "eqeqeq": true,
   "eqnull": true,
