@@ -1,16 +1,17 @@
 {
-	"enable_tab_scrolling": false,
 	"auto_complete_delay": 200,
+	"binary_file_patterns":
+	[
+		"node_modules/*",
+		".bundle/*"
+	],
 	"caret_style": "blink",
 	"color_scheme": "Packages/Demain.tmTheme",
 	"default_line_ending": "LF",
 	"dictionary": "Packages/Language - English/en_GB.dic",
 	"draw_white_space": "selection",
+	"enable_tab_scrolling": false,
 	"fade_fold_buttons": false,
-	"binary_file_patterns": [
-		"node_modules/*",
-		".bundle/*",
-	],
 	"folder_exclude_patterns":
 	[
 		".git",
