@@ -6,6 +6,7 @@
 		"CoffeeScript",
 		"EditorConfig",
 		"Emmet",
+		"ExportHtml",
 		"GitGutter",
 		"Handlebars",
 		"LESS",
