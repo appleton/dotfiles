@@ -83,3 +83,6 @@ alias pngdir='pngquant_dir'
 alias grep="grep -i --color=auto"
 
 alias nv="node -v"
+
+alias vim="/usr/local/Cellar/vim/7.4.052/bin/vim"
+alias vi="vim"
