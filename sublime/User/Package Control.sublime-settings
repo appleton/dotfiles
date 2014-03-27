@@ -3,13 +3,18 @@
 	"installed_packages":
 	[
 		"All Autocomplete",
+		"Base16 Color Schemes",
 		"CoffeeScript",
+		"Dockerfile Syntax Highlighting",
 		"EditorConfig",
 		"Emmet",
 		"ExportHtml",
+		"Git",
 		"GitGutter",
 		"Handlebars",
 		"LESS",
+		"nginx",
+		"Origami",
 		"Package Control",
 		"Ruby Block Converter",
 		"RubyTest",
@@ -17,7 +22,9 @@
 		"SideBarEnhancements",
 		"Syntax Highlighting for Sass",
 		"Theme - Aqua",
-		"Theme - Soda"
+		"Theme - Flatland",
+		"Theme - Soda",
+		"Theme - Spacegray"
 	],
 	"repositories":
 	[
