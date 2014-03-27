@@ -3,7 +3,8 @@
 	"binary_file_patterns":
 	[
 		"node_modules/*",
-		".bundle/*"
+		".bundle/*",
+		"dist/*"
 	],
 	"caret_style": "blink",
 	"color_scheme": "Packages/Demain.tmTheme",
@@ -39,7 +40,7 @@
 	"scroll_speed": 0,
 	"show_full_path": true,
 	"tab_size": 2,
-	"theme": "AppKit.sublime-theme",
+	"theme": "Spacegray Light.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"use_simple_full_screen": true,
