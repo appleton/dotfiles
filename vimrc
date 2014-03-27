@@ -14,11 +14,14 @@ Bundle 'gmarik/vundle'
 " original repos on GitHub
 Bundle "~/projects/vim-tomorrow-theme/.git"
 Bundle 'bling/vim-airline'
-
+Bundle "kien/ctrlp.vim"
 set nu
 set backspace=indent,eol,start
+set mouse=a
 syntax enable
 set colorcolumn=81
+inoremap jk <ESC>
+let mapleader = ","
 
 " airline
 let g:airline_powerline_fonts = 1
