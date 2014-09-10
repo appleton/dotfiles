@@ -1,4 +1,5 @@
-PURE_DEFAULT_USERNAME=andy
+DEFAULT_USERNAME=andy
+OTHER_USERNAME=aappleton
 
 # Pure
 # by Sindre Sorhus
@@ -35,7 +36,7 @@ zstyle ':vcs_info:git*' actionformats ' %b|%a'
 setopt local_options prompt_subst
 
 # only show username if not default
-[ $USER != "$PURE_DEFAULT_USERNAME" ] && local username='%n@%m '
+[ $USER != "$DEFAULT_USERNAME" ] && [ $USER != "$OTHER_USERNAME" ] && local username='%n@%m '
 
 # fastest possible way to check if repo is dirty
 pure_git_dirty() {
