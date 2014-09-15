@@ -3,6 +3,7 @@
 	"binary_file_patterns":
 	[
 		"node_modules/*",
+		"bower_components/*",
 		".bundle/*",
 		"dist/*"
 	],
