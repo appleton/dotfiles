@@ -83,6 +83,7 @@ alias pngdir='pngquant_dir'
 alias grep="grep -i --color=auto"
 
 alias nv="node -v"
+alias nr="npm run"
 
 alias vim="/usr/local/bin/vim"
 alias vi="vim"
