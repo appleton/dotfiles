@@ -5,7 +5,6 @@
 		"All Autocomplete",
 		"Base16 Color Schemes",
 		"Better CoffeeScript",
-		"CoffeeScript",
 		"dired",
 		"Dockerfile Syntax Highlighting",
 		"EditorConfig",
@@ -28,11 +27,7 @@
 		"SublimeLinter-jshint",
 		"SublimeLinter-rubocop",
 		"Syntax Highlighting for Sass",
-		"Theme - Aqua",
 		"Theme - El Capitan",
-		"Theme - Flatland",
-		"Theme - Soda",
-		"Theme - Spacegray"
 	],
 	"repositories":
 	[
