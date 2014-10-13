@@ -6,6 +6,7 @@
 		"Base16 Color Schemes",
 		"Better CoffeeScript",
 		"dired",
+		"DocBlockr",
 		"Dockerfile Syntax Highlighting",
 		"EditorConfig",
 		"Emmet",
@@ -27,7 +28,7 @@
 		"SublimeLinter-jshint",
 		"SublimeLinter-rubocop",
 		"Syntax Highlighting for Sass",
-		"Theme - El Capitan",
+		"Theme - El Capitan"
 	],
 	"repositories":
 	[
