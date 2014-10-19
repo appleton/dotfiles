@@ -1,11 +1,11 @@
 # Dotfiles
-My preferences for zsh, git, Textmate 2 and
-[JSLintMate](https://github.com/rondevera/jslintmate). Incorporates
+
+My preferences for zsh, git, Sublime Text, jshint. Incorporates
 [z](https://github.com/rupa/z).
 
 Clone the repo into `~/.dotfiles` and run:
 
-    sh ~/.dotfiles/install.sh
+    cd ~/.dotfiles && make
 
 This will symlink everything into the home directory.
 

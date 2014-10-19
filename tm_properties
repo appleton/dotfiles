@@ -1,9 +1,0 @@
-fontName       = "Inconsolata-dz"
-font-size      = 13
-showInvisibles = true
-softTabs       = true
-tabSize        = 2
-wrapColumn     = 80
-showWrapColumn = true
-softWrap       = false
-include        = "{.tm_properties,.gitignore,.htaccess,.rvmrc}"
