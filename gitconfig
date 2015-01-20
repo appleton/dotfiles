@@ -3,6 +3,7 @@
   email = andrew@floatleft.com
 [core]
   editor = subl -w
+	excludesfile = /Users/aappleton/.gitignore_global
 [color]
   branch = auto
   diff = auto
