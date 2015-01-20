@@ -2,17 +2,17 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/vundle.vim/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 
 " My bundles here:
 "
 " original repos on GitHub
-Bundle "~/projects/vim-tomorrow-theme/.git"
+Bundle "appleton/vim-tomorrow-theme"
 Bundle 'bling/vim-airline'
 Bundle "kien/ctrlp.vim"
 set nu
