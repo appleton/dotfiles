@@ -23,3 +23,5 @@
 [alias]
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[http "https://git.staging.herokudev.com/"]
+	sslVerify = false
