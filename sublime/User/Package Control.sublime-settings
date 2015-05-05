@@ -1,5 +1,8 @@
 {
 	"auto_upgrade_last_run": null,
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
 		"All Autocomplete",
@@ -9,7 +12,7 @@
 		"DocBlockr",
 		"Dockerfile Syntax Highlighting",
 		"EditorConfig",
-		"Emmet",
+		"EJS",
 		"ExportHtml",
 		"Git",
 		"GitGutter",
@@ -21,14 +24,15 @@
 		"Package Control",
 		"Pretty JSON",
 		"Ruby Block Converter",
-		"RubyTest",
+		"Ruby Slim",
 		"Sass",
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-jshint",
 		"SublimeLinter-rubocop",
 		"Syntax Highlighting for Sass",
-		"Theme - El Capitan"
+		"Theme - El Capitan",
+		"Tomorrow Color Schemes"
 	],
 	"repositories":
 	[
