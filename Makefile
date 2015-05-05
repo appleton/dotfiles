@@ -6,6 +6,7 @@ symlinks:
 	@ln -nsf $(DIR)/zshenv ~/.zshenv
 	@ln -nsf $(DIR)/vimrc ~/.vimrc
 	@ln -nsf $(DIR)/jshintrc ~/.jshintrc
+	@ln -nsf $(DIR)/nvmrc ~/.nvmrc
 	@ln -nsf $(DIR)/gitconfig ~/.gitconfig
 	@ln -nsf $(DIR)/gemrc ~/.gemrc
 	@ln -nsf $(DIR)/bundle ~/.bundle
