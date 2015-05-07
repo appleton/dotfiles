@@ -55,6 +55,19 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Babel ES6 tweaks</string>
+			<key>scope</key>
+			<string>variable.other.object.js, punctuation.definition.parameters, meta.group.braces.round.function.arguments.js, variable.other.readwrite.js, variable.other.constant.js, string.unquoted.label.js</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string />
+				<key>foreground</key>
+				<string>#111111</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Variable, String Link, Regular Expression, Tag Name</string>
 			<key>scope</key>
 			<string>variable, support.other.variable, string.other.link, string.regexp, entity.name.tag, meta.tag, entity.other.attribute-name, declaration.tag</string>
@@ -68,7 +81,7 @@
 			<key>name</key>
 			<string>Number, Constant, Function Argument, Tag Attribute, Embedded</string>
 			<key>scope</key>
-			<string>constant.numeric, constant.language, support.constant, constant.character, variable.parameter, punctuation.section.embedded, keyword.other.unit</string>
+			<string>constant.numeric, constant.language, support.constant, constant.character, variable.parameter, punctuation.section.embedded, keyword.other.unit, punctuation.quasi.element.begin.js, punctuation.quasi.element.end.js</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -370,13 +383,23 @@
 
 	<dict>
             <key>name</key>
+            <string>SublimeLinter Gutter Mark</string>
+            <key>scope</key>
+            <string>sublimelinter.gutter-mark</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#FFFFFF</string>
+            </dict>
+        </dict><dict>
+            <key>name</key>
             <string>SublimeLinter Error</string>
             <key>scope</key>
             <string>sublimelinter.mark.error</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#DA2000</string>
+                <string>#D02000</string>
             </dict>
         </dict><dict>
             <key>name</key>
@@ -386,17 +409,7 @@
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#EDBA00</string>
-            </dict>
-        </dict><dict>
-            <key>name</key>
-            <string>SublimeLinter Gutter Mark</string>
-            <key>scope</key>
-            <string>sublimelinter.gutter-mark</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#FFFFFF</string>
+                <string>#DDB700</string>
             </dict>
         </dict></array>
 	<key>uuid</key>
