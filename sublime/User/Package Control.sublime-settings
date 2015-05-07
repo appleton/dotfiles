@@ -6,8 +6,11 @@
 	"installed_packages":
 	[
 		"All Autocomplete",
+		"Babel",
 		"Base16 Color Schemes",
 		"Better CoffeeScript",
+		"ChannelRepositoryTools",
+		"Demain Color Scheme",
 		"dired",
 		"DocBlockr",
 		"Dockerfile Syntax Highlighting",
@@ -26,6 +29,7 @@
 		"Ruby Block Converter",
 		"Ruby Slim",
 		"Sass",
+		"ScopeHunter",
 		"SideBarEnhancements",
 		"SublimeLinter",
 		"SublimeLinter-jshint",
