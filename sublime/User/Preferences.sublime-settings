@@ -7,7 +7,8 @@
 		".bundle/*",
 		"dist/*",
 		"server/public/*",
-		"client/coverage/*"
+		"client/coverage/*",
+		"generated/*"
 	],
 	"caret_style": "blink",
 	"color_scheme": "Packages/User/SublimeLinter/Demain (SL).tmTheme",
