@@ -1,5 +1,6 @@
 {
 	"auto_upgrade_last_run": null,
+	"bootstrapped": true,
 	"in_process_packages":
 	[
 	],
@@ -22,6 +23,7 @@
 		"Handlebars",
 		"Indent XML",
 		"LESS",
+		"Markdown Preview",
 		"nginx",
 		"Origami",
 		"Package Control",
@@ -32,6 +34,7 @@
 		"ScopeHunter",
 		"SideBarEnhancements",
 		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
 		"SublimeLinter-jshint",
 		"SublimeLinter-rubocop",
 		"Syntax Highlighting for Sass",

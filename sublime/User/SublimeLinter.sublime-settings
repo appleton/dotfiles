@@ -7,6 +7,11 @@
         "gutter_theme_excludes": [],
         "lint_mode": "load/save",
         "linters": {
+            "eslint": {
+                "@disable": false,
+                "args": [],
+                "excludes": []
+            },
             "jshint": {
                 "@disable": false,
                 "args": [],
@@ -34,15 +39,15 @@
             "osx": [],
             "windows": []
         },
-        "rc_search_limit": 3,
+        "rc_search_limit": null,
         "shell_timeout": 10,
         "show_errors_on_save": false,
         "show_marks_in_minimap": true,
         "syntax_map": {
-            "javascript (babel)": "javascript",
             "html (django)": "html",
             "html (rails)": "html",
             "html 5": "html",
+            "javascript (babel)": "javascript",
             "php": "html",
             "python django": "python"
         },
