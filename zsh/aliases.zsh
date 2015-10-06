@@ -89,3 +89,5 @@ alias vim="/usr/local/bin/vim"
 alias vi="vim"
 
 alias h="heroku"
+
+alias d="docker-compose run"
