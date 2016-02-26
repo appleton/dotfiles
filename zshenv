@@ -1,4 +1,5 @@
 # .zshenv - sourced for all shells
+setopt no_global_rcs
 export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
 export PATH=$HOME/bin:$HOME/.dotfiles/bin:$PATH
 
