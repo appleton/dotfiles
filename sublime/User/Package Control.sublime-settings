@@ -17,6 +17,8 @@
 		"Dockerfile Syntax Highlighting",
 		"EditorConfig",
 		"EJS",
+		"Elixir",
+		"ElixirSublime",
 		"ExportHtml",
 		"Git",
 		"GitGutter",
@@ -40,7 +42,8 @@
 		"SublimeLinter-ruby",
 		"Syntax Highlighting for Sass",
 		"Theme - El Capitan",
-		"Tomorrow Color Schemes"
+		"Tomorrow Color Schemes",
+		"Vue Syntax Highlight"
 	],
 	"repositories":
 	[
