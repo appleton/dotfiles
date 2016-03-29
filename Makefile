@@ -12,3 +12,4 @@ symlinks:
 	@ln -nsf $(DIR)/bundle ~/.bundle
 	@ln -nsf $(DIR)/gitignore_global ~/.gitignore_global
 	@ln -nsf $(DIR)/sublime/User ~/Library/Application\ Support/Sublime\ Text\ 3/Packages
+	@ln -nsf $(DIR)/atom ~/.atom

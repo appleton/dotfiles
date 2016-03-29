@@ -1,0 +1,176 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  border-left: 1px dotted @syntax-indent-guide-color;
+  color: transparent;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: #ffffff;
+}
+
+.comment {
+  color: #8E908C;
+}
+
+.keyword.operator.class, .constant.other, .source.php.embedded.line, .source.ruby.embedded {
+  color: #111111;
+}
+
+.variable.other.object.js,
+.punctuation.definition.arguments,
+.meta.group.braces.round.function.arguments.js,
+.variable.other.readwrite.js,
+.variable.other.constant.js,
+.string.unquoted.label.js
+.function.js,
+.arguments.js {
+  color: #111111;
+}
+
+.variable, .support.other.variable, .string.other.link, .string.regexp, .entity.name.tag, .meta.tag, .entity.other.attribute-name, .declaration.tag {
+  color: #c82728;
+}
+
+.constant.numeric, .constant.language, .support.constant, .constant.character, .variable.parameter, .punctuation.section.embedded, .keyword.other.unit, .punctuation.quasi.element.begin.js, .punctuation.quasi.element.end.js {
+  color: #f07219;
+}
+
+.entity.name.class, .entity.name.type.class, .support.type, .support.class {
+  color: #C99E00;
+}
+
+.string, .entity.other.inherited-class, .markup.heading, .constant.other.symbol {
+  color: #839c00;
+}
+
+.keyword.operator, .constant.other.color {
+  color: #3E999F;
+}
+
+.entity.name.function, .entity.name.method, .meta.function-call, .support.function, .keyword.other.special-method, .meta.block-level {
+  color: #4271AE;
+}
+
+.keyword, .storage, .storage.type {
+  color: #8959A8;
+}
+
+.invalid {
+  font-style: italic;
+  color: #C82829;
+}
+
+.meta.separator {
+  color: #FFFFFF;
+  background-color: #4271AE;
+}
+
+.invalid.deprecated {
+  color: #FFFFFF;
+  background-color: #8959A8;
+}
+
+.markup.deleted {
+  color: #c82728;
+}
+
+.markup.inserted {
+  color: #628536;
+}
+
+.markup.changed {
+  color: #7557be;
+}
+
+.entity.name.tag {
+  color: #4170ad;
+}
+
+.punctuation.definition.tag {
+  color: #5d9be5;
+}
+
+.entity.other.attribute-name {
+  color: #5d9ae5;
+}
+
+.meta.tag.other.html, .meta.tag.any.html, .meta.tag.block.any.html, .meta.tag.inline.any.html {
+  color: #5d9ae5;
+}
+
+.meta.tag .string.quoted, .meta.tag .string.quoted .constant.character.entity {
+  color: #839c00;
+}
+
+.support.type.property-name.css, .support.type.property-name.sass, .entity.other.attribute-name.tag.pseudo-element {
+  color: #839c00;
+}
+
+.constant.numeric.css, .constant.numeric.sass, .constant.other.unit.css, .constant.other.unit.sass {
+  color: #f07219;
+}
+
+.variable.parameter.url {
+  color: #151515;
+}
+
+.support.constant.property-value.sass, .support.constant.property-value.css {
+  color: #3E999F;
+}
+
+.constant.other.rgb-value.sass, .constant.other.rgb-value.css, .constant.other.color.rgb-value.css {
+  color: #c82728;
+}
+
+.keyword.control.at-rule.sass, .keyword.control.at-rule.css, .keyword.control.at-rule.import.css {
+  color: #C99E00;
+}
+
+.variable.parameter.sass {
+  color: #c82728;
+}

@@ -1,0 +1,33 @@
+"*":
+  core:
+    disabledPackages: [
+      "metrics"
+    ]
+    ignoredNames: [
+      ".git"
+      ".svn"
+      ".DS_Store"
+    ]
+    openEmptyEditorOnStart: false
+    themes: [
+      "one-light-ui"
+      "demain"
+    ]
+  editor:
+    fontFamily: "Inconsolata-dz"
+    fontSize: 13
+    invisibles: {}
+    scrollPastEnd: true
+    showIndentGuide: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "dea79831-edd0-3c6d-d3dc-b33d60d5bbdd"
+  linter:
+    lintOnFly: false
+  metrics:
+    userId: "56c640f94f89936f149fd63228aea79141241bb1"
+  "release-notes":
+    viewedVersion: "0.85.0"
+  "unity-ui": {}
+  welcome:
+    showOnStartup: false
