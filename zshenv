@@ -10,3 +10,6 @@ export PATH=node_modules/.bin:/usr/local/share/npm/bin:$PATH
 export PATH="/usr/local/heroku/bin:$PATH"
 
 for config_file ($HOME/.dotfiles/zsh/*.zsh) source $config_file
+
+autoload -U promptinit && promptinit
+prompt pure
