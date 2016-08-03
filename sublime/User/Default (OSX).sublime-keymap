@@ -12,5 +12,8 @@
   { "keys": ["super+shift+v"], "command": "paste" },
 
   { "keys": ["super+shift+t"], "command": "reopen_last_file" },
+  { "keys": ["super+ctrl+/"], "command": "swap_line_up" },
+  { "keys": ["ctrl+shift+/"], "command": "select_lines", "args": {"forward": false} },
+
   { "keys": ["super+shift+e"], "command": "run_all_ruby_test" }
 ]
