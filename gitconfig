@@ -1,6 +1,7 @@
 [user]
   name = Andrew Appleton
-  email = andrew@floatleft.com
+  email = andysapple@gmail.com
+	signingkey = 1CAC329A
 [core]
 	editor = vim
 	excludesfile = /Users/aappleton/.gitignore_global
@@ -28,3 +29,5 @@
 [alias]
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[commit]
+	gpgsign = true
