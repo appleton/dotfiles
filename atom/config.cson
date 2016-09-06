@@ -1,7 +1,10 @@
 "*":
+  "base16-syntax":
+    scheme: "Ashes"
   core:
     disabledPackages: [
       "metrics"
+      "linter-jshint"
     ]
     ignoredNames: [
       ".git"
@@ -9,9 +12,10 @@
       ".DS_Store"
     ]
     openEmptyEditorOnStart: false
+    projectHome: "/Users/aappleton/projects"
     themes: [
-      "one-light-ui"
-      "demain"
+      "one-dark-ui"
+      "spacegray-dark-neue-syntax"
     ]
   editor:
     fontFamily: "Inconsolata-dz"
@@ -22,12 +26,28 @@
     tabType: "soft"
   "exception-reporting":
     userId: "dea79831-edd0-3c6d-d3dc-b33d60d5bbdd"
+  "file-icons": {}
+  "go-imports": {}
+  gofmt: {}
   linter:
     lintOnFly: false
+    showErrorPanel: false
+  "linter-jshint": {}
   metrics:
     userId: "56c640f94f89936f149fd63228aea79141241bb1"
+  "one-dark-ui":
+    layoutMode: "Compact"
   "release-notes":
     viewedVersion: "0.85.0"
   "unity-ui": {}
   welcome:
     showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+"autocomplete-plus":
+  suppressActivationForEditorClasses: [
+    "vim-mode-plus.normal-mode"
+    "vim-mode-plus.visual-mode"
+    "vim-mode-plus.operator-pending-mode"
+    "vim-mode-plus.insert-mode.replace"
+  ]

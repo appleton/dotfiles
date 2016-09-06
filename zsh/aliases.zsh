@@ -67,6 +67,12 @@ function serve {
 alias s='subl'
 alias s.='subl .'
 
+# Open in atom
+alias a='atom'
+alias a.='atom .'
+
+# Neovim
+
 # Open at GitHub
 alias gh='open_at_github'
 

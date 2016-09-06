@@ -93,3 +93,7 @@
   'rspec-after':
     'prefix': 'aft'
     'body': 'after { ${0} }'
+'.source.go':
+  'Test':
+    'prefix': 'test'
+    'body': 'func Test${1} (t *testing.T) {\n	${0}\n}'

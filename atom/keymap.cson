@@ -25,3 +25,11 @@
   'cmd-alt-up':    'pane:split-up'
   'cmd-alt-right': 'pane:split-right'
   'cmd-alt-left':  'pane:split-left'
+  'cmd-ctrl-/':    'editor:move-line-up'
+  'ctrl-h':        'window:focus-pane-on-left'
+  'ctrl-j':        'window:focus-pane-below'
+  'ctrl-k':        'window:focus-pane-above'
+  'ctrl-l':        'window:focus-pane-on-right'
+
+'atom-text-editor.vim-mode-plus.insert-mode':
+   'j k': 'vim-mode-plus:activate-normal-mode'
