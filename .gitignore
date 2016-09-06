@@ -14,3 +14,8 @@ Package Control.user-ca-bundle
 
 RubyTest.last-run
 gemrc
+bundle/cache
+
+atom/blob-store/*
+atom/packages/*
+atom/recovery/*
