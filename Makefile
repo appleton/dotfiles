@@ -1,6 +1,6 @@
 DIR=~/.dotfiles
 
-all: symlinks
+all: symlinks install_atom_packages
 
 symlinks:
 	@ln -nsf $(DIR)/zshenv ~/.zshenv
@@ -15,3 +15,9 @@ symlinks:
 	@ln -nsf $(DIR)/atom ~/.atom
 	@ln -s $(DIR)/zsh/theme.zsh /usr/local/share/zsh/site-functions/prompt_pure_setup
 	@ln -s $(DIR)/zsh/async.zsh /usr/local/share/zsh/site-functions/async
+
+install_atom_packages:
+	apm install --packages-file $(DIR)/atom/packages.txt
+
+save_atom_packages:
+	apm list --installed --bare > $(DIR)/atom/packages.txt
