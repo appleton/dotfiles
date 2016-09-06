@@ -1,0 +1,445 @@
+Gocode pkg: "github.com/heroku/sprettur/lib"
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/Cellar/go/1.6/libexec/pkg/darwin_amd64:/Users/aappleton/projects/gocode/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/Cellar/go/1.6/libexec", GOPATH:"/Users/aappleton/projects/gocode", InstallSuffix:""}
+Gocode pkg: "github.com/heroku/sprettur/lib"
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/Cellar/go/1.6/libexec/pkg/darwin_amd64:/Users/aappleton/projects/gocode/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/Cellar/go/1.6/libexec", GOPATH:"/Users/aappleton/projects/gocode", InstallSuffix:""}
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/lib"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/lib"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/lib"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/lib"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/lib"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/lib"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/vendor/github.com/heroku/logrus"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/rollrus"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/rollrus"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/rollrus"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/vendor/github.com/heroku/rollrus"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/vendor/github.com/Sirupsen/logrus"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/vendor/github.com/Sirupsen/logrus"
+Gocode pkg: "github.com/heroku/sprettur"
+margo: 2016/08/16 09:52:33 broker.go:105: gocode_complete#mg9.autoken.2c80a294-cc50-4450-b941-62bc1c77311b PANIC: runtime error: slice bounds out of range
+goroutine 64 [running]:
+disposa.blue/cmd/margo_pkg.(*Broker).call.func1(0xc820ceab80, 0xc820098f50)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:104 +0xb2
+panic(0x593360, 0xc82000c050)
+	/usr/local/Cellar/go/1.6/libexec/src/runtime/panic.go:426 +0x4e9
+disposa.blue/something-borrowed/gocode.(*auto_complete_context).apropos(0xc8200dac80, 0xc820ceae60, 0x15, 0x20, 0xc820320aa0, 0x4f, 0xffffffffffffffff, 0x0, 0x0, 0x0, ...)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/something-borrowed/gocode/autocompletecontext.go:292 +0xb63
+disposa.blue/something-borrowed/gocode.(*margoState).Complete(0xc82009b810, 0xc820ceac00, 0x0, 0x0, 0xc820ceac60, 0x20, 0xc820bc0f20, 0x1, 0x1, 0xc820ceae60, ...)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/something-borrowed/gocode/gosublime_gocode_bridge.go:78 +0x187
+disposa.blue/cmd/margo_pkg.(*mGocode).completions(0xc8210ec080, 0xc820ceae60, 0x15, 0x20, 0xc820320aa0, 0x4f, 0xffffffffffffffff, 0x0, 0x0, 0x0)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/m_gocode.go:95 +0x1c2
+disposa.blue/cmd/margo_pkg.(*mGocode).Call(0xc8210ec080, 0x0, 0x0, 0x0, 0x0)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/m_gocode.go:76 +0x7e7
+disposa.blue/cmd/margo_pkg.(*Broker).call(0xc820098f50, 0xc820ceab80, 0xa73320, 0xc8210ec080)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:113 +0x95
+disposa.blue/cmd/margo_pkg.(*Broker).worker(0xc820098f50, 0xc82010e360, 0xc8200162a0)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:188 +0xdb
+created by disposa.blue/cmd/margo_pkg.(*Broker).Loop
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:209 +0x301
+
+goroutine 1 [syscall]:
+syscall.Syscall(0x3, 0x0, 0xc82015a000, 0x1000, 0x0, 0x0, 0xc820ff2000)
+	/usr/local/Cellar/go/1.6/libexec/src/syscall/asm_darwin_amd64.s:16 +0x5
+syscall.read(0x0, 0xc82015a000, 0x1000, 0x1000, 0xc820ff21d7, 0x0, 0x0)
+	/usr/local/Cellar/go/1.6/libexec/src/syscall/zsyscall_darwin_amd64.go:972 +0x5f
+syscall.Read(0x0, 0xc82015a000, 0x1000, 0x1000, 0x9dd000, 0x0, 0x0)
+	/usr/local/Cellar/go/1.6/libexec/src/syscall/syscall_unix.go:161 +0x4d
+os.(*File).read(0xc82002e008, 0xc82015a000, 0x1000, 0x1000, 0x8aa7b, 0x0, 0x0)
+	/usr/local/Cellar/go/1.6/libexec/src/os/file_unix.go:228 +0x75
+os.(*File).Read(0xc82002e008, 0xc82015a000, 0x1000, 0x1000, 0xc82013c480, 0x0, 0x0)
+	/usr/local/Cellar/go/1.6/libexec/src/os/file.go:95 +0x8a
+bufio.(*Reader).fill(0xc82014a180)
+	/usr/local/Cellar/go/1.6/libexec/src/bufio/bufio.go:97 +0x1e9
+bufio.(*Reader).ReadSlice(0xc82014a180, 0x2ee0a, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/Cellar/go/1.6/libexec/src/bufio/bufio.go:328 +0x21a
+bufio.(*Reader).ReadBytes(0xc82014a180, 0xc82001620a, 0x0, 0x0, 0x0, 0x0, 0x0)
+	/usr/local/Cellar/go/1.6/libexec/src/bufio/bufio.go:406 +0xa9
+disposa.blue/cmd/margo_pkg.(*Broker).accept(0xc820098f50, 0xc8200162a0, 0xc820098f00)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:128 +0x44
+disposa.blue/cmd/margo_pkg.(*Broker).Loop(0xc820098f50, 0x740001)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:213 +0x332
+disposa.blue/cmd/margo_pkg.Main()
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/main.go:140 +0xbd7
+main.main()
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo/main.go:8 +0x14
+
+goroutine 50 [chan receive, 1 minutes]:
+disposa.blue/cmd/margo_pkg.(*Broker).worker(0xc820098f50, 0xc82010e360, 0xc8200162a0)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:187 +0x81
+created by disposa.blue/cmd/margo_pkg.(*Broker).Loop
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:209 +0x301
+
+goroutine 49 [chan receive, 1 minutes]:
+disposa.blue/cmd/margo_pkg.(*Broker).worker(0xc820098f50, 0xc82010e360, 0xc8200162a0)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:187 +0x81
+created by disposa.blue/cmd/margo_pkg.(*Broker).Loop
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:209 +0x301
+
+goroutine 14 [chan receive, 1 minutes]:
+disposa.blue/something-borrowed/gocode.new_file_reader.func1(0xc82002e1b0)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/something-borrowed/gocode/utils.go:176 +0x7b
+created by disposa.blue/something-borrowed/gocode.new_file_reader
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/something-borrowed/gocode/utils.go:180 +0x88
+
+goroutine 18 [chan receive, 1 minutes]:
+disposa.blue/cmd/margo_pkg.init.2.func1()
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/g_autoinst.go:114 +0x96
+created by disposa.blue/cmd/margo_pkg.init.2
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/g_autoinst.go:117 +0x2b
+
+goroutine 19 [sleep, locked to thread]:
+time.Sleep(0x77359400)
+	/usr/local/Cellar/go/1.6/libexec/src/runtime/time.go:59 +0xf9
+disposa.blue/cmd/margo_pkg.startOomKiller.func1(0x3e8)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/oom.go:31 +0x43d
+created by disposa.blue/cmd/margo_pkg.startOomKiller
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/oom.go:33 +0x35
+
+goroutine 36 [sleep, 1 minutes]:
+time.Sleep(0x6fc23ac00)
+	/usr/local/Cellar/go/1.6/libexec/src/runtime/time.go:59 +0xf9
+disposa.blue/cmd/margo_pkg.Main.func1(0x6fc23ac00, 0xc820098f50, 0xc8200ca330)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/main.go:122 +0x33
+created by disposa.blue/cmd/margo_pkg.Main
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/main.go:131 +0xb7b
+
+goroutine 37 [chan receive, 5611 minutes]:
+disposa.blue/cmd/margo_pkg.Main.func2(0xc820098f50)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/main.go:135 +0x94
+created by disposa.blue/cmd/margo_pkg.Main
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/main.go:138 +0xba0
+
+goroutine 51 [chan receive, 1 minutes]:
+disposa.blue/cmd/margo_pkg.(*Broker).worker(0xc820098f50, 0xc82010e360, 0xc8200162a0)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:187 +0x81
+created by disposa.blue/cmd/margo_pkg.(*Broker).Loop
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:209 +0x301
+
+goroutine 52 [chan receive, 1 minutes]:
+disposa.blue/cmd/margo_pkg.(*Broker).worker(0xc820098f50, 0xc82010e360, 0xc8200162a0)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:187 +0x81
+created by disposa.blue/cmd/margo_pkg.(*Broker).Loop
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:209 +0x301
+
+goroutine 53 [chan receive, 1 minutes]:
+disposa.blue/cmd/margo_pkg.(*Broker).worker(0xc820098f50, 0xc82010e360, 0xc8200162a0)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:187 +0x81
+created by disposa.blue/cmd/margo_pkg.(*Broker).Loop
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:209 +0x301
+
+goroutine 54 [chan receive, 1 minutes]:
+disposa.blue/cmd/margo_pkg.(*Broker).worker(0xc820098f50, 0xc82010e360, 0xc8200162a0)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:187 +0x81
+created by disposa.blue/cmd/margo_pkg.(*Broker).Loop
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:209 +0x301
+
+goroutine 55 [chan receive, 1 minutes]:
+disposa.blue/cmd/margo_pkg.(*Broker).worker(0xc820098f50, 0xc82010e360, 0xc8200162a0)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:187 +0x81
+created by disposa.blue/cmd/margo_pkg.(*Broker).Loop
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:209 +0x301
+
+goroutine 56 [chan receive, 1 minutes]:
+disposa.blue/cmd/margo_pkg.(*Broker).worker(0xc820098f50, 0xc82010e360, 0xc8200162a0)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:187 +0x81
+created by disposa.blue/cmd/margo_pkg.(*Broker).Loop
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:209 +0x301
+
+goroutine 57 [chan receive, 1 minutes]:
+disposa.blue/cmd/margo_pkg.(*Broker).worker(0xc820098f50, 0xc82010e360, 0xc8200162a0)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:187 +0x81
+created by disposa.blue/cmd/margo_pkg.(*Broker).Loop
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:209 +0x301
+
+goroutine 58 [chan receive, 1 minutes]:
+disposa.blue/cmd/margo_pkg.(*Broker).worker(0xc820098f50, 0xc82010e360, 0xc8200162a0)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:187 +0x81
+created by disposa.blue/cmd/margo_pkg.(*Broker).Loop
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:209 +0x301
+
+goroutine 59 [chan receive, 1 minutes]:
+disposa.blue/cmd/margo_pkg.(*Broker).worker(0xc820098f50, 0xc82010e360, 0xc8200162a0)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:187 +0x81
+created by disposa.blue/cmd/margo_pkg.(*Broker).Loop
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:209 +0x301
+
+goroutine 60 [chan receive, 1 minutes]:
+disposa.blue/cmd/margo_pkg.(*Broker).worker(0xc820098f50, 0xc82010e360, 0xc8200162a0)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:187 +0x81
+created by disposa.blue/cmd/margo_pkg.(*Broker).Loop
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:209 +0x301
+
+goroutine 61 [chan receive, 1 minutes]:
+disposa.blue/cmd/margo_pkg.(*Broker).worker(0xc820098f50, 0xc82010e360, 0xc8200162a0)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:187 +0x81
+created by disposa.blue/cmd/margo_pkg.(*Broker).Loop
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:209 +0x301
+
+goroutine 62 [chan receive, 1 minutes]:
+disposa.blue/cmd/margo_pkg.(*Broker).worker(0xc820098f50, 0xc82010e360, 0xc8200162a0)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:187 +0x81
+created by disposa.blue/cmd/margo_pkg.(*Broker).Loop
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:209 +0x301
+
+goroutine 63 [chan receive, 1 minutes]:
+disposa.blue/cmd/margo_pkg.(*Broker).worker(0xc820098f50, 0xc82010e360, 0xc8200162a0)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:187 +0x81
+created by disposa.blue/cmd/margo_pkg.(*Broker).Loop
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:209 +0x301
+
+goroutine 65 [chan receive, 1 minutes]:
+disposa.blue/cmd/margo_pkg.(*Broker).worker(0xc820098f50, 0xc82010e360, 0xc8200162a0)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:187 +0x81
+created by disposa.blue/cmd/margo_pkg.(*Broker).Loop
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:209 +0x301
+
+goroutine 66 [chan receive, 1 minutes]:
+disposa.blue/cmd/margo_pkg.(*Broker).worker(0xc820098f50, 0xc82010e360, 0xc8200162a0)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:187 +0x81
+created by disposa.blue/cmd/margo_pkg.(*Broker).Loop
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:209 +0x301
+
+goroutine 67 [chan receive]:
+disposa.blue/cmd/margo_pkg.(*Broker).worker(0xc820098f50, 0xc82010e360, 0xc8200162a0)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:187 +0x81
+created by disposa.blue/cmd/margo_pkg.(*Broker).Loop
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:209 +0x301
+
+goroutine 68 [chan receive, 1 minutes]:
+disposa.blue/cmd/margo_pkg.(*Broker).worker(0xc820098f50, 0xc82010e360, 0xc8200162a0)
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:187 +0x81
+created by disposa.blue/cmd/margo_pkg.(*Broker).Loop
+	/Users/aappleton/Library/Application Support/Sublime Text 3/Packages/GoSublime/src/disposa.blue/cmd/margo_pkg/broker.go:209 +0x301
+
+
+
+** 2016-08-16 09:52:33.789506 **:
+GsComplete: broker: gocode_complete#mg9.autoken.2c80a294-cc50-4450-b941-62bc1c77311b PANIC
+--------------------------------
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/Cellar/go/1.6/libexec/pkg/darwin_amd64:/Users/aappleton/projects/gocode/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/Cellar/go/1.6/libexec", GOPATH:"/Users/aappleton/projects/gocode", InstallSuffix:""}
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/Cellar/go/1.6/libexec/pkg/darwin_amd64:/Users/aappleton/projects/gocode/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/Cellar/go/1.6/libexec", GOPATH:"/Users/aappleton/projects/gocode", InstallSuffix:""}
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/Cellar/go/1.6/libexec/pkg/darwin_amd64:/Users/aappleton/projects/gocode/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/Cellar/go/1.6/libexec", GOPATH:"/Users/aappleton/projects/gocode", InstallSuffix:""}
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/vendor/github.com/heroku/cytokine/buildpack"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/vendor/github.com/heroku/cytokine/buildpack"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/vendor/github.com/heroku/cytokine/buildpack"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/vendor/github.com/heroku/cytokine/buildpack"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/vendor/github.com/heroku/cytokine/buildpack"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/vendor/github.com/heroku/cytokine/buildpack"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/vendor/github.com/heroku/cytokine/buildpack"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode env: gocode.margoEnv{LibPath:"/usr/local/Cellar/go/1.6/libexec/pkg/darwin_amd64:/Users/aappleton/projects/gocode/pkg/darwin_amd64", GOOS:"darwin", GOARCH:"amd64", Compiler:"gc", GOROOT:"/usr/local/Cellar/go/1.6/libexec", GOPATH:"/Users/aappleton/projects/gocode", InstallSuffix:""}
+Gocode pkg: "github.com/heroku/sprettur/vendor/github.com/heroku/cytokine/buildpack"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/vendor/github.com/heroku/cytokine/buildpack"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/vendor/github.com/heroku/cytokine/buildpack"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/vendor/github.com/heroku/cytokine/buildpack"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/vendor/github.com/heroku/cytokine/buildpack"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/vendor/github.com/heroku/cytokine/buildpack"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/cytokine/cmd/cytokine"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/cytokine/cmd/cytokine"
+Gocode pkg: "github.com/heroku/cytokine/buildpack"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/vendor/github.com/heroku/cytokine/buildpack"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/cytokine/cmd/cytokine"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/cytokine/cmd/cytokine"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/cmd/sprettur"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/vendor/github.com/heroku/cytokine/buildpack"
+Gocode pkg: "github.com/heroku/sprettur"
+Gocode pkg: "github.com/heroku/sprettur/vendor/github.com/heroku/cytokine/buildpack"
+Gocode pkg: "github.com/heroku/sprettur"

@@ -15,5 +15,10 @@
   { "keys": ["super+ctrl+/"], "command": "swap_line_up" },
   { "keys": ["ctrl+shift+/"], "command": "select_lines", "args": {"forward": false} },
 
-  { "keys": ["super+shift+e"], "command": "run_all_ruby_test" }
+  { "keys": ["super+shift+e"], "command": "run_all_ruby_test" },
+  {
+    "keys": ["super+shift+e"],
+    "command": "gs_test",
+    "context": [{ "key": "selector", "operator": "equal", "operand": "source.go" }]
+  }
 ]
