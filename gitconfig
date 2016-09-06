@@ -2,7 +2,7 @@
   name = Andrew Appleton
   email = andrew@floatleft.com
 [core]
-  editor = subl -w
+	editor = vim
 	excludesfile = /Users/aappleton/.gitignore_global
 [color]
   branch = auto
@@ -17,7 +17,7 @@
 [mergetool]
   keepBackup = true
 [push]
-  default = current
+	default = current
 [credential]
   helper = osxkeychain
 [alias]
