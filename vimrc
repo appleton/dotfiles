@@ -49,7 +49,7 @@ set autoread
 set termguicolors
 let base16colorspace=256  " Access colors present in 256 colorspace
 " colorscheme tomorrow
- colorscheme base16-ocean
+colorscheme base16-ocean
 
 set cursorline
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
