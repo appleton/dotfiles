@@ -31,5 +31,13 @@
   'ctrl-k':        'window:focus-pane-above'
   'ctrl-l':        'window:focus-pane-on-right'
 
+'atom-text-editor.vim-mode-plus.normal-mode':
+  'y s':   'vim-mode-plus:surround'
+  'y s w': 'vim-mode-plus:surround-word'
+  'y m s': 'vim-mode-plus:map-surround'
+  'd s':   'vim-mode-plus:delete-surround-any-pair'
+  'c s':   'vim-mode-plus:change-surround-any-pair'
+  'enter': 'editor:newline-below'
+
 'atom-text-editor.vim-mode-plus.insert-mode':
    'j k': 'vim-mode-plus:activate-normal-mode'

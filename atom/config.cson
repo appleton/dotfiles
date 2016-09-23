@@ -40,6 +40,8 @@
   "release-notes":
     viewedVersion: "0.85.0"
   "unity-ui": {}
+  "vim-mode-plus":
+    incrementalSearch: true
   welcome:
     showOnStartup: false
   whitespace:
