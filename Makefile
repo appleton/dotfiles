@@ -15,6 +15,7 @@ symlinks:
 	@ln -nsf $(DIR)/atom ~/.atom
 	@ln -s $(DIR)/zsh/theme.zsh /usr/local/share/zsh/site-functions/prompt_pure_setup
 	@ln -s $(DIR)/zsh/async.zsh /usr/local/share/zsh/site-functions/async
+	@ln -s $(DIR)/hyper.js ~/.hyper.js
 
 install_atom_packages:
 	apm install --packages-file $(DIR)/atom/packages.txt
