@@ -13,10 +13,12 @@
     ]
     openEmptyEditorOnStart: false
     projectHome: "/Users/aappleton/projects"
+    telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
       "spacegray-dark-neue-syntax"
     ]
+    useCustomTitleBar: true
   editor:
     fontFamily: "Inconsolata-dz"
     fontSize: 13
@@ -39,6 +41,8 @@
     layoutMode: "Compact"
   "release-notes":
     viewedVersion: "0.85.0"
+  "standard-formatter": {}
+  "tree-view": {}
   "unity-ui": {}
   "vim-mode-plus":
     incrementalSearch: true
