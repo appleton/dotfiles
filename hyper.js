@@ -13,7 +13,7 @@ module.exports = {
     foregroundColor: '#fff',
 
     // terminal background color
-    backgroundColor: '#27292c',
+    backgroundColor: 'rgba(39,41,44, 0.8)',
 
     // border color (window, tabs)
     borderColor: '#555',
@@ -27,14 +27,6 @@ module.exports = {
         border: none !important;
         width: 1px !important;
         background-color: rgba(255, 255, 255, .6) !important;
-      }
-
-      x-screen {
-        -webkit-font-smoothing: subpixel-antialiased !important;
-      }
-
-      x-screen > div {
-        overflow: unset !important;
       }
     `,
 
@@ -69,7 +61,12 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ['hyperterm-snazzy', 'hyperterm-1password', 'hyperterm-title'],
+  plugins: [
+    'hyperterm-snazzy',
+    'hyperterm-1password',
+    'hyperterm-title',
+    'hyper-simple-highlight-active-session'
+  ],
 
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
