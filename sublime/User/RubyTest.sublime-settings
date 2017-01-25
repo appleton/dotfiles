@@ -1,9 +1,0 @@
-{
-  "erb_verify_command": "erb -xT - {file_name} | ruby -c",
-  "ruby_verify_command": "ruby -c {file_name}",
-
-  "check_for_rbenv": true,
-  "check_for_bundler": true,
-
-  "run_single_rspec_command": "rspec {relative_path}:{line_number}",
-}
