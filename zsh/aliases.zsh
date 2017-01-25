@@ -47,6 +47,7 @@ alias gm='git merge'
 compdef _git gm=git-merge
 alias grh='git reset HEAD'
 alias grhh='git reset HEAD --hard'
+alias gh='git open'
 
 #
 # Will return the current branch name
@@ -70,11 +71,6 @@ alias s.='subl .'
 # Open in atom
 alias a='atom'
 alias a.='atom .'
-
-# Neovim
-
-# Open at GitHub
-alias gh='open_at_github'
 
 # Bundler
 alias b='bundle exec'
