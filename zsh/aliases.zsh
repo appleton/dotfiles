@@ -91,9 +91,9 @@ function nu() {
   nvm use $(cat .node-version 2> /dev/null)
 }
 
-alias vim="nvim"
-alias vi="nvim"
-alias v='nvim'
+alias vim="/usr/local/bin/vim"
+alias vi="vim"
+alias v='vim'
 
 alias h="heroku"
 

@@ -12,10 +12,13 @@ Bundle 'gmarik/vundle'
 " My bundles here:
 "
 " original repos on GitHub
-Bundle "appleton/vim-tomorrow-theme"
-Bundle 'chriskempson/base16-vim'
-Bundle 'itchyny/lightline.vim'
+Bundle "chriskempson/base16-vim"
+Bundle "itchyny/lightline.vim"
 Bundle "kien/ctrlp.vim"
+Bundle "jszakmeister/vim-togglecursor"
+Bundle "tpope/vim-surround"
+Bundle "machakann/vim-highlightedyank"
+Bundle "airblade/vim-gitgutter"
 
 set nu
 set relativenumber
@@ -52,7 +55,10 @@ let base16colorspace=256  " Access colors present in 256 colorspace
 colorscheme base16-ocean
 
 set cursorline
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+let g:togglecursor_default = 'block'
+let g:togglecursor_insert = 'line'
+let g:togglecursor_replace = 'underline'
+let g:togglecursor_leave = 'line'
 
 let g:lightline = {
       \ 'component': {
@@ -61,5 +67,8 @@ let g:lightline = {
       \ 'separator': { 'left': '', 'right': '' },
       \ 'subseparator': { 'left': '', 'right': '' }
       \ }
+
+map y <Plug>(highlightedyank)
+let g:highlightedyank_highlight_duration = 100
 
 set noshowmode
