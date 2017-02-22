@@ -19,6 +19,11 @@ Bundle "jszakmeister/vim-togglecursor"
 Bundle "tpope/vim-surround"
 Bundle "machakann/vim-highlightedyank"
 Bundle "airblade/vim-gitgutter"
+Bundle "Valloric/YouCompleteMe"
+Bundle "tpope/vim-endwise"
+Bundle "tpope/vim-repeat"
+Bundle "pangloss/vim-javascript"
+Bundle "tpope/vim-commentary"
 
 set nu
 set relativenumber
@@ -27,6 +32,7 @@ set mouse=a
 syntax enable
 set colorcolumn=81
 inoremap jk <ESC>
+set noswapfile
 
 " Split navigation
 nnoremap <C-J> <C-W><C-J>
@@ -51,7 +57,6 @@ set autoread
 " colours
 set termguicolors
 let base16colorspace=256  " Access colors present in 256 colorspace
-" colorscheme tomorrow
 colorscheme base16-ocean
 
 set cursorline
@@ -72,3 +77,10 @@ map y <Plug>(highlightedyank)
 let g:highlightedyank_highlight_duration = 100
 
 set noshowmode
+
+" Softtabs, 2 spaces
+set tabstop=2
+set shiftwidth=2
+set shiftround
+set expandtab
+
