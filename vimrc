@@ -24,6 +24,9 @@ Bundle "tpope/vim-endwise"
 Bundle "tpope/vim-repeat"
 Bundle "pangloss/vim-javascript"
 Bundle "tpope/vim-commentary"
+Bundle "jiangmiao/auto-pairs"
+Bundle "vim-ruby/vim-ruby"
+Bundle "rakr/vim-one"
 
 set nu
 set relativenumber
