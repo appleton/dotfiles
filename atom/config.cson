@@ -16,7 +16,7 @@
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
-      "spacegray-dark-neue-syntax"
+      "one-dark-vivid-syntax"
     ]
     useCustomTitleBar: true
   editor:
