@@ -20,6 +20,10 @@
 
 }
 
+.atom-dock-toggle-button {
+  display: none;
+}
+
 /******************  VIM MODE STATUS BAR ****************************************/
 
 // green
@@ -33,22 +37,23 @@
   float: right;
 }
 
-#status-bar-vim-mode-plus {
+.status-bar-vim-mode-plus-normal {
   padding-left: 20px;
   padding-right: 20px;
-}
-
-.status-bar-vim-mode-plus-normal {
   background: @normal-bg;
   color: rgb(4, 111, 11);
 }
 
 .status-bar-vim-mode-plus-insert {
+  padding-left: 20px;
+  padding-right: 20px;
   background: @insert-bg;
   color: white;
 }
 
 .status-bar-vim-mode-plus-visual {
+  padding-left: 20px;
+  padding-right: 20px;
   background: @visual-bg;
   color: rgb(168, 117, 5);
 }
