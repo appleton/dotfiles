@@ -19,14 +19,13 @@ Bundle "jszakmeister/vim-togglecursor"
 Bundle "tpope/vim-surround"
 Bundle "machakann/vim-highlightedyank"
 Bundle "airblade/vim-gitgutter"
-Bundle "Valloric/YouCompleteMe"
 Bundle "tpope/vim-endwise"
 Bundle "tpope/vim-repeat"
 Bundle "pangloss/vim-javascript"
 Bundle "tpope/vim-commentary"
 Bundle "jiangmiao/auto-pairs"
 Bundle "vim-ruby/vim-ruby"
-Bundle "rakr/vim-one"
+Bundle "joshdick/onedark.vim"
 
 set nu
 set relativenumber
@@ -36,6 +35,7 @@ syntax enable
 set colorcolumn=81
 inoremap jk <ESC>
 set noswapfile
+set clipboard=unnamed
 
 " Split navigation
 nnoremap <C-J> <C-W><C-J>
@@ -49,18 +49,17 @@ let mapleader = ","
 
 :set guifont=Inconsolata-dz\ for\ Powerline:h13
 
-" airline
-let g:airline_powerline_fonts = 1
-set laststatus=2
-set encoding=utf-8
-
 " auto load files if vim detects they have been changed outside of Vim
 set autoread
 
 " colours
 set termguicolors
-let base16colorspace=256  " Access colors present in 256 colorspace
-colorscheme base16-ocean
+colorscheme onedark
+
+" airline
+let g:airline_powerline_fonts = 1
+set laststatus=2
+set encoding=utf-8
 
 set cursorline
 let g:togglecursor_default = 'block'
@@ -87,3 +86,4 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
+let g:ycm_min_num_of_chars_for_completion = 99
