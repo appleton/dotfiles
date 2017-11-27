@@ -1,6 +1,6 @@
 DIR=~/.dotfiles
 
-all: symlinks install_atom_packages
+all: symlinks install_atom_packages configure_iterm
 
 symlinks:
 	@ln -nsf $(DIR)/zshenv ~/.zshenv
@@ -21,3 +21,7 @@ install_atom_packages:
 
 save_atom_packages:
 	apm list --installed --bare > $(DIR)/atom/packages.txt
+
+configure_iterm:
+	defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string ~/$(DIR)/iterm2
+	defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
