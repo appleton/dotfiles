@@ -12,6 +12,13 @@
     closeDeletedFileTabs: true
     disabledPackages: [
       "metrics"
+      "autocomplete-go"
+      "go-config"
+      "go-get"
+      "go-imports"
+      "gofmt"
+      "gometalinter-linter"
+      "linter-govet"
     ]
     ignoredNames: [
       ".git"
@@ -38,7 +45,8 @@
   "file-icons": {}
   "go-imports": {}
   gofmt: {}
-  linter: {}
+  linter:
+    lintOnChange: false
   "linter-js-standard": {}
   "linter-jshint": {}
   "linter-rubocop": {}
@@ -71,6 +79,10 @@
         brightYellow: "#f6ce85"
     style:
       theme: "one-dark"
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+    useEslint: true
   "release-notes":
     viewedVersion: "0.85.0"
   "ruby-test":

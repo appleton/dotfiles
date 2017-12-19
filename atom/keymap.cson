@@ -20,16 +20,19 @@
 '.editor':
   'cmd-l': 'go-to-line:toggle'
 
-'body':
+'atom-text-editor':
   'cmd-alt-down':  'pane:split-down'
   'cmd-alt-up':    'pane:split-up'
   'cmd-alt-right': 'pane:split-right'
   'cmd-alt-left':  'pane:split-left'
-  'cmd-ctrl-/':    'editor:move-line-up'
   'ctrl-h':        'window:focus-pane-on-left'
   'ctrl-j':        'window:focus-pane-below'
   'ctrl-k':        'window:focus-pane-above'
   'ctrl-l':        'window:focus-pane-on-right'
+  'cmd-ctrl-h':    'window:move-active-item-to-pane-on-left'
+  'cmd-ctrl-j':    'window:move-active-item-to-pane-below'
+  'cmd-ctrl-k':    'window:move-active-item-to-pane-above'
+  'cmd-ctrl-l':    'window:move-active-item-to-pane-on-right'
 
 'atom-text-editor.vim-mode-plus.normal-mode':
   'y s':   'vim-mode-plus:surround'
