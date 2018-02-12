@@ -1,7 +1,7 @@
 [user]
   name = Andrew Appleton
-  email = andysapple@gmail.com
-	signingkey = 1CAC329A
+  email = appleton@github.com
+	signingkey = 32A1436B9894CC82
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
@@ -30,3 +30,7 @@
   colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
 [commit]
 	gpgsign = true
+[github]
+	user = appleton
+[gpg]
+	program = /usr/local/bin/gpg
