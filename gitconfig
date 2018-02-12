@@ -4,7 +4,7 @@
 	signingkey = 1CAC329A
 [core]
 	editor = vim
-	excludesfile = /Users/aappleton/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [color]
   branch = auto
   diff = auto
