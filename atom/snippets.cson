@@ -34,7 +34,7 @@
     'body': 'export default ${0};'
   'mocha-context':
     'prefix': 'con'
-    'body': 'context(\'${1}\', function() {\n  ${0}\n});'
+    'body': 'context(\'${1}\', () => {\n  ${0}\n});'
   'jasmine-waitsFor':
     'prefix': 'wai'
     'body': 'waitsFor(function() {\n  ${0}\n});'
@@ -46,16 +46,16 @@
     'body': 'runs(function() {\n  ${0}\n});'
   'jasmine-it':
     'prefix': 'it'
-    'body': 'it(\'${1}\', function() {\n  ${0}\n});'
+    'body': 'it(\'${1}\', () => {\n  ${0}\n});'
   'jasmine-describe':
     'prefix': 'des'
-    'body': 'describe(\'${1}\', function() {\n  ${0}\n});'
+    'body': 'describe(\'${1}\', () => {\n  ${0}\n});'
   'jasmine-before':
     'prefix': 'bef'
-    'body': 'beforeEach(function() {\n  ${0}\n});'
+    'body': 'beforeEach(() => {\n  ${0}\n});'
   'jasmine-after':
     'prefix': 'aft'
-    'body': 'afterEach(function() {\n  ${0}\n});'
+    'body': 'afterEach(() => {\n  ${0}\n});'
   'finally':
     'prefix': 'finally'
     'body': 'finally(() => {\n  ${0}\n});'
