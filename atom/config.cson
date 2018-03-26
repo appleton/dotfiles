@@ -62,6 +62,7 @@
     useBusySignal: false
   metrics:
     userId: "56c640f94f89936f149fd63228aea79141241bb1"
+  "no-title-bar": {}
   "one-dark-ui": {}
   "platformio-ide-terminal":
     ansiColors:
