@@ -72,6 +72,10 @@ alias s.='subl .'
 alias a='atom'
 alias a.='atom .'
 
+# Open in vscode
+alias c='code'
+alias c.='code .'
+
 # Bundler
 alias b='bundle exec'
 
