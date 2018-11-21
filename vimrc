@@ -12,7 +12,6 @@ Bundle 'gmarik/vundle'
 " My bundles here:
 "
 " original repos on GitHub
-Bundle "chriskempson/base16-vim"
 Bundle "itchyny/lightline.vim"
 Bundle "kien/ctrlp.vim"
 Bundle "jszakmeister/vim-togglecursor"
@@ -26,6 +25,7 @@ Bundle "tpope/vim-commentary"
 Bundle "jiangmiao/auto-pairs"
 Bundle "vim-ruby/vim-ruby"
 Bundle "joshdick/onedark.vim"
+Bundle "gertjanreynaert/cobalt2-vim-theme"
 
 set nu
 set relativenumber
@@ -54,7 +54,7 @@ set autoread
 
 " colours
 set termguicolors
-colorscheme onedark
+colorscheme cobalt2
 
 " airline
 let g:airline_powerline_fonts = 1
