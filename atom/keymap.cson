@@ -41,6 +41,12 @@
   'd s':   'vim-mode-plus:delete-surround-any-pair'
   'c s':   'vim-mode-plus:change-surround-any-pair'
   'enter': 'editor:newline-below'
+  'g f':   'open-this:here'
+  'g f j': 'open-this:split-down'
+  'g f l': 'open-this:split-right'
+"atom-text-editor.vim-mode-plus.normal-mode[data-grammar='source tsx']":
+  'g f':   'typescript:go-to-declaration'
+  'g F':   'typescript:return-from-declaration'
 
 'atom-text-editor.vim-mode-plus.insert-mode':
    'j k': 'vim-mode-plus:activate-normal-mode'

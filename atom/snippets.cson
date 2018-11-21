@@ -13,7 +13,7 @@
 #     'prefix': 'log'
 #     'body': 'console.log $1'
 #
-'.source.js':
+'.source.js, .source.ts, .source.tsx':
   'Console log':
     'prefix': 'cl'
     'body': 'console.log($1);'

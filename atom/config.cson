@@ -22,8 +22,7 @@
       "go-imports"
       "gofmt"
       "gometalinter-linter"
-      "linter-govet"
-      "linter-js-standard"
+      "linter"
     ]
     ignoredNames: [
       ".git"
@@ -50,16 +49,26 @@
   "file-icons": {}
   "go-imports": {}
   gofmt: {}
+  "language-babel":
+    taggedTemplateGrammar: [
+      "\"(?<=<style jsx>{)|(?<=<style jsx global>{)\":source.css.styled"
+    ]
   linter:
     lintOnChange: false
   "linter-js-standard": {}
   "linter-jshint": {}
   "linter-rubocop": {}
+  "linter-tslint":
+    fixOnSave: true
   "linter-ui-default":
     decorateOnTreeView: "Files and Directories"
     panelHeight: 69
     showStatusBar: false
     useBusySignal: false
+  "markdown-preview":
+    useGitHubStyle: true
+  "markdown-table-formatter":
+    formatOnSave: false
   metrics:
     userId: "56c640f94f89936f149fd63228aea79141241bb1"
   "no-title-bar": {}
@@ -101,6 +110,7 @@
     rspecSingleCommand: "bundle exec rspec {relative_path}:{line_number}"
     specFramework: "rspec"
   "standard-formatter": {}
+  "tidy-markdown": {}
   "tree-view": {}
   "unity-ui": {}
   "vim-mode-plus":
@@ -113,6 +123,9 @@
     showOnStartup: false
   whitespace:
     ignoreWhitespaceOnCurrentLine: false
+".gfm.source":
+  editor:
+    softWrapAtPreferredLineLength: true
 "autocomplete-plus":
   suppressActivationForEditorClasses: [
     "vim-mode-plus.normal-mode"
