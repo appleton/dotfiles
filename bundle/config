@@ -1,6 +1,7 @@
 ---
 BUNDLE_PATH: ".bundle"
 BUNDLE_BIN: ".bundle/binstubs"
-BUNDLE_GEM__MIT: '0'
-BUNDLE_GEM__TEST: 'false'
+BUNDLE_GEM__MIT: "0"
+BUNDLE_GEM__TEST: "false"
 BUNDLE_BUILD__PUMA: "--with-opt-dir=/usr/local/opt/openssl"
+BUNDLE_BUILD__NOKOGIRI: ""

@@ -2,7 +2,7 @@ function" vundler
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle.vim/
+set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#rc()
 
 " let Vundle manage Vundle
@@ -53,6 +53,9 @@ let mapleader = ","
 set autoread
 
 " colours
+let g:onedark_color_overrides = {
+\ "black": {"gui": "#002833", "cterm": "235", "cterm16": "0" }
+\}
 set termguicolors
 colorscheme cobalt2
 

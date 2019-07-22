@@ -1,4 +1,7 @@
 "*":
+  "atom-ide-ui":
+    "atom-ide-code-format":
+      formatOnSave: true
   "atom-package-deps":
     ignored: []
   "atom-test-runner":
@@ -22,7 +25,6 @@
       "go-imports"
       "gofmt"
       "gometalinter-linter"
-      "linter"
     ]
     ignoredNames: [
       ".git"
@@ -33,13 +35,12 @@
     projectHome: "/Users/aappleton/projects"
     telemetryConsent: "limited"
     themes: [
-      "one-dark-ui"
-      "cobalt2-syntax"
+      "one-light-ui"
+      "one-light-syntax"
     ]
     titleBar: "custom"
   editor:
     fontFamily: "Inconsolata-dz"
-    fontSize: 13
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
@@ -47,7 +48,16 @@
   "exception-reporting":
     userId: "dea79831-edd0-3c6d-d3dc-b33d60d5bbdd"
   "file-icons": {}
+  "fuzzy-finder":
+    scoringSystem: "fast"
+    useRipGrep: true
   "go-imports": {}
+  "go-plus":
+    panel:
+      displayMode: "closed"
+      focusOnFailure: false
+    test:
+      runTestsOnSave: false
   gofmt: {}
   "language-babel":
     taggedTemplateGrammar: [
@@ -98,6 +108,7 @@
     formatOnSaveOptions:
       enabled: true
       isDisabledIfNoConfigFile: true
+      showInStatusBar: true
     prettierOptions:
       arrowParens: "always"
       singleQuote: true
@@ -111,7 +122,8 @@
     specFramework: "rspec"
   "standard-formatter": {}
   "tidy-markdown": {}
-  "tree-view": {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
   "unity-ui": {}
   "vim-mode-plus":
     charactersToAddSpaceOnSurround: [
