@@ -35,8 +35,8 @@
     projectHome: "/Users/aappleton/projects"
     telemetryConsent: "limited"
     themes: [
-      "one-light-ui"
-      "one-light-syntax"
+      "one-dark-ui"
+      "cobalt2-syntax"
     ]
     titleBar: "custom"
   editor:

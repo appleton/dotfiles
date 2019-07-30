@@ -4,6 +4,7 @@ all: symlinks install_atom_packages configure_iterm
 
 symlinks:
 	@ln -nsf $(DIR)/zshenv ~/.zshenv
+	@ln -nsf $(DIR)/asdfrc ~/.asdfrc
 	@ln -nsf $(DIR)/vimrc ~/.vimrc
 	@ln -nsf $(DIR)/jshintrc ~/.jshintrc
 	@ln -nsf $(DIR)/nvmrc ~/.nvmrc

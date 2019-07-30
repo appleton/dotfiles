@@ -1,7 +1,7 @@
 [user]
   name = Andrew Appleton
-  email = appleton@github.com
-	signingkey = 32A1436B9894CC82
+	email = aappleton@plaid.com
+	signingkey = 0x8EDCA9521C534C61
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
@@ -34,3 +34,5 @@
 	user = appleton
 [gpg]
 	program = /usr/local/bin/gpg
+[url "git@github.plaid.com:"]
+	insteadOf = https://github.plaid.com/
