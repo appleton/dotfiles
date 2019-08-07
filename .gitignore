@@ -1,5 +1,6 @@
 zsh/secret.zsh
 .DS_Store
+atom/.atom-socket*
 
 RubyTest.last-run
 gemrc

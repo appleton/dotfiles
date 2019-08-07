@@ -25,6 +25,7 @@
       "go-imports"
       "gofmt"
       "gometalinter-linter"
+      "linter"
     ]
     ignoredNames: [
       ".git"
@@ -40,11 +41,14 @@
     ]
     titleBar: "custom"
   editor:
-    fontFamily: "Inconsolata-dz"
+    fontFamily: "SFMono Nerd Font"
+    fontSize: 15
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
     tabType: "soft"
+  "env-from-shell":
+    autoRun: true
   "exception-reporting":
     userId: "dea79831-edd0-3c6d-d3dc-b33d60d5bbdd"
   "file-icons": {}
@@ -53,6 +57,8 @@
     useRipGrep: true
   "go-imports": {}
   "go-plus":
+    config: {}
+    format: {}
     panel:
       displayMode: "closed"
       focusOnFailure: false

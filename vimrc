@@ -57,7 +57,7 @@ let g:onedark_color_overrides = {
 \ "black": {"gui": "#002833", "cterm": "235", "cterm16": "0" }
 \}
 set termguicolors
-colorscheme cobalt2
+colorscheme onedark
 
 " airline
 let g:airline_powerline_fonts = 1
