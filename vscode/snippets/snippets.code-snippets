@@ -1,0 +1,110 @@
+{
+	"Console log": {
+		"prefix": "cl",
+		"body": "console.log($1);$0"
+	},
+	"then": {
+		"prefix": "then",
+		"body": "then(() => {\n  ${0}\n});$0"
+	},
+	"require": {
+		"prefix": "req",
+		"body": "${1:var} ${2} = require('${3:path}');${0}$0"
+	},
+	"module-import": {
+		"prefix": "im",
+		"body": "import ${1} from ${2};$0"
+	},
+	"module-export": {
+		"prefix": "ex",
+		"body": "export ${0};$0"
+	},
+	"module-export-default": {
+		"prefix": "ed",
+		"body": "export default ${0};$0"
+	},
+	"mocha-context": {
+		"prefix": "con",
+		"body": "context('${1}', () => {\n  ${0}\n});$0"
+	},
+	"jasmine-waitsFor": {
+		"prefix": "wai",
+		"body": "waitsFor(function() {\n  ${0}\n});$0"
+	},
+	"jasmine-set": {
+		"prefix": "set",
+		"body": "set('${1}', () => ${0});$0"
+	},
+	"jasmine-runs": {
+		"prefix": "run",
+		"body": "runs(function() {\n  ${0}\n});$0"
+	},
+	"jasmine-it": {
+		"prefix": "it",
+		"body": "it('${1}', () => {\n  ${0}\n});$0"
+	},
+	"jasmine-describe": {
+		"prefix": "des",
+		"body": "describe('${1}', () => {\n  ${0}\n});$0"
+	},
+	"jasmine-before": {
+		"prefix": "bef",
+		"body": "beforeEach(() => {\n  ${0}\n});$0"
+	},
+	"jasmine-after": {
+		"prefix": "aft",
+		"body": "afterEach(() => {\n  ${0}\n});$0"
+	},
+	"finally": {
+		"prefix": "finally",
+		"body": "finally(() => {\n  ${0}\n});$0"
+	},
+	"ember-setter": {
+		"prefix": "ts",
+		"body": "this.set('${1}', ${2});$0"
+	},
+	"ember-getter": {
+		"prefix": "tg",
+		"body": "this.get('${0}');$0"
+	},
+	"catch": {
+		"prefix": "catch",
+		"body": "catch(() => {\n  ${0}\n});$0"
+	},
+	"amd-define": {
+		"prefix": "def",
+		"body": "define(function(require) {\n  ${0}\n});$0"
+	},
+	"rspec-subject": {
+		"prefix": "subj",
+		"body": "subject { ${0} }$0"
+	},
+	"rspec-let": {
+		"prefix": "let",
+		"body": "let(${1}) { ${0} }$0"
+	},
+	"rspec-it": {
+		"prefix": "it",
+		"body": "it \"${1}\" do\n  ${0}\nend$0"
+	},
+	"rspec-describe": {
+		"prefix": "des",
+		"body": "describe \"${1}\" do\n  ${0}\nend$0"
+	},
+	"rspec-context": {
+		"prefix": "con",
+		"body": "context \"${1}\" do\n  ${0}\nend$0"
+	},
+	"rspec-before": {
+		"prefix": "bef",
+		"body": "before { ${0} }$0"
+	},
+	"rspec-after": {
+		"prefix": "aft",
+		"body": "after { ${0} }$0"
+	},
+	"Test": {
+		"prefix": "test",
+		"body": "func Test${1} (t *testing.T) {\n\t${0}\n}$0"
+	}
+}

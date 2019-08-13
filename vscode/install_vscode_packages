@@ -1,0 +1,5 @@
+#!/bin/bash
+
+while read package; do
+  code --install-extension "$package"
+done < ~/.dotfiles/vscode/extensions.txt
