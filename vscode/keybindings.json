@@ -86,5 +86,9 @@
   {
     "key": "shift+cmd+u",
     "command": "-workbench.action.output.toggleOutput"
-  }
+  },
+  {
+    "key": "cmd+k cmd+s",
+    "command": "-workbench.action.openGlobalKeybindings"
+  },
 ]

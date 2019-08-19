@@ -61,7 +61,7 @@
     {
       "before": [
         "t",
-        "c"
+        "f"
       ],
       "commands": [
         "go.test.cursor"
@@ -153,7 +153,7 @@
   "workbench.tree.renderIndentGuides": "none",
   "workbench.editor.tabSizing": "shrink",
   "editor.fontSize": 15,
-  "window.zoomLevel": 0.2,
+  "window.zoomLevel": 0,
   "explorer.decorations.badges": false,
   "search.smartCase": true,
   "editor.minimap.enabled": false,
@@ -178,6 +178,10 @@
   ],
   "go.testEnvFile": "${workspaceFolder}/environment/experimental",
   "go.formatTool": "goformat",
+  "gopls": {
+    "usePlaceholders": true, // add parameter placeholders when completing a function
+    "wantCompletionDocumentation": true // for documentation in completion items
+  },
   "editor.matchBrackets": false,
   "workbench.iconTheme": "file-icons",
   "explorer.autoReveal": false,
