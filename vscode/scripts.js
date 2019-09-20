@@ -4,9 +4,10 @@ setTimeout(() => {
   // How much extra padding I added to the container
   const extraPadding = 11;
 
-  require(["vs/base/parts/quickopen/browser/quickOpenWidget"], function({
-    QuickOpenWidget
-  }) {
+  require([
+    "vs/base/parts/quickopen/browser/quickOpenWidget",
+    "vs/base/parts/quickopen/browser/quickOpenViewer"
+  ], function({ QuickOpenWidget }, { Renderer }) {
     QuickOpenWidget.prototype.getHeight = function(input) {
       const renderer = input.renderer;
 
@@ -52,5 +53,11 @@ setTimeout(() => {
       // Here is another hack, add some padding to match the CSS
       return height + extraPadding;
     };
+
+    // This makes the quick open window scroll down when focus moves beyond the
+    // visible portion
+    Renderer.prototype.getHeight = function() {
+      return 44;
+    };
   });
-}, 4000);
+}, 2000);
