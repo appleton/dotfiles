@@ -2,14 +2,11 @@
   "editor.fontFamily": "SFMono Nerd Font",
   "editor.lineNumbers": "relative",
   "files.trimTrailingWhitespace": true,
-  "editor.fontWeight": "400",
   "editor.cursorStyle": "line",
   "editor.cursorBlinking": "solid",
   "editor.tabSize": 2,
   "editor.roundedSelection": false,
-  "editor.rulers": [
-    80
-  ],
+  "editor.rulers": [80],
   "search.location": "panel",
   "explorer.openEditors.visible": 0,
   "editor.hideCursorInOverviewRuler": true,
@@ -21,85 +18,45 @@
   "vim.highlightedyank.color": "#004FAA",
   "vim.insertModeKeyBindings": [
     {
-      "before": [
-        "j",
-        "k"
-      ],
-      "after": [
-        "<Esc>"
-      ]
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
     }
   ],
   "vim.normalModeKeyBindings": [
     {
-      "before": [
-        "g",
-        "p"
-      ],
-      "commands": [
-        "editor.action.peekDefinition"
-      ]
+      "before": ["g", "p"],
+      "commands": ["editor.action.peekDefinition"]
     },
     {
-      "before": [
-        "g",
-        "r"
-      ],
-      "commands": [
-        "editor.action.referenceSearch.trigger"
-      ]
+      "before": ["g", "b"],
+      "commands": ["workbench.action.navigateBack"]
     },
     {
-      "before": [
-        "g",
-        "t"
-      ],
-      "commands": [
-        "go.toggle.test.file"
-      ]
+      "before": ["g", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
     },
     {
-      "before": [
-        "t",
-        "f"
-      ],
-      "commands": [
-        "go.test.cursor"
-      ]
+      "before": ["g", "t"],
+      "commands": ["go.toggle.test.file"]
     },
     {
-      "before": [
-        "t",
-        "t"
-      ],
-      "commands": [
-        "go.test.file"
-      ]
+      "before": ["t", "f"],
+      "commands": ["go.test.cursor"]
     },
     {
-      "before": [
-        "t",
-        "p"
-      ],
-      "commands": [
-        "go.test.package"
-      ]
+      "before": ["t", "t"],
+      "commands": ["go.test.file"]
+    },
+    {
+      "before": ["t", "p"],
+      "commands": ["go.test.package"]
     }
   ],
   "vim.visualModeKeyBindings": [],
   "vim.statusBarColorControl": false,
-  "vim.statusBarColors.normal": [
-    "#69ee66",
-    "#434C5E"
-  ],
-  "vim.statusBarColors.insert": [
-    "#0cc1f3",
-    "#FFFFFF"
-  ],
-  "vim.statusBarColors.visual": [
-    "#ffce62",
-    "#aa770a"
-  ],
+  "vim.statusBarColors.normal": ["#69ee66", "#434C5E"],
+  "vim.statusBarColors.insert": ["#0cc1f3", "#FFFFFF"],
+  "vim.statusBarColors.visual": ["#ffce62", "#aa770a"],
   "vim.statusBarColors.visualline": "#B48EAD",
   "vim.statusBarColors.visualblock": "#A3BE8C",
   "vim.statusBarColors.replace": "#D08770",
@@ -124,12 +81,13 @@
       "editorCursor.background": "#deefff",
       "tab.activeBorder": "#14354b",
       "tab.activeBackground": "#14354b",
-      "editorGroupHeader.tabsBackground": "#152733",
+      "editorGroupHeader.tabsBackground": "#152d3e",
       "tab.inactiveBackground": "#152733",
-      "sideBar.background": "#152733",
+      "sideBar.background": "#152d3e",
       "sideBar.foreground": "#99abb8",
+      "sideBar.border": "#13232e",
       "editor.lineHighlightBorder": "#1F4662",
-      "editorLineNumber.activeForeground": "#56729c",
+      "editorLineNumber.activeForeground": "#456eab",
       "editorGutter.background": "#14354b",
       "editorGutter.deletedBackground": "#86535b",
       "editorGutter.addedBackground": "#6fae5a",
@@ -139,8 +97,32 @@
       "gitDecoration.untrackedResourceForeground": "#6fc38d",
       "gitDecoration.ignoredResourceForeground": "#747476",
       "gitDecoration.conflictingResourceForeground": "#FF7200",
+      "scrollbarSlider.background": "#355166cc",
+      "scrollbarSlider.activeBackground": "#355166cc",
+      "statusBar.border": "#13232e",
+      "pickerGroup.foreground": "#99abb8"
     },
+    "terminal.background": "#002833",
+    "terminal.foreground": "#abb2bf",
+    "terminal.ansiBlack": "#272c33",
+    "terminal.ansiBrightBlack": "#31353f",
+    "terminal.ansiRed": "#e06b74",
+    "terminal.ansiBrightRed": "#f97782",
+    "terminal.ansiGreen": "#98c378",
+    "terminal.ansiBrightGreen": "#aadb87",
+    "terminal.ansiYellow": "#e5c07a",
+    "terminal.ansiBrightYellow": "#ffd589",
+    "terminal.ansiBlue": "#60aeee",
+    "terminal.ansiBrightBlue": "#68bbfe",
+    "terminal.ansiMagenta": "#c677dc",
+    "terminal.ansiBrightMagenta": "#dc85f7",
+    "terminal.ansiCyan": "#56b6c1",
+    "terminal.ansiBrightCyan": "#60ccdb",
+    "terminal.ansiWhite": "#abb1bf",
+    "terminal.ansiBrightWhite": "#b1b9cb"
   },
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.cursorStyle": "line",
   "atomKeymap.promptV3Features": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.formatOnPaste": true,
@@ -151,9 +133,8 @@
   "workbench.tips.enabled": false,
   "workbench.tree.indent": 15,
   "workbench.tree.renderIndentGuides": "none",
-  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.tabSizing": "fit",
   "editor.fontSize": 15,
-  "window.zoomLevel": 0,
   "explorer.decorations.badges": false,
   "search.smartCase": true,
   "editor.minimap.enabled": false,
@@ -171,20 +152,25 @@
     }
   },
   "files.eol": "\n",
-  "go.testFlags": [
-    "-v",
-    "-count",
-    "1"
-  ],
+  "go.testFlags": ["-v", "-count", "1"],
   "go.testEnvFile": "${workspaceFolder}/environment/experimental",
   "go.formatTool": "goformat",
-  "gopls": {
-    "usePlaceholders": true, // add parameter placeholders when completing a function
-    "wantCompletionDocumentation": true // for documentation in completion items
-  },
   "editor.matchBrackets": false,
   "workbench.iconTheme": "file-icons",
   "explorer.autoReveal": false,
   "problems.autoReveal": false,
-  "workbench.colorTheme": "Cobalt2"
+  "workbench.colorTheme": "Cobalt2",
+  "eslint.autoFixOnSave": true,
+  "window.zoomLevel": 0,
+  "editor.fontLigatures": true,
+  "debug.console.fontSize": 15,
+  "editor.mouseWheelZoom": true,
+  "extensions.ignoreRecommendations": true,
+  "update.mode": "manual",
+  "vscode_custom_css.imports": [
+    "file:///Users/aappleton/.dotfiles/vscode/styles.css",
+    "file:///Users/aappleton/.dotfiles/vscode/scripts.js"
+  ],
+  "vscode_custom_css.policy": true,
+  "workbench.quickOpen.closeOnFocusLost": false
 }

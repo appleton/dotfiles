@@ -1,0 +1,127 @@
+/* Hide the explorer titlebar & buttons */
+.monaco-workbench .part > .title > .title-label,
+.monaco-workbench .part > .composite.title > .title-actions {
+  display: none;
+}
+
+/* Hide the tab bar buttons */
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .editor-actions
+  .action-label {
+  display: none;
+}
+
+/* Don't hide the tab bar settings JSON button */
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .editor-actions
+  .action-label[title="Open Settings (JSON)"] {
+  display: block;
+}
+
+/* Hide the litte custom CSS indicator */
+.__CUSTOM_CSS_JS_INDICATOR_CLS {
+  display: none;
+}
+
+/* Rounded scrollbars */
+.monaco-workbench .monaco-scrollable-element > .scrollbar > .slider {
+  border-radius: 10px;
+}
+
+/* Tabs */
+.tab.active {
+  border-left: 2px solid #4daaeb;
+}
+
+/* Sidebar */
+.show-file-icons .folder-icon::before,
+.show-file-icons .monaco-tree-row.expanded .folder-icon::before,
+.show-file-icons
+  .monaco-tl-twistie.collapsible:not(.collapsed)
+  + .monaco-tl-contents
+  .folder-icon::before {
+  color: #99abb8;
+}
+
+/* Quick open overlay */
+
+.monaco-quick-open-widget {
+  border: 1px solid #0f202c !important;
+  top: 50px !important;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 50px !important;
+  padding-bottom: 0px;
+  background-color: #173142 !important;
+}
+
+.monaco-quick-open-widget .quick-open-tree {
+  min-height: 55px;
+}
+
+.monaco-quick-open-widget .quick-open-input {
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.monaco-inputbox {
+  border-color: #0f202c !important;
+  height: auto !important;
+  border-radius: 3px;
+}
+
+.monaco-inputbox.synthetic-focus {
+  border-color: #4daaeb !important;
+  outline-color: transparent;
+}
+
+.monaco-inputbox > .wrapper > .input {
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 15px !important;
+  font-family: "SFMono Nerd Font", monospace;
+  background-color: #102432 !important;
+  border-radius: 3px;
+  line-height: 2em;
+}
+
+.search-widget .monaco-inputbox > .wrapper > .input {
+  line-height: inherit;
+}
+
+.monaco-tree {
+  padding: 0 11px 11px 11px;
+  box-sizing: border-box;
+}
+
+.monaco-tree > .monaco-scrollable-element {
+  border: 1px solid #0f202c;
+}
+
+.monaco-tree .monaco-tree-rows > .monaco-tree-row {
+  height: 45px !important;
+  line-height: 45px;
+  border-bottom: 1px solid #0f202c;
+  background: #1a364b;
+}
+.monaco-tree.focused
+  .monaco-tree-rows
+  > .monaco-tree-row.focused:not(.highlighted) {
+  background: #234b66;
+}
+
+.monaco-icon-label
+  > .monaco-icon-label-description-container
+  > .label-description {
+  margin-left: none;
+}
+.monaco-tree .monaco-tree-row > .content.actions > .primary-action-bar {
+  line-height: 53px;
+}
