@@ -100,7 +100,10 @@
       "scrollbarSlider.background": "#355166cc",
       "scrollbarSlider.activeBackground": "#355166cc",
       "statusBar.border": "#13232e",
-      "pickerGroup.foreground": "#99abb8"
+      "pickerGroup.foreground": "#99abb8",
+      "input.border": "#0f202c",
+      "input.background": "#102432",
+      "list.focusBackground": "#234b66"
     },
     "terminal.background": "#002833",
     "terminal.foreground": "#abb2bf",
@@ -171,6 +174,5 @@
     "file:///Users/aappleton/.dotfiles/vscode/styles.css",
     "file:///Users/aappleton/.dotfiles/vscode/scripts.js"
   ],
-  "vscode_custom_css.policy": true,
-  "workbench.quickOpen.closeOnFocusLost": false
+  "vscode_custom_css.policy": true
 }

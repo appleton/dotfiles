@@ -26,7 +26,7 @@
   display: block;
 }
 
-/* Hide the litte custom CSS indicator */
+/* Hide the little custom CSS indicator */
 .__CUSTOM_CSS_JS_INDICATOR_CLS {
   display: none;
 }
@@ -54,12 +54,45 @@
 /* Quick open overlay */
 
 .monaco-quick-open-widget {
-  border: 1px solid #0f202c !important;
   top: 50px !important;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 50px !important;
   padding-bottom: 0px;
-  background-color: #173142 !important;
+}
+
+@keyframes overlay-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.monaco-quick-open-widget:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-color: #173143;
+  border-radius: 6px;
+  box-shadow: 0 6px 12px -2px rgba(0, 0, 0, 0.4);
+}
+
+.monaco-quick-open-widget:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: #050b0f;
+  opacity: 0.5;
+  backface-visibility: hidden;
+  animation: overlay-fade 0.24s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .monaco-quick-open-widget .quick-open-tree {
@@ -72,7 +105,6 @@
 }
 
 .monaco-inputbox {
-  border-color: #0f202c !important;
   height: auto !important;
   border-radius: 3px;
 }
@@ -87,7 +119,6 @@
   box-sizing: border-box;
   font-size: 15px !important;
   font-family: "SFMono Nerd Font", monospace;
-  background-color: #102432 !important;
   border-radius: 3px;
   line-height: 2em;
 }
@@ -110,11 +141,6 @@
   line-height: 45px;
   border-bottom: 1px solid #0f202c;
   background: #1a364b;
-}
-.monaco-tree.focused
-  .monaco-tree-rows
-  > .monaco-tree-row.focused:not(.highlighted) {
-  background: #234b66;
 }
 
 .monaco-icon-label
