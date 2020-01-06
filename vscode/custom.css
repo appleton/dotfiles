@@ -1,6 +1,6 @@
 /* Hide the explorer titlebar & buttons */
-.monaco-workbench .part > .title > .title-label,
-.monaco-workbench .part > .composite.title > .title-actions {
+.monaco-workbench .sidebar.part > .title > .title-label,
+.monaco-workbench .sidebar.part > .composite.title > .title-actions {
   display: none;
 }
 
@@ -76,9 +76,7 @@
   right: 0;
   bottom: 0;
   z-index: 0;
-  background-color: #173143;
-  border-radius: 6px;
-  box-shadow: 0 6px 12px -2px rgba(0, 0, 0, 0.4);
+  background-color: #173143; /* TODO */
 }
 
 .monaco-quick-open-widget:after {
@@ -133,14 +131,14 @@
 }
 
 .monaco-tree > .monaco-scrollable-element {
-  border: 1px solid #0f202c;
+  border: 1px solid #0f202c; /* TODO */
 }
 
 .monaco-tree .monaco-tree-rows > .monaco-tree-row {
   height: 45px !important;
   line-height: 45px;
-  border-bottom: 1px solid #0f202c;
-  background: #1a364b;
+  border-bottom: 1px solid #0f202c; /* TODO */
+  background: #1a364b; /* TODO */
 }
 
 .monaco-icon-label
