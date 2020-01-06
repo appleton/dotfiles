@@ -6,7 +6,10 @@
   "editor.cursorBlinking": "solid",
   "editor.tabSize": 2,
   "editor.roundedSelection": false,
-  "editor.rulers": [80],
+  "editor.rulers": [
+    80
+  ],
+  "editor.parameterHints.enabled": false,
   "search.location": "panel",
   "explorer.openEditors.visible": 0,
   "editor.hideCursorInOverviewRuler": true,
@@ -18,45 +21,102 @@
   "vim.highlightedyank.color": "#004FAA",
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "k"],
-      "after": ["<Esc>"]
+      "before": [
+        "j",
+        "k"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
   ],
   "vim.normalModeKeyBindings": [
     {
-      "before": ["g", "p"],
-      "commands": ["editor.action.peekDefinition"]
+      "before": [
+        "g",
+        "p"
+      ],
+      "commands": [
+        "editor.action.peekDefinition"
+      ]
     },
     {
-      "before": ["g", "b"],
-      "commands": ["workbench.action.navigateBack"]
+      "before": [
+        "g",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.navigateBack"
+      ]
     },
     {
-      "before": ["g", "r"],
-      "commands": ["editor.action.referenceSearch.trigger"]
+      "before": [
+        "g",
+        "r"
+      ],
+      "commands": [
+        "editor.action.referenceSearch.trigger"
+      ]
     },
     {
-      "before": ["g", "t"],
-      "commands": ["go.toggle.test.file"]
+      "before": [
+        "g",
+        "t"
+      ],
+      "commands": [
+        "go.toggle.test.file"
+      ]
     },
     {
-      "before": ["t", "f"],
-      "commands": ["go.test.cursor"]
+      "before": [
+        "t",
+        "t"
+      ],
+      "commands": [
+        "go.test.cursor"
+      ]
     },
     {
-      "before": ["t", "t"],
-      "commands": ["go.test.file"]
+      "before": [
+        "t",
+        "f"
+      ],
+      "commands": [
+        "go.test.file"
+      ]
     },
     {
-      "before": ["t", "p"],
-      "commands": ["go.test.package"]
+      "before": [
+        "t",
+        "p"
+      ],
+      "commands": [
+        "go.test.package"
+      ]
+    },
+    {
+      "before": [
+        "<esc>"
+      ],
+      "commands": [
+        "workbench.action.closePanel"
+      ]
     }
   ],
   "vim.visualModeKeyBindings": [],
   "vim.statusBarColorControl": false,
-  "vim.statusBarColors.normal": ["#69ee66", "#434C5E"],
-  "vim.statusBarColors.insert": ["#0cc1f3", "#FFFFFF"],
-  "vim.statusBarColors.visual": ["#ffce62", "#aa770a"],
+  "vim.statusBarColors.normal": [
+    "#69ee66",
+    "#434C5E"
+  ],
+  "vim.statusBarColors.insert": [
+    "#0cc1f3",
+    "#FFFFFF"
+  ],
+  "vim.statusBarColors.visual": [
+    "#ffce62",
+    "#aa770a"
+  ],
   "vim.statusBarColors.visualline": "#B48EAD",
   "vim.statusBarColors.visualblock": "#A3BE8C",
   "vim.statusBarColors.replace": "#D08770",
@@ -72,6 +132,14 @@
   },
   "[graphql]": {
     "editor.formatOnSave": true
+  },
+  "[markdown]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80,
+    "editor.quickSuggestions": false
+  },
+  "[yaml]": {
+    "editor.formatOnSave": false
   },
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -102,8 +170,7 @@
       "statusBar.border": "#13232e",
       "pickerGroup.foreground": "#99abb8",
       "input.border": "#0f202c",
-      "input.background": "#102432",
-      "list.focusBackground": "#234b66"
+      "input.background": "#102432"
     },
     "terminal.background": "#002833",
     "terminal.foreground": "#abb2bf",
@@ -149,30 +216,50 @@
   "editor.formatOnSave": true,
   "[go]": {
     "editor.codeActionsOnSaveTimeout": 3000,
-    "editor.snippetSuggestions": "none",
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
     }
   },
   "files.eol": "\n",
-  "go.testFlags": ["-v", "-count", "1"],
+  "go.testFlags": [
+    "-v",
+    "-count",
+    "1"
+  ],
   "go.testEnvFile": "${workspaceFolder}/environment/experimental",
   "go.formatTool": "goformat",
   "editor.matchBrackets": false,
   "workbench.iconTheme": "file-icons",
   "explorer.autoReveal": false,
   "problems.autoReveal": false,
-  "workbench.colorTheme": "Cobalt2",
-  "eslint.autoFixOnSave": true,
-  "window.zoomLevel": 0,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "disable-color-correct-rendering": true,
   "editor.fontLigatures": true,
   "debug.console.fontSize": 15,
-  "editor.mouseWheelZoom": true,
   "extensions.ignoreRecommendations": true,
-  "update.mode": "manual",
-  "vscode_custom_css.imports": [
-    "file:///Users/aappleton/.dotfiles/vscode/styles.css",
-    "file:///Users/aappleton/.dotfiles/vscode/scripts.js"
-  ],
-  "vscode_custom_css.policy": true
+  "editor.snippetSuggestions": "top",
+  "workbench.colorTheme": "Cobalt2",
+  "gopls": {
+    // Experimental settings
+    "completeUnimported": true, // autocomplete unimported packages
+    "watchFileChanges": true, // watch file changes outside of the editor
+    "deepCompletion": true // enable deep completion
+  },
+  "files.associations": {
+    "*.Jenkinsfile": "groovy"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "customizeUI.titleBar": "inline",
+  "window.titleBarStyle": "native",
+  "window.newWindowDimensions": "inherit",
+  "monkeyPatch.folderMap": {
+    "dotfiles": "~/.dotfiles/vscode"
+  },
+  "monkeyPatch.browserModules": [
+    "dotfiles/custom"
+  ]
 }

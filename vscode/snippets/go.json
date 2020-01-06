@@ -1,0 +1,10 @@
+{
+  "test": {
+    "prefix": "test",
+    "body": "func Test${1} (t *testing.T) {\n\t$0\n}"
+  },
+  "run": {
+    "prefix": "run",
+    "body": ["t.Run(\"$1\", func(t *testing.T) {", "\t$0", "})"]
+  }
+}

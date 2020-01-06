@@ -1,0 +1,30 @@
+{
+  "rspec-subject": {
+    "prefix": "subj",
+    "body": "subject { ${0} }"
+  },
+  "rspec-let": {
+    "prefix": "let",
+    "body": "let(${1}) { ${0} }"
+  },
+  "rspec-it": {
+    "prefix": "it",
+    "body": "it \"${1}\" do\n  $0\nend"
+  },
+  "rspec-describe": {
+    "prefix": "des",
+    "body": "describe \"${1}\" do\n  ${0}\nend"
+  },
+  "rspec-context": {
+    "prefix": "con",
+    "body": "context \"${1}\" do\n  ${0}\nend"
+  },
+  "rspec-before": {
+    "prefix": "bef",
+    "body": "before { ${0} }"
+  },
+  "rspec-after": {
+    "prefix": "aft",
+    "body": "after { ${0} }"
+  }
+}
