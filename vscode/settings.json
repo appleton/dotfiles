@@ -228,7 +228,7 @@
   ],
   "go.testEnvFile": "${workspaceFolder}/environment/experimental",
   "go.formatTool": "goformat",
-  "editor.matchBrackets": false,
+  "editor.matchBrackets": "never",
   "workbench.iconTheme": "file-icons",
   "explorer.autoReveal": false,
   "problems.autoReveal": false,
