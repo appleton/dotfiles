@@ -91,4 +91,16 @@
     "key": "cmd+k cmd+s",
     "command": "-workbench.action.openGlobalKeybindings"
   },
+  {
+    "key": "alt+cmd+,",
+    "command": "workbench.action.openGlobalSettings"
+  },
+  {
+    "key": "cmd+,",
+    "command": "-workbench.action.openGlobalSettings"
+  },
+  {
+    "key": "cmd+,",
+    "command": "workbench.action.openSettingsJson"
+  },
 ]
