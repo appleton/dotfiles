@@ -59,7 +59,7 @@ function current_branch() {
 }
 
 # Static file server for current directory
-function serve {
+function server {
   open http://localhost:8000
   python -m SimpleHTTPServer
 }
