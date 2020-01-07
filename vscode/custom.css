@@ -121,6 +121,7 @@
   line-height: 2em;
 }
 
+.monaco-findInput .monaco-inputbox > .wrapper > .input,
 .search-widget .monaco-inputbox > .wrapper > .input {
   line-height: inherit;
 }
