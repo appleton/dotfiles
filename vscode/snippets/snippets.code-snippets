@@ -1,0 +1,127 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Console log": {
+		"scope": "javascript,typescript,typescriptreact",
+		"prefix": "cl",
+		"body": "console.log($1);"
+	},
+	"then": {
+		"scope": "javascript,typescript,typescriptreact",
+		"prefix": "then",
+		"body": "then(() => {\n  ${0}\n});"
+	},
+	"require": {
+		"scope": "javascript,typescript,typescriptreact",
+		"prefix": "req",
+		"body": "const ${1} = require('${2:path}');"
+	},
+	"module-import": {
+		"scope": "javascript,typescript,typescriptreact",
+		"prefix": "im",
+		"body": "import ${1} from ${2};"
+	},
+	"module-export": {
+		"scope": "javascript,typescript,typescriptreact",
+		"prefix": "ex",
+		"body": "export ${0};"
+	},
+	"module-export-default": {
+		"scope": "javascript,typescript,typescriptreact",
+		"prefix": "ed",
+		"body": "export default $0;"
+	},
+	"mocha-context": {
+		"scope": "javascript,typescript,typescriptreact",
+		"prefix": "con",
+		"body": "context('${1}', () => {\n  $0\n});"
+	},
+	"jasmine-waitsFor": {
+		"scope": "javascript,typescript,typescriptreact",
+		"prefix": "wai",
+		"body": "waitsFor(function() {\n  $0\n});"
+	},
+	"jasmine-it": {
+		"scope": "javascript,typescript,typescriptreact",
+		"prefix": "it",
+		"body": "it('${1}', () => {\n  $0\n});"
+	},
+	"jasmine-describe": {
+		"scope": "javascript,typescript,typescriptreact",
+		"prefix": "des",
+		"body": "describe('${1}', () => {\n  $0\n});"
+	},
+	"jasmine-before": {
+		"scope": "javascript,typescript,typescriptreact",
+		"prefix": "bef",
+		"body": "beforeEach(() => {\n  $0\n});"
+	},
+	"jasmine-after": {
+		"scope": "javascript,typescript,typescriptreact",
+		"prefix": "aft",
+		"body": "afterEach(() => {\n  $0\n});"
+	},
+	"test": {
+		"scope": "go",
+		"prefix": "test",
+		"body": "func Test${1} (t *testing.T) {\n\t$0\n}"
+	},
+	"run": {
+		"scope": "go",
+		"prefix": "run",
+		"body": [
+			"t.Run(\"$1\", func(t *testing.T) {",
+			"\t$0",
+			"})"
+		]
+	},
+	"rspec-subject": {
+		"scope": "ruby",
+		"prefix": "subj",
+		"body": "subject { ${0} }"
+	},
+	"rspec-let": {
+		"scope": "ruby",
+		"prefix": "let",
+		"body": "let(${1}) { ${0} }"
+	},
+	"rspec-it": {
+		"scope": "ruby",
+		"prefix": "it",
+		"body": "it \"${1}\" do\n  $0\nend"
+	},
+	"rspec-describe": {
+		"scope": "ruby",
+		"prefix": "des",
+		"body": "describe \"${1}\" do\n  ${0}\nend"
+	},
+	"rspec-context": {
+		"scope": "ruby",
+		"prefix": "con",
+		"body": "context \"${1}\" do\n  ${0}\nend"
+	},
+	"rspec-before": {
+		"scope": "ruby",
+		"prefix": "bef",
+		"body": "before { ${0} }"
+	},
+	"rspec-after": {
+		"scope": "ruby",
+		"prefix": "aft",
+		"body": "after { ${0} }"
+	}
+}
