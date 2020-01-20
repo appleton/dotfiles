@@ -26,11 +26,6 @@
   display: block;
 }
 
-/* Hide the little custom CSS indicator */
-.__CUSTOM_CSS_JS_INDICATOR_CLS {
-  display: none;
-}
-
 /* Rounded scrollbars */
 .monaco-workbench .monaco-scrollable-element > .scrollbar > .slider {
   border-radius: 10px;
@@ -76,6 +71,7 @@
   right: 0;
   bottom: 0;
   z-index: 0;
+  border-radius: 5px;
   background-color: #173143; /* TODO */
 }
 
@@ -105,6 +101,10 @@
 .monaco-inputbox {
   height: auto !important;
   border-radius: 3px;
+}
+
+.monaco-workbench .synthetic-focus {
+  outline-color: transparent !important;
 }
 
 .monaco-inputbox.synthetic-focus {
