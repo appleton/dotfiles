@@ -14,6 +14,8 @@
 	<false/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -39042,7 +39044,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SUStatusFrame</key>
-	<string>1046 1136 400 129 0 0 3008 1669 </string>
+	<string>1283 1155 400 129 0 0 3008 1669 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>1173 957 620 392 0 0 3008 1669 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -40907,14 +40909,19 @@
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.3.3beta1</string>
-		<string>3.3.7beta4</string>
-		<string>3.3.1beta1</string>
-		<string>3.3.0beta16</string>
-		<string>3.3.7beta3</string>
-		<string>3.3.5beta3</string>
+		<string>3.3.8beta3</string>
 		<string>3.3.7beta1</string>
 		<string>3.3.5beta2</string>
+		<string>3.3.8beta5</string>
+		<string>3.3.7beta3</string>
+		<string>3.3.1beta1</string>
+		<string>3.3.8beta2</string>
 		<string>3.3.5beta1</string>
+		<string>3.3.0beta16</string>
+		<string>3.3.8beta4</string>
+		<string>3.3.5beta3</string>
+		<string>3.3.7beta4</string>
+		<string>3.3.8beta1</string>
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
@@ -40931,7 +40938,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>CB2FC1DF-A1A7-41AB-84B4-B11B52838C0D</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>28</integer>
+	<integer>40</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -41632,28 +41639,6 @@
 			</dict>
 		</array>
 	</dict>
-	<key>NoSyncSearchHistory</key>
-	<array>
-		<string>gdpr</string>
-		<string>HIHIH</string>
-		<string>No country</string>
-		<string>creating new ini</string>
-		<string>error creating new </string>
-		<string>"error"</string>
-	</array>
-	<key>NoSyncSearchHistory2</key>
-	<array>
-		<string>"data"</string>
-		<string>user_id</string>
-		<string>megabin consumer_portal</string>
-		<string>num_records</string>
-		<string>num_recorde</string>
-		<string>consumed</string>
-		<string>consumerd</string>
-		<string>event</string>
-		<string>givenName</string>
-		<string>Sign</string>
-	</array>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>586145366.93861198</real>
 	<key>OnlyWhenMoreTabs</key>
@@ -41730,7 +41715,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-11-27T02:21:31Z</date>
+	<date>2020-01-29T16:00:31Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -41804,7 +41789,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.7beta4</string>
+	<string>3.3.8beta5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>1</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
