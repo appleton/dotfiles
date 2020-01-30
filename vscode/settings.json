@@ -96,6 +96,15 @@
     },
     {
       "before": [
+        "t",
+        "."
+      ],
+      "commands": [
+        "go.test.previous"
+      ]
+    },
+    {
+      "before": [
         "<esc>"
       ],
       "commands": [
@@ -155,6 +164,7 @@
       "sideBar.foreground": "#99abb8",
       "sideBar.border": "#13232e",
       "editor.lineHighlightBorder": "#1F4662",
+      "errorForeground": "#ff776b",
       "editorLineNumber.activeForeground": "#456eab",
       "editorGutter.background": "#14354b",
       "editorGutter.deletedBackground": "#86535b",
