@@ -1,7 +1,13 @@
 # Dotfiles
 
-My preferences for zsh, git, Atom, jshint. Incorporates
-[z](https://github.com/rupa/z).
+My preferences for zsh, git, vscode and vim.
+
+Also:
+
+- [z](https://github.com/rupa/z)
+- [asdf](https://asdf-vm.com)
+- [direnv](http://direnv.net/)
+- [pure](https://github.com/sindresorhus/pure)
 
 Clone the repo into `~/.dotfiles` and run:
 

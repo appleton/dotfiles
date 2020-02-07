@@ -10,7 +10,6 @@
     80
   ],
   "editor.parameterHints.enabled": false,
-  "search.location": "panel",
   "explorer.openEditors.visible": 0,
   "editor.hideCursorInOverviewRuler": true,
   "editor.tabCompletion": "on",
@@ -175,8 +174,9 @@
       "gitDecoration.untrackedResourceForeground": "#6fc38d",
       "gitDecoration.ignoredResourceForeground": "#747476",
       "gitDecoration.conflictingResourceForeground": "#FF7200",
-      "scrollbarSlider.background": "#355166cc",
-      "scrollbarSlider.activeBackground": "#355166cc",
+      "scrollbarSlider.background": "#ffffff25",
+      "scrollbarSlider.hoverBackground": "#ffffff45",
+      "scrollbarSlider.activeBackground": "#ffffff45",
       "statusBar.border": "#13232e",
       "pickerGroup.foreground": "#99abb8",
       "input.border": "#0f202c",
@@ -238,7 +238,7 @@
   ],
   "go.testEnvFile": "${workspaceFolder}/environment/experimental",
   "go.formatTool": "goformat",
-  "editor.matchBrackets": "never",
+  "editor.matchBrackets": false,
   "workbench.iconTheme": "file-icons",
   "explorer.autoReveal": false,
   "problems.autoReveal": false,
@@ -254,7 +254,6 @@
   "gopls": {
     // Experimental settings
     "completeUnimported": true, // autocomplete unimported packages
-    "watchFileChanges": true, // watch file changes outside of the editor
     "deepCompletion": true // enable deep completion
   },
   "files.associations": {
