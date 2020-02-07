@@ -1,6 +1,6 @@
 DIR=~/.dotfiles
 
-all: install_asdf symlinks install_vscode_packages configure_iterm
+all: install_asdf install_direnv symlinks install_vscode_packages configure_iterm
 
 symlinks:
 	@ln -nsf $(DIR)/zshenv ~/.zshenv
@@ -15,6 +15,9 @@ symlinks:
 	@ln -s $(DIR)/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 	@ln -s $(DIR)/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 	@ln -s $(DIR)/vscode/snippets ~/Library/Application\ Support/Code/User/snippets
+
+install_direnv:
+	brew install direnv
 
 install_asdf:
 	git clone https://github.com/asdf-vm/asdf.git ~/.asdf
