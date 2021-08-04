@@ -12,3 +12,4 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export GPG_TTY=$(tty)
 
 for config_file ($HOME/.dotfiles/zsh/*.zsh) source $config_file
+source $HOME/.dotfiles/zsh/autosuggestions/zsh-autosuggestions.zsh
