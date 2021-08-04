@@ -1,6 +1,10 @@
 {
-  "editor.fontFamily": "SFMono Nerd Font",
+  "search.exclude": {
+    "node_modules": true
+  },
   "editor.lineNumbers": "relative",
+  "search.searchEditor.reusePriorSearchConfiguration": true,
+  "editor.fontFamily": "Hack",
   "files.trimTrailingWhitespace": true,
   "editor.cursorStyle": "line",
   "editor.cursorBlinking": "solid",
@@ -14,6 +18,7 @@
   "editor.hideCursorInOverviewRuler": true,
   "editor.tabCompletion": "on",
   "editor.renderLineHighlight": "all",
+  "editor.renderWhitespace": "trailing",
   "vim.useSystemClipboard": true,
   "vim.highlightedyank.enable": true,
   "vim.highlightedyank.duration": 100,
@@ -60,6 +65,37 @@
     {
       "before": [
         "g",
+        "i"
+      ],
+      "commands": [
+        "editor.action.goToImplementation"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "e"
+      ],
+      "commands": [
+        "editor.action.marker.nextInFiles",
+        "closeMarkersNavigation",
+        "editor.action.showHover"
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "E"
+      ],
+      "commands": [
+        "editor.action.marker.prevInFiles",
+        "closeMarkersNavigation",
+        "editor.action.showHover"
+      ]
+    },
+    {
+      "before": [
+        "g",
         "t"
       ],
       "commands": [
@@ -73,6 +109,16 @@
       ],
       "commands": [
         "go.test.cursor"
+      ]
+    },
+    {
+      "before": [
+        "t",
+        "t",
+        "t"
+      ],
+      "commands": [
+        "go.subtest.cursor"
       ]
     },
     {
@@ -112,31 +158,26 @@
     }
   ],
   "vim.visualModeKeyBindings": [],
-  "vim.statusBarColorControl": false,
-  "vim.statusBarColors.normal": [
-    "#69ee66",
-    "#434C5E"
-  ],
-  "vim.statusBarColors.insert": [
-    "#0cc1f3",
-    "#FFFFFF"
-  ],
-  "vim.statusBarColors.visual": [
-    "#ffce62",
-    "#aa770a"
-  ],
-  "vim.statusBarColors.visualline": "#B48EAD",
-  "vim.statusBarColors.visualblock": "#A3BE8C",
-  "vim.statusBarColors.replace": "#D08770",
   "explorer.confirmDelete": false,
   "[javascript]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescript]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
   },
   "[typescriptreact]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
   },
   "[graphql]": {
     "editor.formatOnSave": true
@@ -151,12 +192,55 @@
   },
   "workbench.startupEditor": "none",
   "workbench.editor.enablePreviewFromQuickOpen": false,
+  "editor.tokenColorCustomizations": {
+    "semanticTokenColorCustomizations": true,
+    "[Cobalt2]": {
+      "textMateRules": [
+        {
+          "scope": "keyword.interface",
+          "settings": {
+            "foreground": "#80FFBB"
+          }
+        },
+        {
+          "scope": "keyword.struct",
+          "settings": {
+            "foreground": "#80FFBB"
+          }
+        },
+        {
+          "scope": "keyword.map",
+          "settings": {
+            "foreground": "#80FFBB"
+          }
+        },
+        {
+          "scope": "storage.type",
+          "settings": {
+            "foreground": "#80FFBB"
+          }
+        },
+        {
+          "scope": "entity.name.import.go",
+          "settings": {
+            "foreground": "#A5FF90"
+          }
+        },
+        {
+          "scope": "support.function.go",
+          "settings": {
+            "foreground": "#FFC600"
+          }
+        }
+      ]
+    }
+  },
   "workbench.colorCustomizations": {
     "[Cobalt2]": {
       "editorCursor.foreground": "#ffc50099",
       "editorCursor.background": "#deefff",
-      "tab.activeBorder": "#14354b",
-      "tab.activeBackground": "#14354b",
+      "tab.activeBorder": "#193549",
+      "tab.activeBackground": "#193549",
       "editorGroupHeader.tabsBackground": "#152d3e",
       "tab.inactiveBackground": "#152733",
       "sideBar.background": "#152d3e",
@@ -165,7 +249,7 @@
       "editor.lineHighlightBorder": "#1F4662",
       "errorForeground": "#ff776b",
       "editorLineNumber.activeForeground": "#456eab",
-      "editorGutter.background": "#14354b",
+      "editorGutter.background": "#193549",
       "editorGutter.deletedBackground": "#86535b",
       "editorGutter.addedBackground": "#6fae5a",
       "editorGutter.modifiedBackground": "#97885a",
@@ -180,7 +264,14 @@
       "statusBar.border": "#13232e",
       "pickerGroup.foreground": "#99abb8",
       "input.border": "#0f202c",
-      "input.background": "#102432"
+      "input.background": "#102432",
+      "panel.border": "#0f202c",
+      "peekView.border": "#0f202c",
+      "peekViewTitle.background": "#152d3e",
+      "peekViewResult.background": "#152d3e",
+      "peekViewResult.selectionBackground": "#193549",
+      "peekViewResult.matchHighlightBackground": "#193549",
+      "peekViewEditorGutter.background": "#152d3e"
     },
     "terminal.background": "#002833",
     "terminal.foreground": "#abb2bf",
@@ -207,6 +298,7 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.formatOnPaste": true,
   "explorer.confirmDragAndDrop": false,
+  "explorer.decorations.colors": false,
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "workbench.activityBar.visible": false,
@@ -228,7 +320,9 @@
     "editor.codeActionsOnSaveTimeout": 3000,
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
-    }
+    },
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": false,
   },
   "files.eol": "\n",
   "go.testFlags": [
@@ -242,19 +336,22 @@
   "workbench.iconTheme": "file-icons",
   "explorer.autoReveal": false,
   "problems.autoReveal": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
   "disable-color-correct-rendering": true,
   "editor.fontLigatures": true,
   "debug.console.fontSize": 15,
   "extensions.ignoreRecommendations": true,
   "editor.snippetSuggestions": "top",
-  "workbench.colorTheme": "Cobalt2",
   "gopls": {
     // Experimental settings
     "completeUnimported": true, // autocomplete unimported packages
-    "deepCompletion": true // enable deep completion
+    "usePlaceholders": true,
+    "deepCompletion": true, // enable deep completion
+    "analyses": {
+      "fillreturns": true,
+      "undeclaredname": true,
+      "unusedparams": true,
+      "nonewvars": true
+    }
   },
   "files.associations": {
     "*.Jenkinsfile": "groovy"
@@ -266,9 +363,47 @@
   "window.titleBarStyle": "native",
   "window.newWindowDimensions": "inherit",
   "monkeyPatch.folderMap": {
-    "dotfiles": "~/.dotfiles/vscode"
+    "dotfiles": "~/.dotfiles/vscode",
+    "globalStorage": "/Users/aappleton/Library/Application Support/Code/User/globalStorage/iocave.monkey-patch/modules"
   },
   "monkeyPatch.browserModules": [
-    "dotfiles/custom"
-  ]
+    "globalStorage/custom"
+  ],
+  "workbench.colorTheme": "Cobalt2",
+  "timeline.excludeSources": [
+    "git-history"
+  ],
+  "workbench.editor.showTabs": true,
+  "workbench.sideBar.location": "left",
+  "terraform.indexing": {
+    "enabled": false,
+    "liveIndexing": false,
+    "delay": 500,
+    "exclude": [
+      ".terraform/**/*",
+      "**/.terraform/**/*"
+    ]
+  },
+  "terraform.languageServer": {
+    "external": true,
+    "args": [
+      "serve"
+    ]
+  },
+  "vsonline.accountProvider": "Microsoft",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "workbench.statusBar.visible": false,
+  "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off",
+  "editor.insertSpaces": false,
+  "editor.inlineSuggest.enabled": true,
+  "redhat.telemetry.enabled": false
 }

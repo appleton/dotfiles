@@ -1,6 +1,6 @@
-/* Hide the explorer titlebar & buttons */
-.monaco-workbench .sidebar.part > .title > .title-label,
-.monaco-workbench .sidebar.part > .composite.title > .title-actions {
+/* Hide the sidebar titlebar & sidebar explorer buttons */
+/* .monaco-workbench .sidebar.part > .title > .title-label, */
+.sidebar .actions-container[aria-label^="Explorer:"] {
   display: none;
 }
 
@@ -12,7 +12,7 @@
   > .title
   .editor-actions
   .action-label {
-  display: none;
+  display: none !important;
 }
 
 /* Don't hide the tab bar settings JSON button */
@@ -22,18 +22,20 @@
   .editor-group-container
   > .title
   .editor-actions
-  .action-label[title="Open Settings (JSON)"] {
-  display: block;
+  .action-label[title="Open Settings (JSON)"],
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .editor-actions
+  .action-label[title="Open Settings (UI)"] {
+  display: flex !important;
 }
 
 /* Rounded scrollbars */
 .monaco-workbench .monaco-scrollable-element > .scrollbar > .slider {
   border-radius: 10px;
-}
-
-/* Tabs */
-.tab.active {
-  border-left: 2px solid #4daaeb;
 }
 
 /* Sidebar */
@@ -48,7 +50,7 @@
 
 /* Quick open overlay */
 
-.monaco-quick-open-widget {
+.quick-input-widget {
   top: 50px !important;
   border-radius: 5px;
   padding-bottom: 0px;
@@ -63,7 +65,7 @@
   }
 }
 
-.monaco-quick-open-widget:before {
+.quick-input-widget:before {
   content: "";
   position: absolute;
   top: 0;
@@ -72,10 +74,10 @@
   bottom: 0;
   z-index: 0;
   border-radius: 5px;
-  background-color: #173143; /* TODO */
+  background-color: #173143; /*TODO*/
 }
 
-.monaco-quick-open-widget:after {
+.quick-input-widget:after {
   content: "";
   position: fixed;
   top: 0;
@@ -89,17 +91,15 @@
   animation: overlay-fade 0.24s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.monaco-quick-open-widget .quick-open-tree {
-  min-height: 55px;
+.quick-input-widget .quick-input-list {
+  /* min-height: 55px; */
 }
 
-.monaco-quick-open-widget .quick-open-input {
-  padding: 5px;
-  box-sizing: border-box;
+.quick-input-widget .quick-input-header {
+  padding: 11px 11px 0;
 }
 
 .monaco-inputbox {
-  height: auto !important;
   border-radius: 3px;
 }
 
@@ -112,34 +112,31 @@
   outline-color: transparent;
 }
 
-.monaco-inputbox > .wrapper > .input {
+.monaco-inputbox > .ibwrapper > .input {
   padding: 5px;
   box-sizing: border-box;
   font-size: 15px !important;
-  font-family: "SFMono Nerd Font", monospace;
+  font-family: "Hack", monospace;
   border-radius: 3px;
-  line-height: 2em;
 }
 
-.monaco-findInput .monaco-inputbox > .wrapper > .input,
-.search-widget .monaco-inputbox > .wrapper > .input {
-  line-height: inherit;
-}
-
-.monaco-tree {
+.quick-input-widget .monaco-list {
   padding: 0 11px 11px 11px;
   box-sizing: border-box;
 }
 
-.monaco-tree > .monaco-scrollable-element {
+.quick-input-widget .monaco-list > .monaco-scrollable-element {
   border: 1px solid #0f202c; /* TODO */
 }
 
-.monaco-tree .monaco-tree-rows > .monaco-tree-row {
-  height: 45px !important;
-  line-height: 45px;
-  border-bottom: 1px solid #0f202c; /* TODO */
+.quick-input-widget .monaco-list .monaco-list-rows > .monaco-list-row {
+  /* height: 45px !important; */
+  /* line-height: 45px; */
+  /* border-bottom: 1px solid #0f202c; TODO */
   background: #1a364b; /* TODO */
+}
+.quick-input-widget .monaco-list .monaco-list-rows > .monaco-list-row.focused {
+  background: #003b5b;
 }
 
 .monaco-icon-label
@@ -147,6 +144,22 @@
   > .label-description {
   margin-left: none;
 }
+
 .monaco-tree .monaco-tree-row > .content.actions > .primary-action-bar {
   line-height: 53px;
+}
+
+/* Find in file widget */
+.editor-widget.find-widget {
+  width: 600px !important;
+}
+
+.monaco-findInput .monaco-inputbox > .wrapper > .input,
+.search-widget .monaco-inputbox > .wrapper > .input {
+  line-height: inherit;
+}
+
+/* Search results */
+.monaco-list-row .monaco-tl-contents.linematch {
+  font-family: "Hack", monospace;
 }
