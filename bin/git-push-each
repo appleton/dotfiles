@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+# Push commits individually to trigger CI builds for each
+
+set -o errexit    # Exit when an expression fails
+set -o pipefail   # Exit when a command in a pipeline fails
+set -o nounset    # Exit when an undefined variable is used
+set -o noglob     # Disable shell globbing
+set -o noclobber  # Disable automatic file overwriting
+
+IFS=$'\n\t'  # Set default field separator to not split on spaces
+
+parent=${1-master}
+branch=$(git rev-parse --abbrev-ref HEAD)
+# remote=$(git config -- "branch.${branch}.remote")
+
+# Commits in the local branch not in upstream
+commits=$(git rev-list HEAD "^origin/$branch" "^origin/$parent" --reverse)
+
+# TODO: use git push --force on the first commit, and then --ff-only all others
+# TODO: allow --set-upstream to be passed-through
+
+# Push all commits not upstream
+for commit in $commits
+do
+  # Trigger CI for each commit by pushing them individually
+  git push --force-with-lease -- "origin" "$commit:$branch"
+done
