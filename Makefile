@@ -15,6 +15,8 @@ symlinks:
 	@ln -s $(DIR)/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 	@ln -s $(DIR)/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 	@ln -s $(DIR)/vscode/snippets ~/Library/Application\ Support/Code/User/snippets
+	@ln -s $(DIR)/vscode/custom.js  ~/Library/Application\ Support/Code/User/globalStorage/iocave.monkey-patch/modules/custom.js
+	@ln -s $(DIR)/vscode/custom.css  ~/Library/Application\ Support/Code/User/globalStorage/iocave.monkey-patch/modules/custom.css
 
 install_direnv:
 	brew install direnv
