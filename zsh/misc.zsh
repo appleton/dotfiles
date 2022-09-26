@@ -1,6 +1,3 @@
-# Atom as editor
-export EDITOR="atom"
-
 # Enter directories without `cd`
 setopt auto_cd
 
