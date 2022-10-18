@@ -2,6 +2,7 @@ bierner.github-markdown-preview
 bierner.markdown-checkbox
 bierner.markdown-emoji
 bierner.markdown-footnotes
+bierner.markdown-mermaid
 bierner.markdown-preview-github-styles
 bierner.markdown-yaml-preamble
 castwide.solargraph
@@ -10,6 +11,7 @@ christian-kohler.path-intellisense
 dbaeumer.vscode-eslint
 esbenp.prettier-vscode
 file-icons.file-icons
+GitHub.copilot
 GitHub.github-vscode-theme
 golang.go
 hashicorp.terraform
@@ -18,15 +20,19 @@ iocave.monkey-patch
 jeff-hykin.better-go-syntax
 KnisterPeter.vscode-github
 loilo.snazzy-light
+LoranKloeze.ruby-rubocop-revived
 mikestead.dotenv
 mquandalle.graphql
 ms-vscode.atom-keybindings
 ms-vscode.test-adapter-converter
 rafamel.subtle-brackets
+rebornix.ruby
 redhat.vscode-commons
 redhat.vscode-yaml
 Rubymaniac.vscode-direnv
+Shopify.ruby-lsp
 sleistner.vscode-fileutils
+undefined_publisher.cognito
 vscodevim.vim
 wesbos.theme-cobalt2
 wingrunr21.vscode-ruby
