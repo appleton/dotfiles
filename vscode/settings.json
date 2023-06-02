@@ -1,4 +1,5 @@
 {
+  "update.mode": "none",
   "editor.bracketPairColorization.enabled": false,
   "markdown-preview-github-styles.colorTheme": "light",
   "search.exclude": {
@@ -166,21 +167,21 @@
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
     },
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
     },
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
-    },
+    }
   },
   "[graphql]": {
     "editor.formatOnSave": true
@@ -193,7 +194,7 @@
       "strings": "off",
       "other": "off"
     },
-    "editor.insertSpaces": true,
+    "editor.insertSpaces": true
   },
   "[yaml]": {
     "editor.formatOnSave": false
@@ -324,14 +325,13 @@
   "window.restoreWindows": "all",
   "go.useLanguageServer": true,
   "editor.formatOnSave": true,
-  "solargraph.formatting": true,
   "[go]": {
     "editor.codeActionsOnSaveTimeout": 3000,
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
     },
     "editor.insertSpaces": false,
-    "editor.detectIndentation": false,
+    "editor.detectIndentation": false
   },
   "files.eol": "\n",
   "go.testFlags": [
@@ -372,33 +372,12 @@
   "window.titleBarStyle": "native",
   "window.newWindowDimensions": "inherit",
   "monkeyPatch.folderMap": {
-    "dotfiles": "~/.dotfiles/vscode",
     "globalStorage": "/Users/aappleton/Library/Application Support/Code/User/globalStorage/iocave.monkey-patch/modules"
   },
   "monkeyPatch.browserModules": [
     "globalStorage/custom"
   ],
-  "workbench.colorTheme": "Cobalt2",
-  "timeline.excludeSources": [
-    "git-history"
-  ],
   "workbench.editor.showTabs": true,
-  "workbench.sideBar.location": "left",
-  "terraform.indexing": {
-    "enabled": false,
-    "liveIndexing": false,
-    "delay": 500,
-    "exclude": [
-      ".terraform/**/*",
-      "**/.terraform/**/*"
-    ]
-  },
-  "terraform.languageServer": {
-    "external": true,
-    "args": [
-      "serve"
-    ]
-  },
   "vsonline.accountProvider": "Microsoft",
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -408,11 +387,35 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "go.toolsManagement.autoUpdate": true,
-  "workbench.statusBar.visible": false,
   "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.wordWrap": "off",
   "editor.inlineSuggest.enabled": true,
   "redhat.telemetry.enabled": false,
-  "solargraph.diagnostics": true,
+  "[ruby]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "Shopify.ruby-lsp",
+  },
+  "rubyLsp.enabledFeatures": {
+    "codeActions": true,
+    "diagnostics": true,
+    "documentHighlights": true,
+    "documentLink": true,
+    "documentSymbols": true,
+    "foldingRanges": true,
+    "formatting": true,
+    "hover": true,
+    "inlayHint": true,
+    "onTypeFormatting": true,
+    "selectionRanges": true,
+    "semanticHighlighting": false,
+    "completion": true,
+    "codeLens": false
+  },
+  "githubPullRequests.pullBranch": "never",
+  "openInGitHub.github.domain": "github.plaid.com",
+  "openInGitHub.useLocalLine": true,
+  "workbench.statusBar.visible": false,
+  "workbench.preferredLightColorTheme": "GitHub Light Default",
+  "workbench.colorTheme": "Cobalt2",
 }
