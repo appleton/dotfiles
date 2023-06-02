@@ -123,5 +123,10 @@
 		"scope": "ruby",
 		"prefix": "aft",
 		"body": "after { ${0} }"
+	},
+	"tap-n-pry": {
+		"scope": "ruby",
+		"prefix": ".tap",
+		"body": ".tap { |a| require 'pry'; binding.pry }"
 	}
 }
