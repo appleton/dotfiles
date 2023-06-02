@@ -1,7 +1,6 @@
 [user]
-  name = Andrew Appleton
+	name = Andrew Appleton
 	email = aappleton@plaid.com
-	signingkey = 0x8EDCA9521C534C61
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
@@ -41,5 +40,3 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-[diff]
-	external = difft
