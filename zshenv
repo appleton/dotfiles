@@ -14,3 +14,4 @@ export GPG_TTY=$(tty)
 
 for config_file ($HOME/.dotfiles/zsh/*.zsh) source $config_file
 source $HOME/.dotfiles/zsh/autosuggestions/zsh-autosuggestions.zsh
+. "$HOME/.cargo/env"
