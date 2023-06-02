@@ -1,5 +1,4 @@
 /* Hide the sidebar titlebar & sidebar explorer buttons */
-/* .monaco-workbench .sidebar.part > .title > .title-label, */
 .sidebar .actions-container[aria-label^="Explorer:"] {
   display: none;
 }
@@ -74,7 +73,6 @@
   bottom: 0;
   z-index: 0;
   border-radius: 5px;
-  background-color: #173143; /*TODO*/
 }
 
 .quick-input-widget:after {
@@ -85,14 +83,9 @@
   right: 0;
   bottom: 0;
   z-index: -1;
-  background: #050b0f;
   opacity: 0.5;
   backface-visibility: hidden;
   animation: overlay-fade 0.24s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.quick-input-widget .quick-input-list {
-  /* min-height: 55px; */
 }
 
 .quick-input-widget .quick-input-header {
@@ -108,7 +101,6 @@
 }
 
 .monaco-inputbox.synthetic-focus {
-  border-color: #4daaeb !important;
   outline-color: transparent;
 }
 
@@ -123,20 +115,6 @@
 .quick-input-widget .monaco-list {
   padding: 0 11px 11px 11px;
   box-sizing: border-box;
-}
-
-.quick-input-widget .monaco-list > .monaco-scrollable-element {
-  border: 1px solid #0f202c; /* TODO */
-}
-
-.quick-input-widget .monaco-list .monaco-list-rows > .monaco-list-row {
-  /* height: 45px !important; */
-  /* line-height: 45px; */
-  /* border-bottom: 1px solid #0f202c; TODO */
-  background: #1a364b; /* TODO */
-}
-.quick-input-widget .monaco-list .monaco-list-rows > .monaco-list-row.focused {
-  background: #003b5b;
 }
 
 .monaco-icon-label
