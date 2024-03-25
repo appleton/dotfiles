@@ -1,5 +1,5 @@
 {
-  "update.mode": "none",
+  "update.mode": "default",
   "editor.bracketPairColorization.enabled": false,
   "markdown-preview-github-styles.colorTheme": "light",
   "search.exclude": {
@@ -13,9 +13,7 @@
   "editor.cursorBlinking": "solid",
   "editor.tabSize": 2,
   "editor.roundedSelection": false,
-  "editor.rulers": [
-    100
-  ],
+  "editor.rulers": [100],
   "editor.parameterHints.enabled": false,
   "explorer.openEditors.visible": 0,
   "editor.hideCursorInOverviewRuler": true,
@@ -28,29 +26,85 @@
   "vim.highlightedyank.color": "#004FAA",
   "vim.insertModeKeyBindings": [
     {
-      "before": [
-        "j",
-        "k"
-      ],
-      "after": [
-        "<Esc>"
-      ]
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
     }
   ],
-  "vim.normalModeKeyBindings": [],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["g", "p"],
+      "commands": ["editor.action.peekDefinition"]
+    },
+    {
+      "before": ["g", "b"],
+      "commands": ["workbench.action.navigateBack"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["g", "e"],
+      "commands": [
+        "editor.action.marker.nextInFiles",
+        "closeMarkersNavigation",
+        "editor.action.showHover"
+      ]
+    },
+    {
+      "before": ["g", "E"],
+      "commands": [
+        "editor.action.marker.prevInFiles",
+        "closeMarkersNavigation",
+        "editor.action.showHover"
+      ]
+    },
+    {
+      "before": ["g", "t"],
+      "commands": ["go.toggle.test.file"]
+    },
+    {
+      "before": ["t", "t"],
+      "commands": ["go.test.cursor"]
+    },
+    {
+      "before": ["t", "t", "t"],
+      "commands": ["go.subtest.cursor"]
+    },
+    {
+      "before": ["t", "f"],
+      "commands": ["go.test.file"]
+    },
+    {
+      "before": ["t", "p"],
+      "commands": ["go.test.package"]
+    },
+    {
+      "before": ["t", "."],
+      "commands": ["go.test.previous"]
+    },
+    {
+      "before": ["<esc>"],
+      "commands": ["workbench.action.closePanel"]
+    }
+  ],
   "vim.visualModeKeyBindings": [],
   "explorer.confirmDelete": false,
   "[javascript]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+      "source.fixAll.eslint": "explicit"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+      "source.fixAll.eslint": "explicit"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -58,15 +112,14 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+      "source.fixAll.eslint": "explicit"
     }
   },
   "[graphql]": {
     "editor.formatOnSave": true
   },
   "[markdown]": {
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 80,
+    "rewrap.autoWrap.enabled": true,
     "editor.quickSuggestions": {
       "comments": "off",
       "strings": "off",
@@ -74,8 +127,19 @@
     },
     "editor.insertSpaces": true
   },
+  "[plaintext]": {
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+    "editor.insertSpaces": true,
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 80
+  },
   "[yaml]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.insertSpaces": true,
   "workbench.startupEditor": "none",
@@ -181,14 +245,11 @@
   },
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.cursorStyle": "line",
-  "atomKeymap.promptV3Features": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.formatOnPaste": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.colors": false,
-  "telemetry.enableTelemetry": false,
-  "telemetry.enableCrashReporter": false,
-  "workbench.activityBar.visible": false,
+  "telemetry.telemetryLevel": "off",
   "workbench.tips.enabled": false,
   "workbench.tree.indent": 15,
   "workbench.tree.renderIndentGuides": "none",
@@ -204,26 +265,19 @@
   "go.useLanguageServer": true,
   "editor.formatOnSave": true,
   "[go]": {
-    "editor.codeActionsOnSaveTimeout": 3000,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     },
     "editor.insertSpaces": false,
     "editor.detectIndentation": false
   },
   "files.eol": "\n",
-  "go.testFlags": [
-    "-v",
-    "-count",
-    "1"
-  ],
+  "go.testFlags": ["-v", "-count", "1"],
   "go.testEnvFile": "${workspaceFolder}/environment/experimental",
-  "go.formatTool": "goformat",
   "editor.matchBrackets": "never",
   "workbench.iconTheme": "file-icons",
   "explorer.autoReveal": false,
   "problems.autoReveal": false,
-  "disable-color-correct-rendering": true,
   "editor.fontLigatures": true,
   "debug.console.fontSize": 15,
   "extensions.ignoreRecommendations": true,
@@ -241,38 +295,28 @@
     }
   },
   "files.associations": {
-    "*.Jenkinsfile": "groovy"
+    "*.Jenkinsfile": "groovy",
+    "*.txt": "markdown"
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "customizeUI.titleBar": "inline",
-  "window.titleBarStyle": "native",
   "window.newWindowDimensions": "inherit",
-  "monkeyPatch.folderMap": {
-    "globalStorage": "/Users/aappleton/Library/Application Support/Code/User/globalStorage/iocave.monkey-patch/modules"
-  },
-  "monkeyPatch.browserModules": [
-    "globalStorage/custom"
-  ],
-  "workbench.editor.showTabs": true,
-  "vsonline.accountProvider": "Microsoft",
+  "workbench.editor.showTabs": "multiple",
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "go.toolsManagement.autoUpdate": true,
-  "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.wordWrap": "off",
   "editor.inlineSuggest.enabled": true,
   "redhat.telemetry.enabled": false,
   "[ruby]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "Shopify.ruby-lsp",
+    "editor.defaultFormatter": "rubocop.vscode-rubocop"
   },
   "rubyLsp.enabledFeatures": {
     "codeActions": true,
@@ -281,7 +325,7 @@
     "documentLink": true,
     "documentSymbols": true,
     "foldingRanges": true,
-    "formatting": true,
+    "formatting": false,
     "hover": true,
     "inlayHint": true,
     "onTypeFormatting": true,
@@ -290,10 +334,24 @@
     "completion": true,
     "codeLens": false
   },
-  "githubPullRequests.pullBranch": "never",
   "openInGitHub.github.domain": "github.plaid.com",
   "openInGitHub.useLocalLine": true,
   "workbench.statusBar.visible": false,
   "workbench.preferredLightColorTheme": "GitHub Light Default",
   "workbench.colorTheme": "Cobalt2",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.openRepositoryInParentFolders": "always",
+  "cSpell.enabledLanguageIds": ["markdown"],
+  "workbench.activityBar.location": "hidden",
+  "[javascript][typescript][typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "editor.stickyScroll.enabled": false
 }

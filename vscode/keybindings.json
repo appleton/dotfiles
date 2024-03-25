@@ -1,117 +1,5 @@
 // Place your key bindings in this file to override the defaults
 [
-  // Go and Ruby tests
-  {
-    "key": "g t",
-    "command": "go.toggle.test.file",
-    "when": "editorTextFocus && !inDebugRepl && vim.active && vim.mode == 'Normal' && editorLangId == go"
-  },
-  {
-    "key": "g t",
-    "command": "cognito.toggleSpec",
-    "when": "editorTextFocus && !inDebugRepl && vim.active && vim.mode == 'Normal' && editorLangId == ruby"
-  },
-  {
-    "key": "t t",
-    "command": "go.test.cursor",
-    "when": "editorTextFocus && !inDebugRepl && vim.active && vim.mode == 'Normal' && editorLangId == go"
-  },
-  {
-    "key": "t t",
-    "command": "cognito.runSpecLine",
-    "when": "editorTextFocus && !inDebugRepl && vim.active && vim.mode == 'Normal' && editorLangId == ruby"
-  },
-  {
-    "key": "t p",
-    "command": "go.test.package",
-    "when": "editorTextFocus && !inDebugRepl && vim.active && vim.mode == 'Normal' && editorLangId == go"
-  },
-  {
-    "key": "t f",
-    "command": "go.test.file",
-    "when": "editorTextFocus && !inDebugRepl && vim.active && vim.mode == 'Normal' && editorLangId == go"
-  },
-  {
-    "key": "t f",
-    "command": "cognito.runSpecFile",
-    "when": "editorTextFocus && !inDebugRepl && vim.active && vim.mode == 'Normal' && editorLangId == ruby"
-  },
-  {
-    "key": "t .",
-    "command": "go.test.previous",
-    "when": "editorTextFocus && !inDebugRepl && vim.active && vim.mode == 'Normal' && editorLangId == go"
-  },
-  {
-    "key": "t .",
-    "command": "cognito.runLastSpec",
-    "when": "editorTextFocus && !inDebugRepl && vim.active && vim.mode == 'Normal' && editorLangId == ruby"
-  },
-  {
-    "key": "m m",
-    "command": "cognito.runMutateLine",
-    "when": "editorTextFocus && !inDebugRepl && vim.active && vim.mode == 'Normal' && editorLangId == ruby"
-  },
-  {
-    "key": "m c",
-    "command": "cognito.runMutateChanges",
-    "when": "editorTextFocus && !inDebugRepl && vim.active && vim.mode == 'Normal' && editorLangId == ruby"
-  },
-  {
-    "key": "m .",
-    "command": "cognito.runLastMutation",
-    "when": "editorTextFocus && !inDebugRepl && vim.active && vim.mode == 'Normal' && editorLangId == ruby"
-  },
-
-  // Code navigation
-  {
-    "key": "g p",
-    "command": "editor.action.peekDefinition",
-    "when": "editorTextFocus && !inDebugRepl && vim.active && vim.mode == 'Normal'"
-  },
-  {
-    "key": "g b",
-    "command": "workbench.action.navigateBack",
-    "when": "editorTextFocus && !inDebugRepl && vim.active && vim.mode == 'Normal'"
-  },
-  {
-    "key": "g r",
-    "command": "editor.action.referenceSearch.trigger",
-    "when": "editorTextFocus && !inDebugRepl && vim.active && vim.mode == 'Normal'"
-  },
-  {
-    "key": "g i",
-    "command": "editor.action.goToImplementation",
-    "when": "editorTextFocus && !inDebugRepl && vim.active && vim.mode == 'Normal'"
-  },
-  {
-    "key": "g e",
-    "command": "runCommands",
-    "args": {
-      "commands": [
-        "editor.action.marker.nextInFiles",
-        "closeMarkersNavigation",
-        "editor.action.showHover"
-      ]
-    },
-    "when": "editorTextFocus && !inDebugRepl && vim.active && vim.mode == 'Normal'"
-  }, // TODO: doesn't work right now
-  {
-    "key": "g shift-e",
-    "command": "runCommands",
-    "args": {
-      "commands": [
-        "editor.action.marker.prevInFiles",
-        "closeMarkersNavigation",
-        "editor.action.showHover"
-      ]
-    },
-    "when": "editorTextFocus && !inDebugRepl && vim.active && vim.mode == 'Normal'"
-  }, // TODO: doesn't work right now
-  {
-    "key": "<Esc>",
-    "command": "workbench.action.closePanel"
-  },
-
   // Other
   {
     "key": "alt+cmd+right",
@@ -119,7 +7,7 @@
   },
   {
     "key": "alt+cmd+right",
-    "command": "workbench.action.splitEditorRight"
+    "command": "workbench.action.moveEditorToRightGroup"
   },
   {
     "key": "alt+cmd+left",
@@ -132,7 +20,7 @@
   },
   {
     "key": "alt+cmd+up",
-    "command": "workbench.action.splitEditorUp"
+    "command": "workbench.action.moveEditorToAboveGroup"
   },
   {
     "key": "alt+cmd+up",
@@ -141,11 +29,11 @@
   },
   {
     "key": "alt+cmd+down",
-    "command": "workbench.action.splitEditorDown"
+    "command": "workbench.action.moveEditorToBelowGroup"
   },
   {
     "key": "alt+cmd+left",
-    "command": "workbench.action.splitEditorLeft"
+    "command": "workbench.action.moveEditorToLeftGroup"
   },
   {
     "key": "ctrl+l",
