@@ -13,11 +13,9 @@ symlinks:
 	@ln -s $(DIR)/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 	@ln -s $(DIR)/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 	@ln -s $(DIR)/vscode/snippets ~/Library/Application\ Support/Code/User/snippets
-	@ln -s $(DIR)/vscode/custom.js  ~/Library/Application\ Support/Code/User/globalStorage/iocave.monkey-patch/modules/custom.js
-	@ln -s $(DIR)/vscode/custom.css  ~/Library/Application\ Support/Code/User/globalStorage/iocave.monkey-patch/modules/custom.css
 
 install_packages:
-	brew install direnv asdf vim
+	brew install direnv asdf vim homebrew/cask-fonts/font-hack zsh-autosuggestions git
 
 install_vscode_packages:
 	$(DIR)/vscode/install_vscode_packages

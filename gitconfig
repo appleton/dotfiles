@@ -33,8 +33,6 @@
 	user = appleton
 [gpg]
 	program = /usr/local/bin/gpg
-[url "git@github.plaid.com:"]
-	insteadOf = https://github.plaid.com/
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
