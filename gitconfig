@@ -1,6 +1,6 @@
 [user]
-	name = Andrew Appleton
-	email = aappleton@plaid.com
+	name = Andy Appleton
+	email = andrew@appleton.me
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore_global
@@ -32,7 +32,7 @@
 [github]
 	user = appleton
 [gpg]
-	program = /usr/local/bin/gpg
+	program = /opt/homebrew/bin/gpg
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
