@@ -69,7 +69,7 @@
     },
     {
       "before": ["t", "t"],
-      "commands": ["go.test.cursor"]
+      "commands": ["testing.runAtCursor"]
     },
     {
       "before": ["t", "t", "t"],
@@ -77,7 +77,7 @@
     },
     {
       "before": ["t", "f"],
-      "commands": ["go.test.file"]
+      "commands": ["testing.runCurrentFile"]
     },
     {
       "before": ["t", "p"],
@@ -85,7 +85,7 @@
     },
     {
       "before": ["t", "."],
-      "commands": ["go.test.previous"]
+      "commands": ["testing.reRunLastRun"]
     },
     {
       "before": ["<esc>"],
