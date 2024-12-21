@@ -47,7 +47,15 @@ alias gm='git merge'
 compdef _git gm=git-merge
 alias grh='git reset HEAD'
 alias grhh='git reset HEAD --hard'
-alias gh='git open'
+
+# alias `gh` to `git open` only when called with no args, otherwise delegate to the Github CLI
+function gh() {
+  if [[ -z $1 ]] ; then
+    command git open
+  else
+    command gh "$@"
+  fi
+}
 
 #
 # Will return the current branch name
