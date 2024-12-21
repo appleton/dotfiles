@@ -75,6 +75,11 @@
 		"prefix": "aft",
 		"body": "afterEach(() => {\n  $0\n});"
 	},
+	"js-test": {
+		"scope": "javascript,typescript,typescriptreact",
+		"prefix": "test",
+		"body": "test(('${1}') => {\n  $0\n});"
+	},
 	"test": {
 		"scope": "go",
 		"prefix": "test",

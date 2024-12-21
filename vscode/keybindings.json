@@ -130,8 +130,23 @@
     "command": "workbench.view.debug"
   },
   {
+    "key": "cmd+k cmd+d",
+    "command": "workbench.action.closeAuxiliaryBar",
+    "when": "auxiliaryBarVisible"
+  },
+  {
     "key": "shift+cmd+d",
     "command": "-workbench.view.debug"
+  },
+  {
+    "command": "workbench.action.closeAuxiliaryBar",
+    "key": "cmd+k cmd+p",
+    "when": "auxiliaryBarVisible"
+  },
+  {
+    "command": "poolside.focusInput",
+    "key": "cmd+k cmd+p",
+    "when": "!auxiliaryBarVisible"
   },
   {
     "key": "cmd+k cmd+g",
@@ -140,5 +155,21 @@
   {
     "key": "ctrl+shift+g",
     "command": "-workbench.view.scm"
+  },
+  {
+    "key": "cmd+k cmd+t",
+    "command": "-workbench.action.selectTheme"
+  },
+  {
+    "key": "cmd+k cmd+t",
+    "command": "terminal.focus"
+  },
+  {
+    "key": "ctrl+alt+cmd+l",
+    "command": "-workbench.action.reloadWindow"
+  },
+  {
+    "key": "ctrl+alt+cmd+l",
+    "command": "workbench.action.webview.reloadWebviewAction"
   }
 ]

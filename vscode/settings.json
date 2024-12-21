@@ -1,4 +1,6 @@
 {
+  "editor.semanticHighlighting.enabled": true,
+  "github.copilot.editor.enableAutoCompletions": false,
   "update.mode": "default",
   "editor.bracketPairColorization.enabled": false,
   "markdown-preview-github-styles.colorTheme": "light",
@@ -8,6 +10,7 @@
   "editor.lineNumbers": "relative",
   "search.searchEditor.reusePriorSearchConfiguration": true,
   "editor.fontFamily": "Hack",
+  "editor.fontLigatures": false,
   "files.trimTrailingWhitespace": true,
   "editor.cursorStyle": "line",
   "editor.cursorBlinking": "solid",
@@ -20,79 +23,12 @@
   "editor.tabCompletion": "on",
   "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "trailing",
-  "vim.useSystemClipboard": true,
-  "vim.highlightedyank.enable": true,
-  "vim.highlightedyank.duration": 100,
-  "vim.highlightedyank.color": "#004FAA",
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "k"],
-      "after": ["<Esc>"]
+  "debug.enableStatusBarColor": false,
+  "vscode-neovim.compositeKeys": {
+    "jk": {
+      "command": "vscode-neovim.escape"
     }
-  ],
-  "vim.normalModeKeyBindings": [
-    {
-      "before": ["g", "p"],
-      "commands": ["editor.action.peekDefinition"]
-    },
-    {
-      "before": ["g", "b"],
-      "commands": ["workbench.action.navigateBack"]
-    },
-    {
-      "before": ["g", "r"],
-      "commands": ["editor.action.referenceSearch.trigger"]
-    },
-    {
-      "before": ["g", "i"],
-      "commands": ["editor.action.goToImplementation"]
-    },
-    {
-      "before": ["g", "e"],
-      "commands": [
-        "editor.action.marker.nextInFiles",
-        "closeMarkersNavigation",
-        "editor.action.showHover"
-      ]
-    },
-    {
-      "before": ["g", "E"],
-      "commands": [
-        "editor.action.marker.prevInFiles",
-        "closeMarkersNavigation",
-        "editor.action.showHover"
-      ]
-    },
-    {
-      "before": ["g", "t"],
-      "commands": ["go.toggle.test.file"]
-    },
-    {
-      "before": ["t", "t"],
-      "commands": ["testing.runAtCursor"]
-    },
-    {
-      "before": ["t", "t", "t"],
-      "commands": ["go.subtest.cursor"]
-    },
-    {
-      "before": ["t", "f"],
-      "commands": ["testing.runCurrentFile"]
-    },
-    {
-      "before": ["t", "p"],
-      "commands": ["go.test.package"]
-    },
-    {
-      "before": ["t", "."],
-      "commands": ["testing.reRunLastRun"]
-    },
-    {
-      "before": ["<esc>"],
-      "commands": ["workbench.action.closePanel"]
-    }
-  ],
-  "vim.visualModeKeyBindings": [],
+  },
   "explorer.confirmDelete": false,
   "[javascript]": {
     "editor.formatOnSave": true,
@@ -213,6 +149,8 @@
       "scrollbarSlider.hoverBackground": "#ffffff45",
       "scrollbarSlider.activeBackground": "#ffffff45",
       "statusBar.border": "#13232e",
+      "statusBar.debuggingBorder": "#13232e",
+      "statusBar.debuggingForeground": "#aaaaaa",
       "pickerGroup.foreground": "#99abb8",
       "input.border": "#0f202c",
       "input.background": "#102432",
@@ -223,25 +161,7 @@
       "peekViewResult.selectionBackground": "#193549",
       "peekViewResult.matchHighlightBackground": "#193549",
       "peekViewEditorGutter.background": "#152d3e"
-    },
-    "terminal.background": "#002833",
-    "terminal.foreground": "#abb2bf",
-    "terminal.ansiBlack": "#272c33",
-    "terminal.ansiBrightBlack": "#31353f",
-    "terminal.ansiRed": "#e06b74",
-    "terminal.ansiBrightRed": "#f97782",
-    "terminal.ansiGreen": "#98c378",
-    "terminal.ansiBrightGreen": "#aadb87",
-    "terminal.ansiYellow": "#e5c07a",
-    "terminal.ansiBrightYellow": "#ffd589",
-    "terminal.ansiBlue": "#60aeee",
-    "terminal.ansiBrightBlue": "#68bbfe",
-    "terminal.ansiMagenta": "#c677dc",
-    "terminal.ansiBrightMagenta": "#dc85f7",
-    "terminal.ansiCyan": "#56b6c1",
-    "terminal.ansiBrightCyan": "#60ccdb",
-    "terminal.ansiWhite": "#abb1bf",
-    "terminal.ansiBrightWhite": "#b1b9cb"
+    }
   },
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.cursorStyle": "line",
@@ -249,7 +169,7 @@
   "editor.formatOnPaste": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.colors": false,
-  "telemetry.telemetryLevel": "off",
+  "telemetry.telemetryLevel": "error",
   "workbench.tips.enabled": false,
   "workbench.tree.indent": 15,
   "workbench.tree.renderIndentGuides": "none",
@@ -278,7 +198,6 @@
   "workbench.iconTheme": "file-icons",
   "explorer.autoReveal": false,
   "problems.autoReveal": false,
-  "editor.fontLigatures": true,
   "debug.console.fontSize": 15,
   "extensions.ignoreRecommendations": true,
   "editor.snippetSuggestions": "top",
@@ -312,11 +231,10 @@
   "go.toolsManagement.autoUpdate": true,
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.wordWrap": "off",
-  "editor.inlineSuggest.enabled": true,
   "redhat.telemetry.enabled": false,
   "[ruby]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "rubocop.vscode-rubocop"
+    "editor.defaultFormatter": "LoranKloeze.ruby-rubocop-revived"
   },
   "rubyLsp.enabledFeatures": {
     "codeActions": true,
@@ -334,11 +252,9 @@
     "completion": true,
     "codeLens": false
   },
-  "openInGitHub.github.domain": "github.plaid.com",
   "openInGitHub.useLocalLine": true,
-  "workbench.statusBar.visible": false,
   "workbench.preferredLightColorTheme": "GitHub Light Default",
-  "workbench.colorTheme": "Cobalt2",
+  "workbench.colorTheme": "GitHub Light",
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -347,11 +263,32 @@
   },
   "git.openRepositoryInParentFolders": "always",
   "cSpell.enabledLanguageIds": ["markdown"],
-  "workbench.activityBar.location": "hidden",
   "[javascript][typescript][typescriptreact]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": "explicit"
     }
   },
-  "editor.stickyScroll.enabled": false
+  "svelte.enable-ts-plugin": true,
+  "debug.onTaskErrors": "debugAnyway",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "window.confirmSaveUntitledWorkspace": false,
+  "diffEditor.renderSideBySide": false,
+  "[python]": {
+    "diffEditor.ignoreTrimWhitespace": false
+  },
+  "workbench.editor.enablePreview": false,
+  "diffEditor.codeLens": true,
+  "diffEditor.useInlineViewWhenSpaceIsLimited": false,
+  "workbench.activityBar.location": "hidden",
+  "cSpell.userWords": ["postamble", "UNSTAGED"],
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "chat.commandCenter.enabled": false,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  }
 }
