@@ -22,6 +22,7 @@ require('github-theme').setup({
 
 vim.cmd('colorscheme github_light')
 
+vim.wo.wrap = false
 vim.opt.cursorline = true
 vim.wo.number = true
 vim.wo.relativenumber = true
