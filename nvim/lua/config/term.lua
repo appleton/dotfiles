@@ -27,3 +27,9 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 vim.keymap.set('i', 'jk', '<Esc>')
 
+vim.cmd([[
+  augroup RestoreCursorShapeOnExit
+    autocmd!
+      autocmd VimLeave * set guicursor=a:ver1
+  augroup END
+]])
