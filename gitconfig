@@ -2,7 +2,7 @@
 	name = Andy Appleton
 	email = andrew@appleton.me
 [core]
-	editor = vim
+	editor = nvim
 	excludesfile = ~/.gitignore_global
 [color]
   branch = auto

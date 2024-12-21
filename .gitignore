@@ -1,11 +1,8 @@
 zsh/secret.zsh
 .DS_Store
-atom/.atom-socket*
 
 RubyTest.last-run
 gemrc
 bundle/cache
 
-atom/blob-store/*
-atom/packages/*
-atom/recovery/*
+nvim/lazy-lock.json

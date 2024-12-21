@@ -1,6 +1,6 @@
 # Dotfiles
 
-My preferences for zsh, git, vscode and vim.
+My preferences for zsh, git, vscode and nvim.
 
 Also:
 
