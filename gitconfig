@@ -14,6 +14,7 @@
   keepBackup = true
 [push]
 	default = current
+	autoSetupRemote = true
 [credential]
   helper = osxkeychain
 [alias]
@@ -33,6 +34,7 @@
 	user = appleton
 [gpg]
 	program = /opt/homebrew/bin/gpg
+	format = ssh
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
