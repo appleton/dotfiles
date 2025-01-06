@@ -31,7 +31,7 @@
 
 # Define default styles.
 : ${ZSH_HIGHLIGHT_STYLES[default]:=none}
-: ${ZSH_HIGHLIGHT_STYLES[unknown-token]:=fg=red,bold}
+: ${ZSH_HIGHLIGHT_STYLES[unknown-token]:=fg=red}
 : ${ZSH_HIGHLIGHT_STYLES[reserved-word]:=fg=yellow}
 : ${ZSH_HIGHLIGHT_STYLES[alias]:=fg=green}
 : ${ZSH_HIGHLIGHT_STYLES[builtin]:=fg=green}
@@ -61,7 +61,7 @@ _zsh_highlight_main_highlighter_predicate()
 # Main syntax highlighting function.
 _zsh_highlight_main_highlighter()
 {
-  emulate -L zsh 
+  emulate -L zsh
   setopt localoptions extendedglob bareglobqual
   local start_pos=0 end_pos highlight_glob=true new_expression=true arg style
   typeset -a ZSH_HIGHLIGHT_TOKENS_COMMANDSEPARATOR
