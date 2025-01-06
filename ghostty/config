@@ -1,0 +1,28 @@
+font-family = "Hack"
+font-size = 15
+font-thicken
+adjust-underline-position = 5
+adjust-underline-thickness = -1
+adjust-cell-width = -5%
+window-padding-x = 5
+adjust-cell-height = 1.5%
+
+cursor-style-blink = false
+shell-integration-features = no-cursor
+cursor-style = bar
+adjust-cursor-thickness = 1
+
+theme = mine
+macos-titlebar-style = tabs
+
+# Commented out for now because light macos-icon-screen-color doesn't seem to work
+# https://github.com/ghostty-org/ghostty/issues/3215
+#
+# macos-icon = custom-style
+# macos-icon-frame = aluminum
+# macos-icon-screen-color = F7F8FA,F6F8FA,FFFFFF
+# macos-icon-ghost-color = 000000
+
+window-height = 100
+window-width = 100
+keybind = super+backspace=text:\x15

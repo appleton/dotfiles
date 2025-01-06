@@ -4,6 +4,7 @@ all: install_packages symlinks install_vscode_packages configure_iterm
 
 symlinks:
 	@mkdir ~/.config
+	@ln -nsf $(DIR)/ghostty ~/.config/ghostty
 	@ln -nsf $(DIR)/nvim ~/.config/nvim
 	@ln -nsf $(DIR)/zshenv ~/.zshenv
 	@ln -nsf $(DIR)/asdfrc ~/.asdfrc
@@ -17,6 +18,7 @@ symlinks:
 
 install_packages:
 	brew install direnv asdf nvim homebrew/cask-fonts/font-hack zsh-autosuggestions git
+	brew install --cask ghostty
 
 install_vscode_packages:
 	$(DIR)/vscode/install_vscode_packages
