@@ -1,6 +1,7 @@
 font-family = "Hack"
 font-size = 15
 font-thicken
+font-thicken-strength = 1
 adjust-underline-position = 5
 adjust-underline-thickness = -1
 adjust-cell-width = -5%
@@ -23,6 +24,8 @@ macos-titlebar-style = tabs
 # macos-icon-screen-color = F7F8FA,F6F8FA,FFFFFF
 # macos-icon-ghost-color = 000000
 
+# Larger than full screen on a 27" display
 window-height = 100
-window-width = 100
+window-width = 300
+
 keybind = super+backspace=text:\x15
