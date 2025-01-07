@@ -16,11 +16,12 @@ adjust-cursor-thickness = 1
 theme = mine
 macos-titlebar-style = tabs
 
+macos-icon = custom-style
+macos-icon-frame = aluminum
+macos-icon-screen-color = 131C1F
+macos-icon-ghost-color = 00E716
 # Commented out for now because light macos-icon-screen-color doesn't seem to work
 # https://github.com/ghostty-org/ghostty/issues/3215
-#
-# macos-icon = custom-style
-# macos-icon-frame = aluminum
 # macos-icon-screen-color = F7F8FA,F6F8FA,FFFFFF
 # macos-icon-ghost-color = 000000
 
