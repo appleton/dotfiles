@@ -1,5 +1,5 @@
 if not vim.g.vscode then
-	return
+  return
 end
 
 local vscode = require('vscode')
@@ -31,6 +31,9 @@ vim.keymap.set('n', 'ttt', function() vscode.action('go.subtest.cursor') end)
 vim.keymap.set('n', 'tf', function() vscode.action('testing.runCurrentFile') end)
 vim.keymap.set('n', 'tp', function() vscode.action('go.test.package') end)
 vim.keymap.set('n', 't.', function() vscode.action('testing.reRunLastRun') end)
+
+vim.keymap.set('n', 'ss', function() vscode.action('workbench.action.debug.selectandstart') end)
+vim.keymap.set('n', 's.', function() vscode.action('workbench.action.debug.restart') end)
 
 -- misc
 vim.keymap.set('n', '<esc>', function() vscode.action('workbench.action.closePanel') end)
