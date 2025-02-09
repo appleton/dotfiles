@@ -1,4 +1,5 @@
 font-family = "Hack"
+font-family-bold = "Hack"
 font-size = 15
 font-thicken
 font-thicken-strength = 1
@@ -15,18 +16,12 @@ adjust-cursor-thickness = 1
 
 theme = mine
 macos-titlebar-style = tabs
-
-macos-icon = custom-style
-macos-icon-frame = aluminum
-macos-icon-screen-color = 131C1F
-macos-icon-ghost-color = 00E716
-# Commented out for now because light macos-icon-screen-color doesn't seem to work
-# https://github.com/ghostty-org/ghostty/issues/3215
-# macos-icon-screen-color = F7F8FA,F6F8FA,FFFFFF
-# macos-icon-ghost-color = 000000
+window-save-state = always
 
 # Larger than full screen on a 27" display
 window-height = 100
 window-width = 300
 
 keybind = super+backspace=text:\x15
+keybind = super+shift+plus=equalize_splits
+
