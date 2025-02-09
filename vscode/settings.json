@@ -290,5 +290,7 @@
   "chat.commandCenter.enabled": false,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
-  }
+  },
+  "git.blame.editorDecoration.enabled": false,
+  "git.blame.statusBarItem.enabled": false
 }

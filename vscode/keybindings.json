@@ -157,6 +157,16 @@
     "when": "!auxiliaryBarVisible"
   },
   {
+    "command": "workbench.action.closePanel",
+    "key": "cmd+k cmd+t",
+    "when": "terminal.visible"
+  },
+  {
+    "command": "-workbench.action.output.show.terminal",
+    "key": "cmd+k cmd+t",
+    "when": "!terminal.visible"
+  },
+  {
     "key": "cmd+k cmd+g",
     "command": "workbench.view.scm"
   },
