@@ -2,6 +2,9 @@ if vim.g.vscode then
   return
 end
 
+vim.wo.number = true
+vim.wo.relativenumber = true
+
 require('lualine').setup()
 require('github-theme').setup({
   palettes = {
@@ -24,8 +27,6 @@ vim.cmd('colorscheme github_light')
 
 vim.wo.wrap = false
 vim.opt.cursorline = true
-vim.wo.number = true
-vim.wo.relativenumber = true
 vim.keymap.set('i', 'jk', '<Esc>')
 
 vim.cmd([[

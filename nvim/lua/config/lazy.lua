@@ -22,13 +22,13 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
   spec = {
     -- common plugins (terminal and vscode)
-    { 'tpope/vim-surround', version = false },
-    { 'nvim-treesitter/nvim-treesitter', version = false },
-    { 'nvim-treesitter/nvim-treesitter-textobjects', version = false },
+    { 'tpope/vim-surround' },
+    { 'nvim-treesitter/nvim-treesitter' },
+    { 'nvim-treesitter/nvim-treesitter-textobjects' },
 
     -- terminal only plugins
-    { 'projekt0n/github-nvim-theme', version = false },
-    { 'nvim-lualine/lualine.nvim', version = false, dependencies = { 'nvim-tree/nvim-web-devicons' } },
+    { 'projekt0n/github-nvim-theme' },
+    { 'nvim-lualine/lualine.nvim',                  dependencies = { 'nvim-tree/nvim-web-devicons' } },
   },
 
   install = { colorscheme = { "habamax" } },
