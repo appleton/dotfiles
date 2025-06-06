@@ -1,4 +1,5 @@
 {
+  "vitest.experimentalStaticAstCollect": true,
   "editor.semanticHighlighting.enabled": true,
   "github.copilot.editor.enableAutoCompletions": false,
   "update.mode": "default",
@@ -182,7 +183,7 @@
   "files.eol": "\n",
   "go.testFlags": ["-v", "-count", "1"],
   "go.testEnvFile": "${workspaceFolder}/environment/experimental",
-  "editor.matchBrackets": "never",
+  "editor.matchBrackets": "near",
   "workbench.iconTheme": "file-icons",
   "explorer.autoReveal": false,
   "problems.autoReveal": false,
@@ -199,7 +200,8 @@
       "undeclaredname": true,
       "unusedparams": true,
       "nonewvars": true
-    }
+    },
+    "ui.semanticTokens": true
   },
   "files.associations": {
     "*.Jenkinsfile": "groovy",
@@ -250,11 +252,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.openRepositoryInParentFolders": "always",
-  "cSpell.enabledLanguageIds": ["markdown"],
-  "[javascript][typescript][typescriptreact]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit"
-    }
+  "cSpell.enabledFileTypes": {
+    "markdown": true
   },
   "svelte.enable-ts-plugin": true,
   "debug.onTaskErrors": "debugAnyway",
@@ -269,13 +268,24 @@
   "workbench.editor.enablePreview": false,
   "diffEditor.codeLens": true,
   "diffEditor.useInlineViewWhenSpaceIsLimited": false,
-  "workbench.activityBar.location": "hidden",
-  "cSpell.userWords": ["postamble", "UNSTAGED"],
+  "cSpell.userWords": [
+    "afero",
+    "glsp",
+    "IDBP",
+    "jaccard",
+    "pkgerrors",
+    "postamble",
+    "tasksdb",
+    "UNSTAGED"
+  ],
   "diffEditor.hideUnchangedRegions.enabled": true,
   "chat.commandCenter.enabled": false,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
   "git.blame.editorDecoration.enabled": false,
-  "git.blame.statusBarItem.enabled": false
+  "git.blame.statusBarItem.enabled": false,
+  "workbench.activityBar.location": "hidden",
+  "files.autoSave": "off",
+  "files.autoSaveDelay": 1000
 }

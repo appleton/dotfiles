@@ -2,6 +2,11 @@
 [
   // Other
   {
+    "key": "cmd+shift+f",
+    "command": "workbench.action.quickTextSearch",
+    "when": "!inQuickInput"
+  },
+  {
     "key": "cmd+[",
     "command": "workbench.action.navigateBack"
   },
