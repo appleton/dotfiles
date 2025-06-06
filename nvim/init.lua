@@ -2,6 +2,7 @@ require("config.lazy")
 require("config.treesitter")
 require("config.vscode")
 require("config.term")
+require("config.substitute")
 
 vim.cmd([[
   hi YankHighlight guibg=#004FAA

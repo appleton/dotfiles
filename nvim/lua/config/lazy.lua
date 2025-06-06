@@ -6,7 +6,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   if vim.v.shell_error ~= 0 then
     vim.api.nvim_echo({
       { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
-      { out, "WarningMsg" },
+      { out,                            "WarningMsg" },
       { "\nPress any key to exit..." },
     }, true, {})
     vim.fn.getchar()
@@ -25,6 +25,7 @@ require("lazy").setup({
     { 'tpope/vim-surround' },
     { 'nvim-treesitter/nvim-treesitter' },
     { 'nvim-treesitter/nvim-treesitter-textobjects' },
+    { "gbprod/substitute.nvim", opts = {} },
 
     -- terminal only plugins
     { 'projekt0n/github-nvim-theme' },
@@ -33,5 +34,5 @@ require("lazy").setup({
 
   install = { colorscheme = { "habamax" } },
 
-  checker = { enabled = true },
+  checker = { enabled = true, notify = false },
 })
