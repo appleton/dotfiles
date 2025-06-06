@@ -17,7 +17,7 @@ symlinks:
 	@ln -s $(DIR)/vscode/snippets.code-snippets ~/Library/Application\ Support/Code/User/snippets
 
 install_packages:
-	brew install direnv asdf nvim homebrew/cask-fonts/font-hack zsh-autosuggestions git
+	brew install direnv asdf nvim homebrew/cask-fonts/font-hack zsh-autosuggestions git fzf
 	brew install --cask ghostty
 
 install_vscode_packages:

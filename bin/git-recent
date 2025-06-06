@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+recent_branches() {
+  local branch
+  branch=$(git for-each-ref --sort=-committerdate refs/heads/ \
+    --format="%(refname:short) (%(committerdate:relative))" --count=20 \
+    | fzf --ansi --no-sort --reverse --height=20 --prompt="Recent branches: " \
+    | awk '{print $1}')
+
+  [[ -n $branch ]] && git switch "$branch"
+}
+
+recent_branches
