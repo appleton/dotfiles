@@ -30,26 +30,14 @@
     }
   },
   "explorer.confirmDelete": false,
-  "[javascript]": {
+  "[javascript][typescript][typescriptreact][svelte]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit"
+      "source.addMissingImports": "explicit",
+      "source.fixAll.eslint": "explicit",
+      "source.removeUnusedImports": "explicit"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit"
-    },
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit"
-    }
   },
   "[graphql]": {
     "editor.formatOnSave": true
@@ -272,9 +260,6 @@
   "debug.onTaskErrors": "debugAnyway",
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "window.confirmSaveUntitledWorkspace": false,
   "diffEditor.renderSideBySide": false,
