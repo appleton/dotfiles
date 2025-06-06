@@ -2,7 +2,6 @@ font-family = "Hack"
 font-family-bold = "Hack"
 font-size = 15
 font-thicken
-font-thicken-strength = 1
 adjust-underline-position = 5
 adjust-underline-thickness = -1
 adjust-cell-width = -5%
@@ -24,4 +23,8 @@ window-width = 300
 
 keybind = super+backspace=text:\x15
 keybind = super+shift+plus=equalize_splits
+
+# cmd-j / cmd-k for up/down
+keybind = super+k=csi:A
+keybind = super+j=csi:B
 
