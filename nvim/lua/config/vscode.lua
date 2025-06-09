@@ -33,6 +33,9 @@ if vim.g.vscode then
   vim.keymap.set('n', 'ss', function() vscode.action('workbench.action.debug.selectandstart') end)
   vim.keymap.set('n', 's.', function() vscode.action('workbench.action.debug.restart') end)
 
+  -- ide
+  vim.keymap.set('n', 'cis', function() vscode.action('editor.action.rename') end)
+
   -- misc
   vim.keymap.set('n', '<esc>', function() vscode.action('workbench.action.closePanel') end)
 end
