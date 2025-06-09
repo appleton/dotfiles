@@ -1,7 +1,4 @@
 if not vim.g.vscode then
-  vim.wo.number = true
-  vim.wo.relativenumber = true
-
   require('lualine').setup()
   require('github-theme').setup({
     palettes = {
