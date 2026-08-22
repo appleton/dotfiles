@@ -1,18 +1,15 @@
 # Dotfiles
 
-My preferences for zsh, git, vscode and nvim.
+Install the Homebrew dependencies:
 
-Also:
+    brew bundle
 
-- [z](https://github.com/rupa/z)
-- [asdf](https://asdf-vm.com)
-- [direnv](http://direnv.net/)
-- [pure](https://github.com/sindresorhus/pure)
+Create the Fish symlink and install the Pure prompt:
 
-Clone the repo into `~/.dotfiles` and run:
+    make fish
 
-    cd ~/.dotfiles && make
+Try Fish without changing the login shell:
 
-This will symlink everything into the home directory.
+    fish
 
-Put zsh stuff that shouldn't be shared into `zsh/secret.zsh`
+Zsh remains available, and the login shell is not changed.

@@ -1,0 +1,8 @@
+brew "fish"
+brew "mise"
+brew "zoxide"
+brew "fzf"
+brew "atuin"
+brew "git-delta"
+brew "gh"
+brew "fisher"

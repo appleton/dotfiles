@@ -1,4 +1,6 @@
 zsh/secret.zsh
+fish/conf.d/secret.fish
+fish/fish_variables
 .DS_Store
 
 RubyTest.last-run
