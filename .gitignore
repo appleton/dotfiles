@@ -8,3 +8,4 @@ gemrc
 bundle/cache
 
 nvim/lazy-lock.json
+/.claude
