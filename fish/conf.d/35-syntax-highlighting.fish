@@ -1,4 +1,3 @@
-# Match the palette used by the existing Zsh syntax highlighter.
 set -g fish_color_normal normal
 set -g fish_color_command green
 set -g fish_color_builtin green

@@ -1,6 +1,11 @@
 function fish_user_key_bindings
     fish_default_key_bindings
 
+    # Command-Right accepts the full suggestion; Option-Right stays wordwise.
+    bind super-right end-of-line accept-autosuggestion
+    bind \e\[1\;9C end-of-line accept-autosuggestion
+    bind ctrl-e end-of-line accept-autosuggestion # Ghostty sends Ctrl-E.
+
     bind ctrl-u backward-kill-line
     bind alt-backspace backward-kill-word
     bind alt-delete backward-kill-word

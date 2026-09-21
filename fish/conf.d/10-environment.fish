@@ -8,7 +8,6 @@ fish_add_path --global --move \
     $HOME/.dotfiles/bin \
     $HOME/.local/bin \
     $HOME/.cargo/bin \
-    $HOME/.sentry/bin \
     /Applications/Postgres.app/Contents/Versions/latest/bin
 
 if status is-interactive
