@@ -1,7 +1,5 @@
 {
-  "vitest.experimentalStaticAstCollect": true,
   "editor.semanticHighlighting.enabled": true,
-  "github.copilot.editor.enableAutoCompletions": false,
   "update.mode": "default",
   "editor.bracketPairColorization.enabled": false,
   "markdown-preview-github-styles.colorTheme": "light",
@@ -10,7 +8,7 @@
   },
   "editor.lineNumbers": "relative",
   "search.searchEditor.reusePriorSearchConfiguration": true,
-  "editor.fontFamily": "Hack",
+  "editor.fontFamily": "CommitMono",
   "editor.fontLigatures": false,
   "files.trimTrailingWhitespace": true,
   "editor.cursorStyle": "line",
@@ -31,6 +29,7 @@
     }
   },
   "explorer.confirmDelete": false,
+  "svelte.plugin.svelte.runesLegacyModeCodeLens.enable": false,
   "[javascript][typescript][typescriptreact][svelte]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
@@ -40,6 +39,7 @@
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "typescript.preferences.importModuleSpecifier": "relative",
   "[graphql]": {
     "editor.formatOnSave": true
   },
@@ -67,91 +67,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.insertSpaces": true,
-  "workbench.startupEditor": "none",
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "editor.tokenColorCustomizations": {
-    "[Cobalt2]": {
-      "textMateRules": [
-        {
-          "scope": "keyword.interface",
-          "settings": {
-            "foreground": "#80FFBB"
-          }
-        },
-        {
-          "scope": "keyword.struct",
-          "settings": {
-            "foreground": "#80FFBB"
-          }
-        },
-        {
-          "scope": "keyword.map",
-          "settings": {
-            "foreground": "#80FFBB"
-          }
-        },
-        {
-          "scope": "storage.type",
-          "settings": {
-            "foreground": "#80FFBB"
-          }
-        },
-        {
-          "scope": "entity.name.import.go",
-          "settings": {
-            "foreground": "#A5FF90"
-          }
-        },
-        {
-          "scope": "support.function.go",
-          "settings": {
-            "foreground": "#FFC600"
-          }
-        }
-      ]
-    }
-  },
-  "workbench.colorCustomizations": {
-    "[Cobalt2]": {
-      "editorCursor.foreground": "#ffc50099",
-      "editorCursor.background": "#deefff",
-      "tab.activeBorder": "#193549",
-      "tab.activeBackground": "#193549",
-      "editorGroupHeader.tabsBackground": "#152d3e",
-      "tab.inactiveBackground": "#152733",
-      "sideBar.background": "#152d3e",
-      "sideBar.foreground": "#99abb8",
-      "sideBar.border": "#13232e",
-      "editor.lineHighlightBorder": "#1F4662",
-      "errorForeground": "#ff776b",
-      "editorLineNumber.activeForeground": "#456eab",
-      "editorGutter.background": "#193549",
-      "editorGutter.deletedBackground": "#86535b",
-      "editorGutter.addedBackground": "#6fae5a",
-      "editorGutter.modifiedBackground": "#97885a",
-      "gitDecoration.modifiedResourceForeground": "#e2c18d",
-      "gitDecoration.deletedResourceForeground": "#747476",
-      "gitDecoration.untrackedResourceForeground": "#6fc38d",
-      "gitDecoration.ignoredResourceForeground": "#747476",
-      "gitDecoration.conflictingResourceForeground": "#FF7200",
-      "scrollbarSlider.background": "#ffffff25",
-      "scrollbarSlider.hoverBackground": "#ffffff45",
-      "scrollbarSlider.activeBackground": "#ffffff45",
-      "statusBar.border": "#13232e",
-      "statusBar.debuggingBorder": "#13232e",
-      "statusBar.debuggingForeground": "#aaaaaa",
-      "pickerGroup.foreground": "#99abb8",
-      "input.border": "#0f202c",
-      "input.background": "#102432",
-      "panel.border": "#0f202c",
-      "peekView.border": "#0f202c",
-      "peekViewTitle.background": "#152d3e",
-      "peekViewResult.background": "#152d3e",
-      "peekViewResult.selectionBackground": "#193549",
-      "peekViewResult.matchHighlightBackground": "#193549",
-      "peekViewEditorGutter.background": "#152d3e"
-    }
-  },
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.cursorStyle": "line",
   "editor.multiCursorModifier": "ctrlCmd",
@@ -252,9 +168,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.openRepositoryInParentFolders": "always",
-  "cSpell.enabledFileTypes": {
-    "markdown": true
-  },
   "svelte.enable-ts-plugin": true,
   "debug.onTaskErrors": "debugAnyway",
   "[html]": {
@@ -265,19 +178,11 @@
   "[python]": {
     "diffEditor.ignoreTrimWhitespace": false
   },
-  "workbench.editor.enablePreview": false,
   "diffEditor.codeLens": true,
   "diffEditor.useInlineViewWhenSpaceIsLimited": false,
-  "cSpell.userWords": [
-    "afero",
-    "glsp",
-    "IDBP",
-    "jaccard",
-    "pkgerrors",
-    "postamble",
-    "tasksdb",
-    "UNSTAGED"
-  ],
+  "poolside.inlineCodeCompletion": false,
+  "chatgpt.commentCodeLensEnabled": false,
+  "poolsideHelper.trace.server": "verbose",
   "diffEditor.hideUnchangedRegions.enabled": true,
   "chat.commandCenter.enabled": false,
   "extensions.experimental.affinity": {
@@ -285,7 +190,47 @@
   },
   "git.blame.editorDecoration.enabled": false,
   "git.blame.statusBarItem.enabled": false,
-  "workbench.activityBar.location": "hidden",
+  "poolside.wrapLines": false,
+  "files.autoSaveDelay": 0,
+  "terminal.integrated.tabs.location": "left",
+  "workbench.startupEditor": "none",
+  "svelte.plugin.svelte.defaultScriptLanguage": "ts",
   "files.autoSave": "off",
-  "files.autoSaveDelay": 1000
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "workbench.editor.enablePreview": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "poolside.uri": "https://api.poolsi.de",
+  "claudeCode.preferredLocation": "panel",
+  "claudeCode.selectedModel": "opus",
+  "chat.disableAIFeatures": true,
+  "poolside.agentMode": "acp",
+  "yaml.disableSchemaDetection": [
+    "**/.github/workflows/*.yml",
+    "**/.github/workflows/*.yaml",
+    "**/.gitea/workflows/*.yml",
+    "**/.gitea/workflows/*.yaml",
+    "**/.forgejo/workflows/*.yml",
+    "**/.forgejo/workflows/*.yaml"
+  ],
+  "json.schemaDownload.trustedDomains": {
+    "https://developer.microsoft.com/json-schemas/": true,
+    "https://json-schema.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://poolside.ai": true,
+    "https://raw.githubusercontent.com": true,
+    "https://raw.githubusercontent.com/devcontainers/spec/": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://schemastore.azurewebsites.net/": true,
+    "https://www.schemastore.org/": true
+  },
+  "workbench.activityBar.location": "hidden",
+  "poolside.toolActivity": "compact"
 }

@@ -143,6 +143,21 @@
     "command": "workbench.view.debug"
   },
   {
+    "key": "cmd+escape",
+    "command": "workbench.action.closeAuxiliaryBar",
+    "when": "auxiliaryBarVisible"
+  },
+  {
+    "key": "cmd+escape",
+    "command": "poolside.showSidebar",
+    "when": "!auxiliaryBarVisible"
+  },
+  {
+    "key": "cmd+escape",
+    "command": "workbench.action.closeAuxiliaryBar",
+    "when": "auxiliaryBarVisible"
+  },
+  {
     "key": "cmd+k cmd+d",
     "command": "workbench.action.closeAuxiliaryBar",
     "when": "auxiliaryBarVisible"
@@ -153,13 +168,8 @@
   },
   {
     "command": "workbench.action.closeAuxiliaryBar",
-    "key": "cmd+k cmd+p",
+    "key": "cmd+escape",
     "when": "auxiliaryBarVisible"
-  },
-  {
-    "command": "poolside.focusInput",
-    "key": "cmd+k cmd+p",
-    "when": "!auxiliaryBarVisible"
   },
   {
     "command": "workbench.action.closePanel",
@@ -194,5 +204,19 @@
   {
     "key": "ctrl+alt+cmd+l",
     "command": "workbench.action.webview.reloadWebviewAction"
+  },
+  {
+    "key": "cmd+escape",
+    "command": "-claude-vscode.blur",
+    "when": "!config.claudeCode.useTerminal && !editorTextFocus"
+  },
+  {
+    "key": "cmd+escape",
+    "command": "-claude-vscode.focus",
+    "when": "editorTextFocus && !config.claudeCode.useTerminal"
+  },
+  {
+    "key": "cmd+escape",
+    "command": "-poolside.focusInput"
   }
 ]
