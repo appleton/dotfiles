@@ -1,8 +1,10 @@
 # Dotfiles
 
-Install the Homebrew dependencies:
+Install the Homebrew dependencies and VS Code extensions listed in `Brewfile`:
 
-    brew bundle
+    make install_packages
+
+This runs `brew bundle` using this repository's `Brewfile`.
 
 Create the Fish symlink and install the Pure prompt:
 

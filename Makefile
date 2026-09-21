@@ -1,18 +1,17 @@
 DIR=~/.dotfiles
 
-.PHONY: fish
+.PHONY: all install_packages symlinks fish
 
-all: install_packages symlinks install_vscode_packages configure_iterm
+all: install_packages symlinks
 
 symlinks: fish
 	@mkdir -p ~/.config
 	@ln -nsf $(DIR)/ghostty ~/.config/ghostty
 	@ln -nsf $(DIR)/nvim ~/.config/nvim
+	@ln -nsf $(DIR)/direnv ~/.config/direnv
 	@ln -nsf $(DIR)/zshenv ~/.zshenv
 	@ln -nsf $(DIR)/asdfrc ~/.asdfrc
 	@ln -nsf $(DIR)/gitconfig ~/.gitconfig
-	@ln -nsf $(DIR)/gemrc ~/.gemrc
-	@ln -nsf $(DIR)/bundle ~/.bundle
 	@ln -nsf $(DIR)/gitignore_global ~/.gitignore_global
 	@ln -s $(DIR)/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 	@ln -s $(DIR)/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
@@ -40,15 +39,4 @@ fish:
 	fi
 
 install_packages:
-	brew install direnv asdf nvim homebrew/cask-fonts/font-hack zsh-autosuggestions git fzf
-	brew install --cask ghostty
-
-install_vscode_packages:
-	$(DIR)/vscode/install_vscode_packages
-
-save_vscode_packages:
-	code --list-extensions > $(DIR)/vscode/extensions.txt
-
-configure_iterm:
-	defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string $(DIR)/iterm2
-	defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+	brew bundle --file="$(CURDIR)/Brewfile"

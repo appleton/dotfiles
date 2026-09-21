@@ -4,5 +4,5 @@ node_modules/
 .bundle/
 .sublimelinterrc
 tags
-.envrc
+mise.local.toml
 .tool-versions
