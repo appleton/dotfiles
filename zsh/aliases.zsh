@@ -27,7 +27,6 @@ compdef _git gca=git-commit
 alias gco='git checkout'
 compdef _git gco=git-checkout
 alias gcm='git checkout master'
-alias gb='git branch'
 compdef _git gb=git-branch
 alias gba='git branch -a'
 compdef _git gba=git-branch
@@ -54,6 +53,14 @@ function gh() {
     command git open
   else
     command gh "$@"
+  fi
+}
+
+function gb() {
+  if [[ -z $1 ]] ; then
+    command git recent
+  else
+    command git branch "$@"
   fi
 }
 

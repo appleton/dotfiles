@@ -7,6 +7,9 @@ export PATH=$HOME/bin:$HOME/.dotfiles/bin:$PATH
 # npm executables
 export PATH=node_modules/.bin:/usr/local/share/npm/bin:$PATH
 
+# local bin
+export PATH=/Users/andy/.local/bin:$PATH
+
 # Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
@@ -14,3 +17,8 @@ export GPG_TTY=$(tty)
 
 for config_file ($HOME/.dotfiles/zsh/*.zsh) source $config_file
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+export EDITOR=nvim
+. "$HOME/.cargo/env"
+
+fpath=("/Users/andy/.local/share/zsh/site-functions" $fpath)
