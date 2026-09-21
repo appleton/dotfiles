@@ -1,12 +1,12 @@
-font-family = "Hack"
-font-family-bold = "Hack"
+font-family = "CommitMono"
+font-family-bold = "CommitMono"
 font-size = 15
 font-thicken
 adjust-underline-position = 5
 adjust-underline-thickness = -1
 adjust-cell-width = -5%
 window-padding-x = 5
-adjust-cell-height = 1.5%
+adjust-cell-height = 1.7%
 
 cursor-style-blink = false
 shell-integration-features = no-cursor
@@ -14,18 +14,24 @@ cursor-style = bar
 adjust-cursor-thickness = 1
 
 theme = mine
-macos-titlebar-style = tabs
-window-save-state = always
-
-# Larger than full screen on a 27" display
-window-height = 100
-window-width = 300
 
 keybind = super+backspace=text:\x15
 keybind = alt+backspace=text:\x1b\x7f
 keybind = super+shift+plus=equalize_splits
 
-# cmd-j / cmd-k for up/down
-keybind = super+k=csi:A
-keybind = super+j=csi:B
 
+macos-titlebar-style = tabs
+window-save-state = always
+
+window-height = 50
+window-width = 170
+
+
+# cmd-j / cmd-k for up/down
+# keybind = super+k=csi:A
+# keybind = super+j=csi:B
+#keybind = alt+left=csi:C
+
+
+keybind = shift+enter=text:\n
+# auto-update-channel = tip
