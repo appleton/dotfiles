@@ -17,6 +17,8 @@ symlinks: fish
 	@ln -s $(DIR)/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 	@ln -s $(DIR)/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 	@ln -s $(DIR)/vscode/snippets.code-snippets ~/Library/Application\ Support/Code/User/snippets
+	@mkdir -p ~/.config/karabiner
+	@ln -nsf $(DIR)/karabiner/karabiner.json ~/.config/karabiner/karabiner.json
 
 fish:
 	@mkdir -p "$(HOME)/.config"
