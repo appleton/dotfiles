@@ -8,7 +8,6 @@ brew "gh"
 brew "fisher"
 
 brew "pure"
-brew "direnv"
 brew "asdf"
 brew "neovim"
 brew "zsh-autosuggestions"

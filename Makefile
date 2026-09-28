@@ -8,7 +8,6 @@ symlinks: fish
 	@mkdir -p ~/.config
 	@ln -nsf $(DIR)/ghostty ~/.config/ghostty
 	@ln -nsf $(DIR)/nvim ~/.config/nvim
-	@ln -nsf $(DIR)/direnv ~/.config/direnv
 	@ln -nsf $(DIR)/zshenv ~/.zshenv
 	@ln -nsf $(DIR)/asdfrc ~/.asdfrc
 	@ln -nsf $(DIR)/gitconfig ~/.gitconfig
