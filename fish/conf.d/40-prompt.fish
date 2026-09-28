@@ -3,6 +3,7 @@ set -g pure_begin_prompt_with_current_directory true
 set -g pure_enable_single_line_prompt false
 set -g pure_enable_aws_profile false
 set -g pure_enable_virtualenv false
+set -g pure_show_numbered_git_indicator false
 set -g pure_threshold_command_duration 3
 
 set -g pure_color_current_directory blue
