@@ -1,15 +1,16 @@
 status is-interactive; or return
 
+# Init scripts are cached by _cached_init to avoid a subprocess per tool.
 if type -q zoxide
-    zoxide init fish --cmd j | source
+    source (_cached_init zoxide init fish --cmd j)
 end
 
 if type -q fzf
     set -lx FZF_CTRL_R_COMMAND
-    fzf --fish | source
+    source (_cached_init fzf --fish)
 end
 
 if type -q atuin
     set -gx ATUIN_NOBIND true
-    atuin init fish | source
+    source (_cached_init atuin init fish)
 end
