@@ -6,6 +6,10 @@ function fish_user_key_bindings
     bind \e\[1\;9C end-of-line accept-autosuggestion
     bind ctrl-e end-of-line accept-autosuggestion # Ghostty sends Ctrl-E.
 
+    # Expand abbreviations only when the line is run, not while typing.
+    bind space self-insert
+    bind enter _expand_abbr_and_execute
+
     bind ctrl-u backward-kill-line
     bind alt-backspace backward-kill-word
     bind alt-delete backward-kill-word
