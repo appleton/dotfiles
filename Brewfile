@@ -6,11 +6,7 @@ brew "atuin"
 brew "git-delta"
 brew "gh"
 brew "fisher"
-
-brew "pure"
-brew "asdf"
 brew "neovim"
-brew "zsh-autosuggestions"
 brew "git"
 
 cask "font-commit-mono"

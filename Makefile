@@ -8,8 +8,6 @@ symlinks: fish
 	@mkdir -p ~/.config
 	@ln -nsf $(DIR)/ghostty ~/.config/ghostty
 	@ln -nsf $(DIR)/nvim ~/.config/nvim
-	@ln -nsf $(DIR)/zshenv ~/.zshenv
-	@ln -nsf $(DIR)/asdfrc ~/.asdfrc
 	@ln -nsf $(DIR)/gitconfig ~/.gitconfig
 	@ln -nsf $(DIR)/gitignore_global ~/.gitignore_global
 	@ln -s $(DIR)/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
