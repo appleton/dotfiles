@@ -11,12 +11,9 @@ if status is-interactive
     fish_vi_cursor
 end
 
-# pnpm
+# pnpm: global packages' bins. Appended, so mise's pinned pnpm comes first.
 set -gx PNPM_HOME "/Users/andy/Library/pnpm"
-if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
-end
-# pnpm end
+fish_add_path --path --append $PNPM_HOME
 
 # Added by OrbStack: command-line tools and integration
 # This won't be added again if you remove it.
