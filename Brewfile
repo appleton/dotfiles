@@ -1,5 +1,4 @@
 brew "fish"
-brew "mise"
 brew "zoxide"
 brew "fzf"
 brew "atuin"

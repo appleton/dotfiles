@@ -1,8 +1,8 @@
 DIR=~/.dotfiles
 
-.PHONY: all install_packages symlinks fish
+.PHONY: all install_packages mise symlinks fish
 
-all: install_packages symlinks
+all: install_packages mise symlinks
 
 symlinks: fish
 	@mkdir -p ~/.config
@@ -37,3 +37,7 @@ fish:
 
 install_packages:
 	brew bundle --file="$(CURDIR)/Brewfile"
+
+# Installs to ~/.local/bin/mise; upgrade with `mise self-update`.
+mise:
+	@test -x "$(HOME)/.local/bin/mise" || curl -fsSL https://mise.run | sh
