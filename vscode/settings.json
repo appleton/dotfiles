@@ -1,10 +1,11 @@
 {
+  "workbench.experimental.modernUI": false,
   "editor.semanticHighlighting.enabled": true,
   "update.mode": "default",
   "editor.bracketPairColorization.enabled": false,
   "markdown-preview-github-styles.colorTheme": "light",
   "search.exclude": {
-    "node_modules": true
+    "node_modules": true,
   },
   "editor.lineNumbers": "relative",
   "search.searchEditor.reusePriorSearchConfiguration": true,
@@ -25,8 +26,8 @@
   "debug.enableStatusBarColor": false,
   "vscode-neovim.compositeKeys": {
     "jk": {
-      "command": "vscode-neovim.escape"
-    }
+      "command": "vscode-neovim.escape",
+    },
   },
   "explorer.confirmDelete": false,
   "svelte.plugin.svelte.runesLegacyModeCodeLens.enable": false,
@@ -35,36 +36,36 @@
     "editor.codeActionsOnSave": {
       "source.addMissingImports": "explicit",
       "source.fixAll.eslint": "explicit",
-      "source.removeUnusedImports": "explicit"
+      "source.removeUnusedImports": "explicit",
     },
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "typescript.preferences.importModuleSpecifier": "relative",
   "[graphql]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
   },
   "[markdown]": {
     "rewrap.autoWrap.enabled": true,
     "editor.quickSuggestions": {
       "comments": "off",
       "strings": "off",
-      "other": "off"
+      "other": "off",
     },
-    "editor.insertSpaces": true
+    "editor.insertSpaces": true,
   },
   "[plaintext]": {
     "editor.quickSuggestions": {
       "comments": "off",
       "strings": "off",
-      "other": "off"
+      "other": "off",
     },
     "editor.insertSpaces": true,
     "editor.wordWrap": "on",
-    "editor.wordWrapColumn": 80
+    "editor.wordWrapColumn": 80,
   },
   "[yaml]": {
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "editor.insertSpaces": true,
   "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -91,10 +92,10 @@
   "editor.formatOnSave": true,
   "[go]": {
     "editor.codeActionsOnSave": {
-      "source.organizeImports": "explicit"
+      "source.organizeImports": "explicit",
     },
     "editor.insertSpaces": false,
-    "editor.detectIndentation": false
+    "editor.detectIndentation": false,
   },
   "files.eol": "\n",
   "go.testFlags": ["-v", "-count", "1"],
@@ -115,16 +116,16 @@
       "fillreturns": true,
       "undeclaredname": true,
       "unusedparams": true,
-      "nonewvars": true
+      "nonewvars": true,
     },
-    "ui.semanticTokens": true
+    "ui.semanticTokens": true,
   },
   "files.associations": {
     "*.Jenkinsfile": "groovy",
-    "*.txt": "markdown"
+    "*.txt": "markdown",
   },
   "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "vscode.json-language-features",
   },
   "window.newWindowDimensions": "inherit",
   "workbench.editor.showTabs": "multiple",
@@ -132,7 +133,7 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "go.toolsManagement.autoUpdate": true,
   "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
@@ -140,7 +141,7 @@
   "redhat.telemetry.enabled": false,
   "[ruby]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "LoranKloeze.ruby-rubocop-revived"
+    "editor.defaultFormatter": "LoranKloeze.ruby-rubocop-revived",
   },
   "rubyLsp.enabledFeatures": {
     "codeActions": true,
@@ -156,27 +157,27 @@
     "selectionRanges": true,
     "semanticHighlighting": false,
     "completion": true,
-    "codeLens": false
+    "codeLens": false,
   },
   "openInGitHub.useLocalLine": true,
   "workbench.preferredLightColorTheme": "GitHub Light Default",
   "workbench.colorTheme": "GitHub Light",
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "git.openRepositoryInParentFolders": "always",
   "svelte.enable-ts-plugin": true,
   "debug.onTaskErrors": "debugAnyway",
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "window.confirmSaveUntitledWorkspace": false,
   "diffEditor.renderSideBySide": false,
   "[python]": {
-    "diffEditor.ignoreTrimWhitespace": false
+    "diffEditor.ignoreTrimWhitespace": false,
   },
   "diffEditor.codeLens": true,
   "diffEditor.useInlineViewWhenSpaceIsLimited": false,
@@ -186,7 +187,7 @@
   "diffEditor.hideUnchangedRegions.enabled": true,
   "chat.commandCenter.enabled": false,
   "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
+    "asvetliakov.vscode-neovim": 1,
   },
   "git.blame.editorDecoration.enabled": false,
   "git.blame.statusBarItem.enabled": false,
@@ -200,10 +201,10 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
     "editor.autoIndent": "advanced",
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "workbench.editor.enablePreview": false,
   "security.workspace.trust.untrustedFiles": "open",
@@ -218,7 +219,7 @@
     "**/.gitea/workflows/*.yml",
     "**/.gitea/workflows/*.yaml",
     "**/.forgejo/workflows/*.yml",
-    "**/.forgejo/workflows/*.yaml"
+    "**/.forgejo/workflows/*.yaml",
   ],
   "json.schemaDownload.trustedDomains": {
     "https://developer.microsoft.com/json-schemas/": true,
@@ -229,8 +230,8 @@
     "https://raw.githubusercontent.com/devcontainers/spec/": true,
     "https://raw.githubusercontent.com/microsoft/vscode/": true,
     "https://schemastore.azurewebsites.net/": true,
-    "https://www.schemastore.org/": true
+    "https://www.schemastore.org/": true,
   },
   "workbench.activityBar.location": "hidden",
-  "poolside.toolActivity": "compact"
+  "poolside.toolActivity": "compact",
 }
