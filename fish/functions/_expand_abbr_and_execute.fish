@@ -11,5 +11,7 @@ function _expand_abbr_and_execute --description 'Expand the command abbreviation
         commandline -C (string length -- $first)
         commandline -f expand-abbr
     end
-    commandline -f end-of-buffer execute
+    # Drop any autosuggestion first: end-of-buffer accepts it when the cursor
+    # is already at the end, which would run the suggestion instead.
+    commandline -f suppress-autosuggestion end-of-buffer execute
 end
