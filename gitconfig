@@ -4,17 +4,12 @@
 [core]
 	editor = nvim
 	excludesfile = ~/.gitignore_global
-	pager = delta
 [color]
   branch = auto
   diff = auto
   status = auto
 [difftool]
   prompt = false
-[interactive]
-  diffFilter = delta --color-only
-[delta]
-  navigate = true
 [mergetool]
   keepBackup = true
 [push]
