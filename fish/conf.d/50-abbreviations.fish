@@ -1,5 +1,16 @@
 status is-interactive; or return
 
+# Each abbreviation also gets a function of the same name (unless a command
+# already exists): fish only autosuggests history entries whose command
+# exists, so without one `gp --force-with-lease` would never be suggested.
+function _abbr --argument-names name expansion
+    abbr --add --global $name $expansion
+    type -q -- $name; and return
+    function $name --inherit-variable expansion --wraps $expansion
+        eval $expansion (string escape -- $argv)
+    end
+end
+
 # Directories
 abbr --add --global .. 'cd ..'
 abbr --add --global ... 'cd ../..'
@@ -7,23 +18,25 @@ abbr --add --global .... 'cd ../../..'
 abbr --add --global ..... 'cd ../../../..'
 
 # Git
-abbr --add --global g git
-abbr --add --global gst 'git status'
-abbr --add --global gup 'git fetch; and git rebase'
-abbr --add --global gp 'git push'
-abbr --add --global gc 'git commit --verbose'
-abbr --add --global gco 'git checkout'
-abbr --add --global ga 'git add'
+_abbr g git
+_abbr gst 'git status'
+_abbr gup 'git fetch; and git rebase'
+_abbr gp 'git push'
+_abbr gc 'git commit --verbose'
+_abbr gco 'git checkout'
+_abbr ga 'git add'
 
 # Tools
-abbr --add --global b 'bundle exec'
-abbr --add --global c code
-abbr --add --global c. 'code .'
-abbr --add --global nr 'npm run'
-abbr --add --global nv 'node --version'
-abbr --add --global vim nvim
-abbr --add --global vi nvim
-abbr --add --global v nvim
-abbr --add --global h heroku
-abbr --add --global d 'docker compose run'
-abbr --add --global grep 'grep -i --color=auto'
+_abbr b 'bundle exec'
+_abbr c code
+_abbr c. 'code .'
+_abbr nr 'npm run'
+_abbr nv 'node --version'
+_abbr vim nvim
+_abbr vi nvim
+_abbr v nvim
+_abbr h heroku
+_abbr d 'docker compose run'
+_abbr grep 'grep -i --color=auto'
+
+functions --erase _abbr
