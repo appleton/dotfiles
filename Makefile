@@ -1,8 +1,8 @@
 DIR=~/.dotfiles
 
-.PHONY: all install_packages mise symlinks fish
+.PHONY: all install_packages mise symlinks fish macos-keyboard
 
-all: install_packages mise symlinks
+all: install_packages mise symlinks macos-keyboard
 
 symlinks: fish
 	@mkdir -p ~/.config
@@ -41,3 +41,8 @@ install_packages:
 # Installs to ~/.local/bin/mise; upgrade with `mise self-update`.
 mise:
 	@test -x "$(HOME)/.local/bin/mise" || curl -fsSL https://mise.run | sh
+
+# Free F11 for applications without changing the laptop's media-key mode.
+macos-keyboard:
+	@defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 36 '<dict><key>enabled</key><false/></dict>'
+	@echo "Disabled the global Show Desktop (F11) shortcut. Log out and back in if it remains active."
