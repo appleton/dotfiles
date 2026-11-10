@@ -1,0 +1,4 @@
+[settings]
+
+[settings.self_update]
+auto = true

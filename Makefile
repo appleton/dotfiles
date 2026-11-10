@@ -6,6 +6,8 @@ all: install_packages mise symlinks macos-keyboard
 
 symlinks: fish
 	@mkdir -p ~/.config
+	@ln -nsf $(DIR)/mise ~/.config/mise
+	@ln -nsf $(DIR)/tool-versions ~/.tool-versions
 	@ln -nsf $(DIR)/ghostty ~/.config/ghostty
 	@ln -nsf $(DIR)/nvim ~/.config/nvim
 	@ln -nsf $(DIR)/gitconfig ~/.gitconfig
