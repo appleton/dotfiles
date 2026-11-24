@@ -11,10 +11,16 @@ function fish_user_key_bindings
     bind enter _expand_abbr_and_execute
 
     bind ctrl-u backward-kill-line
-    bind alt-backspace backward-kill-word
-    bind alt-delete backward-kill-word
-    bind \e\x7f backward-kill-word
-    bind \e\b backward-kill-word
+
+    # Option word motions use macOS word boundaries (foo.bar is one word, foo-bar is two).
+    bind alt-left '_macos_word backward move'
+    bind alt-b '_macos_word backward move'
+    bind alt-right '_macos_word forward move'
+    bind alt-f '_macos_word forward move'
+    bind alt-backspace '_macos_word backward kill'
+    bind alt-delete '_macos_word backward kill'
+    bind \e\x7f '_macos_word backward kill'
+    bind \e\b '_macos_word backward kill'
     bind \e\[A history-prefix-search-backward
     bind \e\[B history-prefix-search-forward
     bind \eOA history-prefix-search-backward
